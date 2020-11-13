@@ -6,7 +6,7 @@ to build Climage Data Analysis pipelines
 for climate data analysis.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    alg
