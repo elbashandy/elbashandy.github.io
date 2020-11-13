@@ -1,0 +1,1255 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DATA &mdash; TECA  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="System" href="system.html" />
+    <link rel="prev" title="I/O" href="io.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> TECA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer.html">Development</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="framework.html">Framework</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="alg.html">Algorithms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html">CORE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">I/O</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">DATA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="system.html">System</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">TECA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="framework.html">Framework</a> &raquo;</li>
+        
+      <li>DATA</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/framework/data.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data">
+<h1>DATA<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt id="_CPPv421teca_array_collection">
+<span id="_CPPv321teca_array_collection"></span><span id="_CPPv221teca_array_collection"></span><span id="teca_array_collection"></span><span class="target" id="classteca__array__collection"></span><em class="property">class </em><code class="sig-name descname">teca_array_collection</code><a class="headerlink" href="#_CPPv421teca_array_collection" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A collection of named arrays </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection5clearEv">
+<span id="_CPPv3N21teca_array_collection5clearEv"></span><span id="_CPPv2N21teca_array_collection5clearEv"></span><span id="teca_array_collection::clear"></span><span class="target" id="classteca__array__collection_1a43536abeeb104e1ef7e7956895dc663e"></span>void <code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection5clearEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I00DpEN21teca_array_collection11declare_setEvRR2nT2aTDpRR2oT">
+<span id="_CPPv3I00DpEN21teca_array_collection11declare_setERR2nT2aTDpRR2oT"></span><span id="_CPPv2I00DpEN21teca_array_collection11declare_setERR2nT2aTDpRR2oT"></span>template&lt;typename <code class="sig-name descname">nT</code>, typename <code class="sig-name descname">aT</code>, typename ...<code class="sig-name descname">oT</code>&gt;<br /><span class="target" id="classteca__array__collection_1a60efc6e7f09fefac5de8a91ae38ebbac"></span>void <code class="sig-name descname">declare_set</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I00DpEN21teca_array_collection11declare_setEvRR2nT2aTDpRR2oT" title="teca_array_collection::declare_set::nT">nT</a> &amp;&amp;<em>a_name</em>, <a class="reference internal" href="#_CPPv4I00DpEN21teca_array_collection11declare_setEvRR2nT2aTDpRR2oT" title="teca_array_collection::declare_set::aT">aT</a> <em>a_type</em>, <a class="reference internal" href="#_CPPv4I00DpEN21teca_array_collection11declare_setEvRR2nT2aTDpRR2oT" title="teca_array_collection::declare_set::oT">oT</a>&amp;&amp;... <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I00DpEN21teca_array_collection11declare_setEvRR2nT2aTDpRR2oT" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I00EN21teca_array_collection7declareEvRR2nT2aT">
+<span id="_CPPv3I00EN21teca_array_collection7declareERR2nT2aT"></span><span id="_CPPv2I00EN21teca_array_collection7declareERR2nT2aT"></span>template&lt;typename <code class="sig-name descname">nT</code>, typename <code class="sig-name descname">aT</code>&gt;<br /><span class="target" id="classteca__array__collection_1a656b0328fe7e68d0339e84d1c6e4fa5d"></span>void <code class="sig-name descname">declare</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I00EN21teca_array_collection7declareEvRR2nT2aT" title="teca_array_collection::declare::nT">nT</a> &amp;&amp;<em>a_name</em>, <a class="reference internal" href="#_CPPv4I00EN21teca_array_collection7declareEvRR2nT2aT" title="teca_array_collection::declare::aT">aT</a> <em>a_type</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I00EN21teca_array_collection7declareEvRR2nT2aT" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection6appendE20p_teca_variant_array">
+<span id="_CPPv3N21teca_array_collection6appendE20p_teca_variant_array"></span><span id="_CPPv2N21teca_array_collection6appendE20p_teca_variant_array"></span><span id="teca_array_collection::append__p_teca_variant_array"></span><span class="target" id="classteca__array__collection_1ae1e4887e16a45c23cebfeee91dacde25"></span>int <code class="sig-name descname">append</code><span class="sig-paren">(</span>p_teca_variant_array <em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection6appendE20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection6appendERKNSt6stringE20p_teca_variant_array">
+<span id="_CPPv3N21teca_array_collection6appendERKNSt6stringE20p_teca_variant_array"></span><span id="_CPPv2N21teca_array_collection6appendERKNSt6stringE20p_teca_variant_array"></span><span id="teca_array_collection::append__ssCR.p_teca_variant_array"></span><span class="target" id="classteca__array__collection_1abd365a478ddc8d774473338302f4b499"></span>int <code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em>, p_teca_variant_array <em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection6appendERKNSt6stringE20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection3setEj20p_teca_variant_array">
+<span id="_CPPv3N21teca_array_collection3setEj20p_teca_variant_array"></span><span id="_CPPv2N21teca_array_collection3setEj20p_teca_variant_array"></span><span id="teca_array_collection::set__unsigned-i.p_teca_variant_array"></span><span class="target" id="classteca__array__collection_1aeeadadfb7e1924c7f19ba4d0f17a5bdc"></span>int <code class="sig-name descname">set</code><span class="sig-paren">(</span>unsigned int <em>i</em>, p_teca_variant_array <em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection3setEj20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection3setERKNSt6stringE20p_teca_variant_array">
+<span id="_CPPv3N21teca_array_collection3setERKNSt6stringE20p_teca_variant_array"></span><span id="_CPPv2N21teca_array_collection3setERKNSt6stringE20p_teca_variant_array"></span><span id="teca_array_collection::set__ssCR.p_teca_variant_array"></span><span class="target" id="classteca__array__collection_1a516bb563779e187047386599b822301d"></span>int <code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em>, p_teca_variant_array <em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection3setERKNSt6stringE20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection6removeEj">
+<span id="_CPPv3N21teca_array_collection6removeEj"></span><span id="_CPPv2N21teca_array_collection6removeEj"></span><span id="teca_array_collection::remove__unsigned-i"></span><span class="target" id="classteca__array__collection_1a26b685d1cf577b967ffe41097720e1ee"></span>int <code class="sig-name descname">remove</code><span class="sig-paren">(</span>unsigned int <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection6removeEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection6removeERKNSt6stringE">
+<span id="_CPPv3N21teca_array_collection6removeERKNSt6stringE"></span><span id="_CPPv2N21teca_array_collection6removeERKNSt6stringE"></span><span id="teca_array_collection::remove__ssCR"></span><span class="target" id="classteca__array__collection_1ae022fcb981eaad2780c2b3f486a7141c"></span>int <code class="sig-name descname">remove</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection6removeERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_array_collection4sizeEv">
+<span id="_CPPv3NK21teca_array_collection4sizeEv"></span><span id="_CPPv2NK21teca_array_collection4sizeEv"></span><span id="teca_array_collection::sizeC"></span><span class="target" id="classteca__array__collection_1a690597d9e22027d86ce7bff4f3a21cbf"></span>unsigned int <code class="sig-name descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">noexcept</em><a class="headerlink" href="#_CPPv4NK21teca_array_collection4sizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection3getEj">
+<span id="_CPPv3N21teca_array_collection3getEj"></span><span id="_CPPv2N21teca_array_collection3getEj"></span><span id="teca_array_collection::get__unsigned-i"></span><span class="target" id="classteca__array__collection_1aa18d00331bb98267493eed6af76b3834"></span>p_teca_variant_array <code class="sig-name descname">get</code><span class="sig-paren">(</span>unsigned int <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection3getEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_array_collection3getEj">
+<span id="_CPPv3NK21teca_array_collection3getEj"></span><span id="_CPPv2NK21teca_array_collection3getEj"></span><span id="teca_array_collection::get__unsigned-iC"></span><span class="target" id="classteca__array__collection_1a8d264d4a90d16eb15347b83e2ed92441"></span>const_p_teca_variant_array <code class="sig-name descname">get</code><span class="sig-paren">(</span>unsigned int <em>i</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_array_collection3getEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_array_collection3hasERKNSt6stringE">
+<span id="_CPPv3NK21teca_array_collection3hasERKNSt6stringE"></span><span id="_CPPv2NK21teca_array_collection3hasERKNSt6stringE"></span><span id="teca_array_collection::has__ssCRC"></span><span class="target" id="classteca__array__collection_1ab1ff7ddee48a78391a513f06ceccdc94"></span>bool <code class="sig-name descname">has</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_array_collection3hasERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection3getERKNSt6stringE">
+<span id="_CPPv3N21teca_array_collection3getERKNSt6stringE"></span><span id="_CPPv2N21teca_array_collection3getERKNSt6stringE"></span><span id="teca_array_collection::get__ssCR"></span><span class="target" id="classteca__array__collection_1aeaa2b35a64b167a8be3e2c7a613fc7db"></span>p_teca_variant_array <code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection3getERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_array_collection3getERKNSt6stringE">
+<span id="_CPPv3NK21teca_array_collection3getERKNSt6stringE"></span><span id="_CPPv2NK21teca_array_collection3getERKNSt6stringE"></span><span id="teca_array_collection::get__ssCRC"></span><span class="target" id="classteca__array__collection_1acd3c284bf4413acfca10b8e311c3a431"></span>const_p_teca_variant_array <code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_array_collection3getERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collectionixERKNSt6stringE">
+<span id="_CPPv3N21teca_array_collectionixERKNSt6stringE"></span><span id="_CPPv2N21teca_array_collectionixERKNSt6stringE"></span><span id="teca_array_collection::subscript-operator__ssCR"></span><span class="target" id="classteca__array__collection_1a489cf32337149a961300b239dc690d39"></span>p_teca_variant_array <code class="sig-name descname">operator[]</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collectionixERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_array_collectionixERKNSt6stringE">
+<span id="_CPPv3NK21teca_array_collectionixERKNSt6stringE"></span><span id="_CPPv2NK21teca_array_collectionixERKNSt6stringE"></span><span id="teca_array_collection::subscript-operator__ssCRC"></span><span class="target" id="classteca__array__collection_1a69cda800c27f53a9f6cec696bbe16795"></span>const_p_teca_variant_array <code class="sig-name descname">operator[]</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_array_collectionixERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection8get_nameEj">
+<span id="_CPPv3N21teca_array_collection8get_nameEj"></span><span id="_CPPv2N21teca_array_collection8get_nameEj"></span><span id="teca_array_collection::get_name__unsigned-i"></span><span class="target" id="classteca__array__collection_1a5139b276ae89217fc6360c3b0673d989"></span>std::string &amp;<code class="sig-name descname">get_name</code><span class="sig-paren">(</span>unsigned int <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection8get_nameEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_array_collection8get_nameEj">
+<span id="_CPPv3NK21teca_array_collection8get_nameEj"></span><span id="_CPPv2NK21teca_array_collection8get_nameEj"></span><span id="teca_array_collection::get_name__unsigned-iC"></span><span class="target" id="classteca__array__collection_1acee1c4a069665801163fb4d75e2a04f2"></span><em class="property">const</em> std::string &amp;<code class="sig-name descname">get_name</code><span class="sig-paren">(</span>unsigned int <em>i</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_array_collection8get_nameEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_array_collection14get_class_nameEv">
+<span id="_CPPv3NK21teca_array_collection14get_class_nameEv"></span><span id="_CPPv2NK21teca_array_collection14get_class_nameEv"></span><span id="teca_array_collection::get_class_nameC"></span><span class="target" id="classteca__array__collection_1aaa05ef136246df9ddf53542215270427"></span>std::string <code class="sig-name descname">get_class_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_array_collection14get_class_nameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_array_collection13get_type_codeEv">
+<span id="_CPPv3NK21teca_array_collection13get_type_codeEv"></span><span id="_CPPv2NK21teca_array_collection13get_type_codeEv"></span><span id="teca_array_collection::get_type_codeC"></span><span class="target" id="classteca__array__collection_1a7cbdefb6a80452260619e4a27b6f6b2e"></span>int <code class="sig-name descname">get_type_code</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_array_collection13get_type_codeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection4copyERK29const_p_teca_array_collection">
+<span id="_CPPv3N21teca_array_collection4copyERK29const_p_teca_array_collection"></span><span id="_CPPv2N21teca_array_collection4copyERK29const_p_teca_array_collection"></span><span id="teca_array_collection::copy__const_p_teca_array_collectionCR"></span><span class="target" id="classteca__array__collection_1aa8cde631c7931e36a81fd4cc4d2b3df2"></span>void <code class="sig-name descname">copy</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_array_collection &amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection4copyERK29const_p_teca_array_collection" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection12shallow_copyERK23p_teca_array_collection">
+<span id="_CPPv3N21teca_array_collection12shallow_copyERK23p_teca_array_collection"></span><span id="_CPPv2N21teca_array_collection12shallow_copyERK23p_teca_array_collection"></span><span id="teca_array_collection::shallow_copy__p_teca_array_collectionCR"></span><span class="target" id="classteca__array__collection_1ae7726ad0e6a73616bb5184a53bcc1555"></span>void <code class="sig-name descname">shallow_copy</code><span class="sig-paren">(</span><em class="property">const</em> p_teca_array_collection &amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection12shallow_copyERK23p_teca_array_collection" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection6appendERK29const_p_teca_array_collection">
+<span id="_CPPv3N21teca_array_collection6appendERK29const_p_teca_array_collection"></span><span id="_CPPv2N21teca_array_collection6appendERK29const_p_teca_array_collection"></span><span id="teca_array_collection::append__const_p_teca_array_collectionCR"></span><span class="target" id="classteca__array__collection_1ade8c722501ebe64852bb44e3bcb0f5a8"></span>int <code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_array_collection &amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection6appendERK29const_p_teca_array_collection" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection14shallow_appendERK23p_teca_array_collection">
+<span id="_CPPv3N21teca_array_collection14shallow_appendERK23p_teca_array_collection"></span><span id="_CPPv2N21teca_array_collection14shallow_appendERK23p_teca_array_collection"></span><span id="teca_array_collection::shallow_append__p_teca_array_collectionCR"></span><span class="target" id="classteca__array__collection_1ad80238373c83a7b1ed67e88dc6e3be6e"></span>int <code class="sig-name descname">shallow_append</code><span class="sig-paren">(</span><em class="property">const</em> p_teca_array_collection &amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection14shallow_appendERK23p_teca_array_collection" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection4swapER23p_teca_array_collection">
+<span id="_CPPv3N21teca_array_collection4swapER23p_teca_array_collection"></span><span id="_CPPv2N21teca_array_collection4swapER23p_teca_array_collection"></span><span id="teca_array_collection::swap__p_teca_array_collectionR"></span><span class="target" id="classteca__array__collection_1aa05440cf5bdb986a54018d454f72231b"></span>void <code class="sig-name descname">swap</code><span class="sig-paren">(</span>p_teca_array_collection &amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection4swapER23p_teca_array_collection" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_array_collection9to_streamER18teca_binary_stream">
+<span id="_CPPv3NK21teca_array_collection9to_streamER18teca_binary_stream"></span><span id="_CPPv2NK21teca_array_collection9to_streamER18teca_binary_stream"></span><span id="teca_array_collection::to_stream__teca_binary_streamRC"></span><span class="target" id="classteca__array__collection_1a81aca7363212947edf5413c31bdf6aad"></span>int <code class="sig-name descname">to_stream</code><span class="sig-paren">(</span><a class="reference internal" href="core.html#_CPPv418teca_binary_stream" title="teca_binary_stream">teca_binary_stream</a> &amp;<em>s</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_array_collection9to_streamER18teca_binary_stream" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection11from_streamER18teca_binary_stream">
+<span id="_CPPv3N21teca_array_collection11from_streamER18teca_binary_stream"></span><span id="_CPPv2N21teca_array_collection11from_streamER18teca_binary_stream"></span><span id="teca_array_collection::from_stream__teca_binary_streamR"></span><span class="target" id="classteca__array__collection_1ad462cfa6280cd4120f5d9582ba992c5c"></span>int <code class="sig-name descname">from_stream</code><span class="sig-paren">(</span><a class="reference internal" href="core.html#_CPPv418teca_binary_stream" title="teca_binary_stream">teca_binary_stream</a> &amp;<em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection11from_streamER18teca_binary_stream" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_array_collection9to_streamERNSt7ostreamE">
+<span id="_CPPv3NK21teca_array_collection9to_streamERNSt7ostreamE"></span><span id="_CPPv2NK21teca_array_collection9to_streamERNSt7ostreamE"></span><span id="teca_array_collection::to_stream__osRC"></span><span class="target" id="classteca__array__collection_1a03fd202f4454103368eea7bffecc9c23"></span>int <code class="sig-name descname">to_stream</code><span class="sig-paren">(</span>std::ostream&amp;<span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_array_collection9to_streamERNSt7ostreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection3NewEv">
+<span id="_CPPv3N21teca_array_collection3NewEv"></span><span id="_CPPv2N21teca_array_collection3NewEv"></span><span id="teca_array_collection::New"></span><span class="target" id="classteca__array__collection_1abba1f713e4e816198c56f92663c8d833"></span>p_teca_array_collection <code class="sig-name descname">New</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection3NewEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection21teca_array_collectionEv">
+<span id="_CPPv3N21teca_array_collection21teca_array_collectionEv"></span><span id="_CPPv2N21teca_array_collection21teca_array_collectionEv"></span><span id="teca_array_collection::teca_array_collection"></span><span class="target" id="classteca__array__collection_1a08f479dab9a8648b6c15e6ee3fc3df1c"></span><code class="sig-name descname">teca_array_collection</code><span class="sig-paren">(</span><span class="sig-paren">)</span> = default<a class="headerlink" href="#_CPPv4N21teca_array_collection21teca_array_collectionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection21teca_array_collectionERK21teca_array_collection">
+<span id="_CPPv3N21teca_array_collection21teca_array_collectionERK21teca_array_collection"></span><span id="_CPPv2N21teca_array_collection21teca_array_collectionERK21teca_array_collection"></span><span id="teca_array_collection::teca_array_collection__teca_array_collectionCR"></span><span class="target" id="classteca__array__collection_1a705fc32f0747d313d6100ca8732029c8"></span><code class="sig-name descname">teca_array_collection</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N21teca_array_collection21teca_array_collectionERK21teca_array_collection" title="teca_array_collection::teca_array_collection">teca_array_collection</a>&amp;<span class="sig-paren">)</span> = delete<a class="headerlink" href="#_CPPv4N21teca_array_collection21teca_array_collectionERK21teca_array_collection" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection21teca_array_collectionERRK21teca_array_collection">
+<span id="_CPPv3N21teca_array_collection21teca_array_collectionERRK21teca_array_collection"></span><span id="_CPPv2N21teca_array_collection21teca_array_collectionERRK21teca_array_collection"></span><span id="teca_array_collection::teca_array_collection__teca_array_collectionCRR"></span><span class="target" id="classteca__array__collection_1a26bdc184a0de4416e56a1a422e2dfb6b"></span><code class="sig-name descname">teca_array_collection</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N21teca_array_collection21teca_array_collectionERRK21teca_array_collection" title="teca_array_collection::teca_array_collection">teca_array_collection</a>&amp;&amp;<span class="sig-paren">)</span> = delete<a class="headerlink" href="#_CPPv4N21teca_array_collection21teca_array_collectionERRK21teca_array_collection" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collectionaSERK21teca_array_collection">
+<span id="_CPPv3N21teca_array_collectionaSERK21teca_array_collection"></span><span id="_CPPv2N21teca_array_collectionaSERK21teca_array_collection"></span><span id="teca_array_collection::assign-operator__teca_array_collectionCR"></span><span class="target" id="classteca__array__collection_1a81c7d280cda97995a7ac003ca3873a50"></span>void <code class="sig-name descname">operator=</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv421teca_array_collection" title="teca_array_collection">teca_array_collection</a>&amp;<span class="sig-paren">)</span> = delete<a class="headerlink" href="#_CPPv4N21teca_array_collectionaSERK21teca_array_collection" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collectionaSERRK21teca_array_collection">
+<span id="_CPPv3N21teca_array_collectionaSERRK21teca_array_collection"></span><span id="_CPPv2N21teca_array_collectionaSERRK21teca_array_collection"></span><span id="teca_array_collection::assign-operator__teca_array_collectionCRR"></span><span class="target" id="classteca__array__collection_1a0fdf0f871273f02ce22ebea45482612a"></span>void <code class="sig-name descname">operator=</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv421teca_array_collection" title="teca_array_collection">teca_array_collection</a>&amp;&amp;<span class="sig-paren">)</span> = delete<a class="headerlink" href="#_CPPv4N21teca_array_collectionaSERRK21teca_array_collection" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_array_collection11declare_setEv">
+<span id="_CPPv3N21teca_array_collection11declare_setEv"></span><span id="_CPPv2N21teca_array_collection11declare_setEv"></span><span id="teca_array_collection::declare_set"></span><span class="target" id="classteca__array__collection_1aa6375c97e3d4b14acd2df956272c15f1"></span>void <code class="sig-name descname">declare_set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_array_collection11declare_setEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Private Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N21teca_array_collection13name_vector_tE">
+<span id="_CPPv3N21teca_array_collection13name_vector_tE"></span><span id="_CPPv2N21teca_array_collection13name_vector_tE"></span><span class="target" id="classteca__array__collection_1aaa7cddad71ff9a1fe982b2021fb6f624"></span><em class="property">using </em><code class="sig-name descname">name_vector_t</code> = std::vector&lt;std::string&gt;<a class="headerlink" href="#_CPPv4N21teca_array_collection13name_vector_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt id="_CPPv4N21teca_array_collection14array_vector_tE">
+<span id="_CPPv3N21teca_array_collection14array_vector_tE"></span><span id="_CPPv2N21teca_array_collection14array_vector_tE"></span><span class="target" id="classteca__array__collection_1ad360555fa10057603639ad024396774c"></span><em class="property">using </em><code class="sig-name descname">array_vector_t</code> = std::vector&lt;p_teca_variant_array&gt;<a class="headerlink" href="#_CPPv4N21teca_array_collection14array_vector_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt id="_CPPv4N21teca_array_collection16name_array_map_tE">
+<span id="_CPPv3N21teca_array_collection16name_array_map_tE"></span><span id="_CPPv2N21teca_array_collection16name_array_map_tE"></span><span class="target" id="classteca__array__collection_1a16cb360233413499720a76d17567456d"></span><em class="property">using </em><code class="sig-name descname">name_array_map_t</code> = std::map&lt;std::string, unsigned int&gt;<a class="headerlink" href="#_CPPv4N21teca_array_collection16name_array_map_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Private Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N21teca_array_collection7m_namesE">
+<span id="_CPPv3N21teca_array_collection7m_namesE"></span><span id="_CPPv2N21teca_array_collection7m_namesE"></span><span id="teca_array_collection::m_names__name_vector_t"></span><span class="target" id="classteca__array__collection_1a9d2d882de6968d3c21eb31a10a205189"></span><a class="reference internal" href="#_CPPv4N21teca_array_collection13name_vector_tE" title="teca_array_collection::name_vector_t">name_vector_t</a> <code class="sig-name descname">m_names</code><a class="headerlink" href="#_CPPv4N21teca_array_collection7m_namesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N21teca_array_collection8m_arraysE">
+<span id="_CPPv3N21teca_array_collection8m_arraysE"></span><span id="_CPPv2N21teca_array_collection8m_arraysE"></span><span id="teca_array_collection::m_arrays__array_vector_t"></span><span class="target" id="classteca__array__collection_1ab4905cb73e73504d3b6e7f350778692a"></span><a class="reference internal" href="#_CPPv4N21teca_array_collection14array_vector_tE" title="teca_array_collection::array_vector_t">array_vector_t</a> <code class="sig-name descname">m_arrays</code><a class="headerlink" href="#_CPPv4N21teca_array_collection8m_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N21teca_array_collection16m_name_array_mapE">
+<span id="_CPPv3N21teca_array_collection16m_name_array_mapE"></span><span id="_CPPv2N21teca_array_collection16m_name_array_mapE"></span><span id="teca_array_collection::m_name_array_map__name_array_map_t"></span><span class="target" id="classteca__array__collection_1a600c17ea0f985c09d242c9eee53745bc"></span><a class="reference internal" href="#_CPPv4N21teca_array_collection16name_array_map_tE" title="teca_array_collection::name_array_map_t">name_array_map_t</a> <code class="sig-name descname">m_name_array_map</code><a class="headerlink" href="#_CPPv4N21teca_array_collection16m_name_array_mapE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt id="_CPPv419teca_cartesian_mesh">
+<span id="_CPPv319teca_cartesian_mesh"></span><span id="_CPPv219teca_cartesian_mesh"></span><span id="teca_cartesian_mesh"></span><span class="target" id="classteca__cartesian__mesh"></span><em class="property">class </em><code class="sig-name descname">teca_cartesian_mesh</code> : <em class="property">public</em> <a class="reference internal" href="#_CPPv49teca_mesh" title="teca_mesh">teca_mesh</a><a class="headerlink" href="#_CPPv419teca_cartesian_mesh" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>data on a physically uniform cartesian mesh </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_meshD0Ev">
+<span id="_CPPv3N19teca_cartesian_meshD0Ev"></span><span id="_CPPv2N19teca_cartesian_meshD0Ev"></span><span id="teca_cartesian_mesh::~teca_cartesian_mesh"></span><span class="target" id="classteca__cartesian__mesh_1a1f331a8ad5671419280aefabd5b9290d"></span><code class="sig-name descname">~teca_cartesian_mesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span> = default<a class="headerlink" href="#_CPPv4N19teca_cartesian_meshD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh17get_x_coordinatesEv">
+<span id="_CPPv3N19teca_cartesian_mesh17get_x_coordinatesEv"></span><span id="_CPPv2N19teca_cartesian_mesh17get_x_coordinatesEv"></span><span id="teca_cartesian_mesh::get_x_coordinates"></span><span class="target" id="classteca__cartesian__mesh_1ac9442fd6d6d51653d108b4e301186815"></span>p_teca_variant_array <code class="sig-name descname">get_x_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh17get_x_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK19teca_cartesian_mesh17get_x_coordinatesEv">
+<span id="_CPPv3NK19teca_cartesian_mesh17get_x_coordinatesEv"></span><span id="_CPPv2NK19teca_cartesian_mesh17get_x_coordinatesEv"></span><span id="teca_cartesian_mesh::get_x_coordinatesC"></span><span class="target" id="classteca__cartesian__mesh_1a5734729747b1531f3c1fe47256171691"></span>const_p_teca_variant_array <code class="sig-name descname">get_x_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK19teca_cartesian_mesh17get_x_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh17get_y_coordinatesEv">
+<span id="_CPPv3N19teca_cartesian_mesh17get_y_coordinatesEv"></span><span id="_CPPv2N19teca_cartesian_mesh17get_y_coordinatesEv"></span><span id="teca_cartesian_mesh::get_y_coordinates"></span><span class="target" id="classteca__cartesian__mesh_1aaf8bae8093147dac8386512c1d82ee96"></span>p_teca_variant_array <code class="sig-name descname">get_y_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh17get_y_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK19teca_cartesian_mesh17get_y_coordinatesEv">
+<span id="_CPPv3NK19teca_cartesian_mesh17get_y_coordinatesEv"></span><span id="_CPPv2NK19teca_cartesian_mesh17get_y_coordinatesEv"></span><span id="teca_cartesian_mesh::get_y_coordinatesC"></span><span class="target" id="classteca__cartesian__mesh_1aeb5da32346d3c0f952d296ea5403eb93"></span>const_p_teca_variant_array <code class="sig-name descname">get_y_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK19teca_cartesian_mesh17get_y_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh17get_z_coordinatesEv">
+<span id="_CPPv3N19teca_cartesian_mesh17get_z_coordinatesEv"></span><span id="_CPPv2N19teca_cartesian_mesh17get_z_coordinatesEv"></span><span id="teca_cartesian_mesh::get_z_coordinates"></span><span class="target" id="classteca__cartesian__mesh_1a7272ef669da1ef8f921755c01d30d026"></span>p_teca_variant_array <code class="sig-name descname">get_z_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh17get_z_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK19teca_cartesian_mesh17get_z_coordinatesEv">
+<span id="_CPPv3NK19teca_cartesian_mesh17get_z_coordinatesEv"></span><span id="_CPPv2NK19teca_cartesian_mesh17get_z_coordinatesEv"></span><span id="teca_cartesian_mesh::get_z_coordinatesC"></span><span class="target" id="classteca__cartesian__mesh_1a553497180a696d16b57af77880525187"></span>const_p_teca_variant_array <code class="sig-name descname">get_z_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK19teca_cartesian_mesh17get_z_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh17set_x_coordinatesERKNSt6stringERK20p_teca_variant_array">
+<span id="_CPPv3N19teca_cartesian_mesh17set_x_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="_CPPv2N19teca_cartesian_mesh17set_x_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="teca_cartesian_mesh::set_x_coordinates__ssCR.p_teca_variant_arrayCR"></span><span class="target" id="classteca__cartesian__mesh_1acc19439bd818aafe06eb9c7aa4f0017e"></span>void <code class="sig-name descname">set_x_coordinates</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em>, <em class="property">const</em> p_teca_variant_array &amp;<em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh17set_x_coordinatesERKNSt6stringERK20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh17set_y_coordinatesERKNSt6stringERK20p_teca_variant_array">
+<span id="_CPPv3N19teca_cartesian_mesh17set_y_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="_CPPv2N19teca_cartesian_mesh17set_y_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="teca_cartesian_mesh::set_y_coordinates__ssCR.p_teca_variant_arrayCR"></span><span class="target" id="classteca__cartesian__mesh_1affe1702d030fa9846b85a7805f8e8980"></span>void <code class="sig-name descname">set_y_coordinates</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em>, <em class="property">const</em> p_teca_variant_array &amp;<em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh17set_y_coordinatesERKNSt6stringERK20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh17set_z_coordinatesERKNSt6stringERK20p_teca_variant_array">
+<span id="_CPPv3N19teca_cartesian_mesh17set_z_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="_CPPv2N19teca_cartesian_mesh17set_z_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="teca_cartesian_mesh::set_z_coordinates__ssCR.p_teca_variant_arrayCR"></span><span class="target" id="classteca__cartesian__mesh_1adbb62c561be95d38801705d48398557f"></span>void <code class="sig-name descname">set_z_coordinates</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em>, <em class="property">const</em> p_teca_variant_array &amp;<em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh17set_z_coordinatesERKNSt6stringERK20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK19teca_cartesian_mesh14get_class_nameEv">
+<span id="_CPPv3NK19teca_cartesian_mesh14get_class_nameEv"></span><span id="_CPPv2NK19teca_cartesian_mesh14get_class_nameEv"></span><span id="teca_cartesian_mesh::get_class_nameC"></span><span class="target" id="classteca__cartesian__mesh_1ac718691988fbf76838716b6c6e4af6b3"></span>std::string <code class="sig-name descname">get_class_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK19teca_cartesian_mesh14get_class_nameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK19teca_cartesian_mesh13get_type_codeEv">
+<span id="_CPPv3NK19teca_cartesian_mesh13get_type_codeEv"></span><span id="_CPPv2NK19teca_cartesian_mesh13get_type_codeEv"></span><span id="teca_cartesian_mesh::get_type_codeC"></span><span class="target" id="classteca__cartesian__mesh_1add6fa48897fe87ee173e359310ffe208"></span>int <code class="sig-name descname">get_type_code</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK19teca_cartesian_mesh13get_type_codeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh4copyERK20const_p_teca_dataset">
+<span id="_CPPv3N19teca_cartesian_mesh4copyERK20const_p_teca_dataset"></span><span id="_CPPv2N19teca_cartesian_mesh4copyERK20const_p_teca_dataset"></span><span id="teca_cartesian_mesh::copy__const_p_teca_datasetCR"></span><span class="target" id="classteca__cartesian__mesh_1ae79ee2ebbd7d929acfaf98586a0b49da"></span>void <code class="sig-name descname">copy</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh4copyERK20const_p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh12shallow_copyERK14p_teca_dataset">
+<span id="_CPPv3N19teca_cartesian_mesh12shallow_copyERK14p_teca_dataset"></span><span id="_CPPv2N19teca_cartesian_mesh12shallow_copyERK14p_teca_dataset"></span><span id="teca_cartesian_mesh::shallow_copy__p_teca_datasetCR"></span><span class="target" id="classteca__cartesian__mesh_1a2509d461e2bfa170cbbfab24e081b158"></span>void <code class="sig-name descname">shallow_copy</code><span class="sig-paren">(</span><em class="property">const</em> p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh12shallow_copyERK14p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh13copy_metadataERK20const_p_teca_dataset">
+<span id="_CPPv3N19teca_cartesian_mesh13copy_metadataERK20const_p_teca_dataset"></span><span id="_CPPv2N19teca_cartesian_mesh13copy_metadataERK20const_p_teca_dataset"></span><span id="teca_cartesian_mesh::copy_metadata__const_p_teca_datasetCR"></span><span class="target" id="classteca__cartesian__mesh_1aecc68ebaf018819b6c50cb8ac29eba64"></span>void <code class="sig-name descname">copy_metadata</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_dataset &amp;<em>other</em><span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh13copy_metadataERK20const_p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh4swapER14p_teca_dataset">
+<span id="_CPPv3N19teca_cartesian_mesh4swapER14p_teca_dataset"></span><span id="_CPPv2N19teca_cartesian_mesh4swapER14p_teca_dataset"></span><span id="teca_cartesian_mesh::swap__p_teca_datasetR"></span><span class="target" id="classteca__cartesian__mesh_1a59471846596a1a3e1a5f94a713712e23"></span>void <code class="sig-name descname">swap</code><span class="sig-paren">(</span>p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh4swapER14p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK19teca_cartesian_mesh9to_streamER18teca_binary_stream">
+<span id="_CPPv3NK19teca_cartesian_mesh9to_streamER18teca_binary_stream"></span><span id="_CPPv2NK19teca_cartesian_mesh9to_streamER18teca_binary_stream"></span><span id="teca_cartesian_mesh::to_stream__teca_binary_streamRC"></span><span class="target" id="classteca__cartesian__mesh_1addf24b5d4394e16848c0ffa70d8144ad"></span>int <code class="sig-name descname">to_stream</code><span class="sig-paren">(</span><a class="reference internal" href="core.html#_CPPv418teca_binary_stream" title="teca_binary_stream">teca_binary_stream</a>&amp;<span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK19teca_cartesian_mesh9to_streamER18teca_binary_stream" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh11from_streamER18teca_binary_stream">
+<span id="_CPPv3N19teca_cartesian_mesh11from_streamER18teca_binary_stream"></span><span id="_CPPv2N19teca_cartesian_mesh11from_streamER18teca_binary_stream"></span><span id="teca_cartesian_mesh::from_stream__teca_binary_streamR"></span><span class="target" id="classteca__cartesian__mesh_1a46c5e30c4f5573493489e98a8235a9df"></span>int <code class="sig-name descname">from_stream</code><span class="sig-paren">(</span><a class="reference internal" href="core.html#_CPPv418teca_binary_stream" title="teca_binary_stream">teca_binary_stream</a>&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh11from_streamER18teca_binary_stream" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK19teca_cartesian_mesh9to_streamERNSt7ostreamE">
+<span id="_CPPv3NK19teca_cartesian_mesh9to_streamERNSt7ostreamE"></span><span id="_CPPv2NK19teca_cartesian_mesh9to_streamERNSt7ostreamE"></span><span id="teca_cartesian_mesh::to_stream__osRC"></span><span class="target" id="classteca__cartesian__mesh_1ad2e956dbf690307f26f0b5ee66c2b367"></span>int <code class="sig-name descname">to_stream</code><span class="sig-paren">(</span>std::ostream&amp;<span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK19teca_cartesian_mesh9to_streamERNSt7ostreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N19teca_cartesian_mesh19teca_cartesian_meshEv">
+<span id="_CPPv3N19teca_cartesian_mesh19teca_cartesian_meshEv"></span><span id="_CPPv2N19teca_cartesian_mesh19teca_cartesian_meshEv"></span><span id="teca_cartesian_mesh::teca_cartesian_mesh"></span><span class="target" id="classteca__cartesian__mesh_1aaadd118efe8e5c078ebb12ebfe4162fe"></span><code class="sig-name descname">teca_cartesian_mesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh19teca_cartesian_meshEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Private Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N19teca_cartesian_mesh19m_coordinate_arraysE">
+<span id="_CPPv3N19teca_cartesian_mesh19m_coordinate_arraysE"></span><span id="_CPPv2N19teca_cartesian_mesh19m_coordinate_arraysE"></span><span id="teca_cartesian_mesh::m_coordinate_arrays__p_teca_array_collection"></span><span class="target" id="classteca__cartesian__mesh_1a829eb47abc8c262b2dd6eb60552b8ef5"></span>p_teca_array_collection <code class="sig-name descname">m_coordinate_arrays</code><a class="headerlink" href="#_CPPv4N19teca_cartesian_mesh19m_coordinate_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt id="_CPPv421teca_curvilinear_mesh">
+<span id="_CPPv321teca_curvilinear_mesh"></span><span id="_CPPv221teca_curvilinear_mesh"></span><span id="teca_curvilinear_mesh"></span><span class="target" id="classteca__curvilinear__mesh"></span><em class="property">class </em><code class="sig-name descname">teca_curvilinear_mesh</code> : <em class="property">public</em> <a class="reference internal" href="#_CPPv49teca_mesh" title="teca_mesh">teca_mesh</a><a class="headerlink" href="#_CPPv421teca_curvilinear_mesh" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>data on a physically uniform curvilinear mesh </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_meshD0Ev">
+<span id="_CPPv3N21teca_curvilinear_meshD0Ev"></span><span id="_CPPv2N21teca_curvilinear_meshD0Ev"></span><span id="teca_curvilinear_mesh::~teca_curvilinear_mesh"></span><span class="target" id="classteca__curvilinear__mesh_1a7e8f21d90064c198fab1c97975286995"></span><code class="sig-name descname">~teca_curvilinear_mesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span> = default<a class="headerlink" href="#_CPPv4N21teca_curvilinear_meshD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_curvilinear_mesh14get_class_nameEv">
+<span id="_CPPv3NK21teca_curvilinear_mesh14get_class_nameEv"></span><span id="_CPPv2NK21teca_curvilinear_mesh14get_class_nameEv"></span><span id="teca_curvilinear_mesh::get_class_nameC"></span><span class="target" id="classteca__curvilinear__mesh_1a50cb7609a95b4227f98dafbf4cf10e32"></span>std::string <code class="sig-name descname">get_class_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK21teca_curvilinear_mesh14get_class_nameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_curvilinear_mesh13get_type_codeEv">
+<span id="_CPPv3NK21teca_curvilinear_mesh13get_type_codeEv"></span><span id="_CPPv2NK21teca_curvilinear_mesh13get_type_codeEv"></span><span id="teca_curvilinear_mesh::get_type_codeC"></span><span class="target" id="classteca__curvilinear__mesh_1ae527ded83165c72cc83b1a69f688702d"></span>int <code class="sig-name descname">get_type_code</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK21teca_curvilinear_mesh13get_type_codeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh17get_x_coordinatesEv">
+<span id="_CPPv3N21teca_curvilinear_mesh17get_x_coordinatesEv"></span><span id="_CPPv2N21teca_curvilinear_mesh17get_x_coordinatesEv"></span><span id="teca_curvilinear_mesh::get_x_coordinates"></span><span class="target" id="classteca__curvilinear__mesh_1a43050d9db26cc4cd098ba2a9db784b11"></span>p_teca_variant_array <code class="sig-name descname">get_x_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh17get_x_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_curvilinear_mesh17get_x_coordinatesEv">
+<span id="_CPPv3NK21teca_curvilinear_mesh17get_x_coordinatesEv"></span><span id="_CPPv2NK21teca_curvilinear_mesh17get_x_coordinatesEv"></span><span id="teca_curvilinear_mesh::get_x_coordinatesC"></span><span class="target" id="classteca__curvilinear__mesh_1a2902f113893933c06bf81776c161b8d3"></span>const_p_teca_variant_array <code class="sig-name descname">get_x_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_curvilinear_mesh17get_x_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh17get_y_coordinatesEv">
+<span id="_CPPv3N21teca_curvilinear_mesh17get_y_coordinatesEv"></span><span id="_CPPv2N21teca_curvilinear_mesh17get_y_coordinatesEv"></span><span id="teca_curvilinear_mesh::get_y_coordinates"></span><span class="target" id="classteca__curvilinear__mesh_1ab88cf22bc6ebddcccbb592c60719247b"></span>p_teca_variant_array <code class="sig-name descname">get_y_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh17get_y_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_curvilinear_mesh17get_y_coordinatesEv">
+<span id="_CPPv3NK21teca_curvilinear_mesh17get_y_coordinatesEv"></span><span id="_CPPv2NK21teca_curvilinear_mesh17get_y_coordinatesEv"></span><span id="teca_curvilinear_mesh::get_y_coordinatesC"></span><span class="target" id="classteca__curvilinear__mesh_1a5e687793bca3dc801ce5d0805238f74f"></span>const_p_teca_variant_array <code class="sig-name descname">get_y_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_curvilinear_mesh17get_y_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh17get_z_coordinatesEv">
+<span id="_CPPv3N21teca_curvilinear_mesh17get_z_coordinatesEv"></span><span id="_CPPv2N21teca_curvilinear_mesh17get_z_coordinatesEv"></span><span id="teca_curvilinear_mesh::get_z_coordinates"></span><span class="target" id="classteca__curvilinear__mesh_1a8615948b8c8e196ae336d7e4db42b328"></span>p_teca_variant_array <code class="sig-name descname">get_z_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh17get_z_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_curvilinear_mesh17get_z_coordinatesEv">
+<span id="_CPPv3NK21teca_curvilinear_mesh17get_z_coordinatesEv"></span><span id="_CPPv2NK21teca_curvilinear_mesh17get_z_coordinatesEv"></span><span id="teca_curvilinear_mesh::get_z_coordinatesC"></span><span class="target" id="classteca__curvilinear__mesh_1a24b216ca2bc084189629b66483b3d59e"></span>const_p_teca_variant_array <code class="sig-name descname">get_z_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK21teca_curvilinear_mesh17get_z_coordinatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh17set_x_coordinatesERKNSt6stringERK20p_teca_variant_array">
+<span id="_CPPv3N21teca_curvilinear_mesh17set_x_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="_CPPv2N21teca_curvilinear_mesh17set_x_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="teca_curvilinear_mesh::set_x_coordinates__ssCR.p_teca_variant_arrayCR"></span><span class="target" id="classteca__curvilinear__mesh_1a7738600b71b9adae38404be63fbc792f"></span>void <code class="sig-name descname">set_x_coordinates</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em>, <em class="property">const</em> p_teca_variant_array &amp;<em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh17set_x_coordinatesERKNSt6stringERK20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh17set_y_coordinatesERKNSt6stringERK20p_teca_variant_array">
+<span id="_CPPv3N21teca_curvilinear_mesh17set_y_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="_CPPv2N21teca_curvilinear_mesh17set_y_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="teca_curvilinear_mesh::set_y_coordinates__ssCR.p_teca_variant_arrayCR"></span><span class="target" id="classteca__curvilinear__mesh_1a51410cc8c94f602688a3b40954d0fa57"></span>void <code class="sig-name descname">set_y_coordinates</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em>, <em class="property">const</em> p_teca_variant_array &amp;<em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh17set_y_coordinatesERKNSt6stringERK20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh17set_z_coordinatesERKNSt6stringERK20p_teca_variant_array">
+<span id="_CPPv3N21teca_curvilinear_mesh17set_z_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="_CPPv2N21teca_curvilinear_mesh17set_z_coordinatesERKNSt6stringERK20p_teca_variant_array"></span><span id="teca_curvilinear_mesh::set_z_coordinates__ssCR.p_teca_variant_arrayCR"></span><span class="target" id="classteca__curvilinear__mesh_1a65fd73fff739d8cb09292e149750f379"></span>void <code class="sig-name descname">set_z_coordinates</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em>, <em class="property">const</em> p_teca_variant_array &amp;<em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh17set_z_coordinatesERKNSt6stringERK20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh4copyERK20const_p_teca_dataset">
+<span id="_CPPv3N21teca_curvilinear_mesh4copyERK20const_p_teca_dataset"></span><span id="_CPPv2N21teca_curvilinear_mesh4copyERK20const_p_teca_dataset"></span><span id="teca_curvilinear_mesh::copy__const_p_teca_datasetCR"></span><span class="target" id="classteca__curvilinear__mesh_1aff101e1bf9c2aa8736bf9f6b0bb547fd"></span>void <code class="sig-name descname">copy</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh4copyERK20const_p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh12shallow_copyERK14p_teca_dataset">
+<span id="_CPPv3N21teca_curvilinear_mesh12shallow_copyERK14p_teca_dataset"></span><span id="_CPPv2N21teca_curvilinear_mesh12shallow_copyERK14p_teca_dataset"></span><span id="teca_curvilinear_mesh::shallow_copy__p_teca_datasetCR"></span><span class="target" id="classteca__curvilinear__mesh_1ae267a493a551b42b1b716c0af1121b82"></span>void <code class="sig-name descname">shallow_copy</code><span class="sig-paren">(</span><em class="property">const</em> p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh12shallow_copyERK14p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh13copy_metadataERK20const_p_teca_dataset">
+<span id="_CPPv3N21teca_curvilinear_mesh13copy_metadataERK20const_p_teca_dataset"></span><span id="_CPPv2N21teca_curvilinear_mesh13copy_metadataERK20const_p_teca_dataset"></span><span id="teca_curvilinear_mesh::copy_metadata__const_p_teca_datasetCR"></span><span class="target" id="classteca__curvilinear__mesh_1a2c5a20ce24563542cda3b248d85b0d45"></span>void <code class="sig-name descname">copy_metadata</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_dataset &amp;<em>other</em><span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh13copy_metadataERK20const_p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh4swapER14p_teca_dataset">
+<span id="_CPPv3N21teca_curvilinear_mesh4swapER14p_teca_dataset"></span><span id="_CPPv2N21teca_curvilinear_mesh4swapER14p_teca_dataset"></span><span id="teca_curvilinear_mesh::swap__p_teca_datasetR"></span><span class="target" id="classteca__curvilinear__mesh_1a20ce66f5fa305d99e64b3971ba66fa87"></span>void <code class="sig-name descname">swap</code><span class="sig-paren">(</span>p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh4swapER14p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_curvilinear_mesh9to_streamER18teca_binary_stream">
+<span id="_CPPv3NK21teca_curvilinear_mesh9to_streamER18teca_binary_stream"></span><span id="_CPPv2NK21teca_curvilinear_mesh9to_streamER18teca_binary_stream"></span><span id="teca_curvilinear_mesh::to_stream__teca_binary_streamRC"></span><span class="target" id="classteca__curvilinear__mesh_1a3d56b35651608ea6cb38bc80fc6f6cbd"></span>int <code class="sig-name descname">to_stream</code><span class="sig-paren">(</span><a class="reference internal" href="core.html#_CPPv418teca_binary_stream" title="teca_binary_stream">teca_binary_stream</a>&amp;<span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK21teca_curvilinear_mesh9to_streamER18teca_binary_stream" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh11from_streamER18teca_binary_stream">
+<span id="_CPPv3N21teca_curvilinear_mesh11from_streamER18teca_binary_stream"></span><span id="_CPPv2N21teca_curvilinear_mesh11from_streamER18teca_binary_stream"></span><span id="teca_curvilinear_mesh::from_stream__teca_binary_streamR"></span><span class="target" id="classteca__curvilinear__mesh_1a846eb05f2463cf3fd71ed3f23614a996"></span>int <code class="sig-name descname">from_stream</code><span class="sig-paren">(</span><a class="reference internal" href="core.html#_CPPv418teca_binary_stream" title="teca_binary_stream">teca_binary_stream</a>&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh11from_streamER18teca_binary_stream" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK21teca_curvilinear_mesh9to_streamERNSt7ostreamE">
+<span id="_CPPv3NK21teca_curvilinear_mesh9to_streamERNSt7ostreamE"></span><span id="_CPPv2NK21teca_curvilinear_mesh9to_streamERNSt7ostreamE"></span><span id="teca_curvilinear_mesh::to_stream__osRC"></span><span class="target" id="classteca__curvilinear__mesh_1a654ef3b7205f1e4d6a8f624ebbcb9984"></span>int <code class="sig-name descname">to_stream</code><span class="sig-paren">(</span>std::ostream&amp;<span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK21teca_curvilinear_mesh9to_streamERNSt7ostreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N21teca_curvilinear_mesh21teca_curvilinear_meshEv">
+<span id="_CPPv3N21teca_curvilinear_mesh21teca_curvilinear_meshEv"></span><span id="_CPPv2N21teca_curvilinear_mesh21teca_curvilinear_meshEv"></span><span id="teca_curvilinear_mesh::teca_curvilinear_mesh"></span><span class="target" id="classteca__curvilinear__mesh_1ad367076688343f8871771f7acf133a03"></span><code class="sig-name descname">teca_curvilinear_mesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh21teca_curvilinear_meshEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Private Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N21teca_curvilinear_mesh19m_coordinate_arraysE">
+<span id="_CPPv3N21teca_curvilinear_mesh19m_coordinate_arraysE"></span><span id="_CPPv2N21teca_curvilinear_mesh19m_coordinate_arraysE"></span><span id="teca_curvilinear_mesh::m_coordinate_arrays__p_teca_array_collection"></span><span class="target" id="classteca__curvilinear__mesh_1a0007e7b4b0537742f0f95f34ea6cf342"></span>p_teca_array_collection <code class="sig-name descname">m_coordinate_arrays</code><a class="headerlink" href="#_CPPv4N21teca_curvilinear_mesh19m_coordinate_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt id="_CPPv49teca_mesh">
+<span id="_CPPv39teca_mesh"></span><span id="_CPPv29teca_mesh"></span><span id="teca_mesh"></span><span class="target" id="classteca__mesh"></span><em class="property">class </em><code class="sig-name descname">teca_mesh</code> : <em class="property">public</em> <a class="reference internal" href="core.html#_CPPv412teca_dataset" title="teca_dataset">teca_dataset</a><a class="headerlink" href="#_CPPv49teca_mesh" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>a base class for geometric data </p>
+<p>The mesh declares containers for typical geometricly associated data such as point, cell, face and edge centered data arrays and defines the API’s for accessing them. API’s for accessing common metadata such as time related metadata are declared here. </p>
+<p>Subclassed by teca_arakawa_c_grid, <a class="reference internal" href="#classteca__cartesian__mesh"><span class="std std-ref">teca_cartesian_mesh</span></a>, <a class="reference internal" href="#classteca__curvilinear__mesh"><span class="std std-ref">teca_curvilinear_mesh</span></a>, <a class="reference internal" href="#classteca__uniform__cartesian__mesh"><span class="std std-ref">teca_uniform_cartesian_mesh</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_meshD0Ev">
+<span id="_CPPv3N9teca_meshD0Ev"></span><span id="_CPPv2N9teca_meshD0Ev"></span><span id="teca_mesh::~teca_mesh"></span><span class="target" id="classteca__mesh_1a7d603b507f15ff3e56af9e34f5b4d593"></span><code class="sig-name descname">~teca_mesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span> = default<a class="headerlink" href="#_CPPv4N9teca_meshD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh10get_arraysEi">
+<span id="_CPPv3N9teca_mesh10get_arraysEi"></span><span id="_CPPv2N9teca_mesh10get_arraysEi"></span><span id="teca_mesh::get_arrays__i"></span><span class="target" id="classteca__mesh_1a42afa240e863be5b833be7a967b8b07c"></span>p_teca_array_collection &amp;<code class="sig-name descname">get_arrays</code><span class="sig-paren">(</span>int <em>centering</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh10get_arraysEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh10get_arraysEi">
+<span id="_CPPv3NK9teca_mesh10get_arraysEi"></span><span id="_CPPv2NK9teca_mesh10get_arraysEi"></span><span id="teca_mesh::get_arrays__iC"></span><span class="target" id="classteca__mesh_1a5c4948221b3caf02c60543073e5f61e3"></span>const_p_teca_array_collection <code class="sig-name descname">get_arrays</code><span class="sig-paren">(</span>int <em>centering</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9teca_mesh10get_arraysEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh16get_point_arraysEv">
+<span id="_CPPv3N9teca_mesh16get_point_arraysEv"></span><span id="_CPPv2N9teca_mesh16get_point_arraysEv"></span><span id="teca_mesh::get_point_arrays"></span><span class="target" id="classteca__mesh_1aa7d6d8a3d5024c7e6cac8853adcab0e1"></span>p_teca_array_collection &amp;<code class="sig-name descname">get_point_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh16get_point_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh16get_point_arraysEv">
+<span id="_CPPv3NK9teca_mesh16get_point_arraysEv"></span><span id="_CPPv2NK9teca_mesh16get_point_arraysEv"></span><span id="teca_mesh::get_point_arraysC"></span><span class="target" id="classteca__mesh_1a7bbd2b654c230f25fb100c2d0aadefaf"></span>const_p_teca_array_collection <code class="sig-name descname">get_point_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9teca_mesh16get_point_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh15get_cell_arraysEv">
+<span id="_CPPv3N9teca_mesh15get_cell_arraysEv"></span><span id="_CPPv2N9teca_mesh15get_cell_arraysEv"></span><span id="teca_mesh::get_cell_arrays"></span><span class="target" id="classteca__mesh_1a519e5fac02f0b75af3c37dd23a8957f4"></span>p_teca_array_collection &amp;<code class="sig-name descname">get_cell_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh15get_cell_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh15get_cell_arraysEv">
+<span id="_CPPv3NK9teca_mesh15get_cell_arraysEv"></span><span id="_CPPv2NK9teca_mesh15get_cell_arraysEv"></span><span id="teca_mesh::get_cell_arraysC"></span><span class="target" id="classteca__mesh_1a7e1eb020d3afa9ca91cf09024ea738f1"></span>const_p_teca_array_collection <code class="sig-name descname">get_cell_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9teca_mesh15get_cell_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh17get_x_edge_arraysEv">
+<span id="_CPPv3N9teca_mesh17get_x_edge_arraysEv"></span><span id="_CPPv2N9teca_mesh17get_x_edge_arraysEv"></span><span id="teca_mesh::get_x_edge_arrays"></span><span class="target" id="classteca__mesh_1ad0dc0df5322692a333b00fcc5c0888e3"></span>p_teca_array_collection &amp;<code class="sig-name descname">get_x_edge_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh17get_x_edge_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh17get_x_edge_arraysEv">
+<span id="_CPPv3NK9teca_mesh17get_x_edge_arraysEv"></span><span id="_CPPv2NK9teca_mesh17get_x_edge_arraysEv"></span><span id="teca_mesh::get_x_edge_arraysC"></span><span class="target" id="classteca__mesh_1ad393546bd816e2e1d139b0d81fbd3c1d"></span>const_p_teca_array_collection <code class="sig-name descname">get_x_edge_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9teca_mesh17get_x_edge_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh17get_y_edge_arraysEv">
+<span id="_CPPv3N9teca_mesh17get_y_edge_arraysEv"></span><span id="_CPPv2N9teca_mesh17get_y_edge_arraysEv"></span><span id="teca_mesh::get_y_edge_arrays"></span><span class="target" id="classteca__mesh_1a91daa1d37d35c37ca51f7269fb7f8262"></span>p_teca_array_collection &amp;<code class="sig-name descname">get_y_edge_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh17get_y_edge_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh17get_y_edge_arraysEv">
+<span id="_CPPv3NK9teca_mesh17get_y_edge_arraysEv"></span><span id="_CPPv2NK9teca_mesh17get_y_edge_arraysEv"></span><span id="teca_mesh::get_y_edge_arraysC"></span><span class="target" id="classteca__mesh_1acec8edb201c173d0d10f8667651b111d"></span>const_p_teca_array_collection <code class="sig-name descname">get_y_edge_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9teca_mesh17get_y_edge_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh17get_z_edge_arraysEv">
+<span id="_CPPv3N9teca_mesh17get_z_edge_arraysEv"></span><span id="_CPPv2N9teca_mesh17get_z_edge_arraysEv"></span><span id="teca_mesh::get_z_edge_arrays"></span><span class="target" id="classteca__mesh_1ae2fdce0c555d52460c2859c4e3ba9dec"></span>p_teca_array_collection &amp;<code class="sig-name descname">get_z_edge_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh17get_z_edge_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh17get_z_edge_arraysEv">
+<span id="_CPPv3NK9teca_mesh17get_z_edge_arraysEv"></span><span id="_CPPv2NK9teca_mesh17get_z_edge_arraysEv"></span><span id="teca_mesh::get_z_edge_arraysC"></span><span class="target" id="classteca__mesh_1a285148a4913fade5e3f39bd94454a826"></span>const_p_teca_array_collection <code class="sig-name descname">get_z_edge_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9teca_mesh17get_z_edge_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh17get_x_face_arraysEv">
+<span id="_CPPv3N9teca_mesh17get_x_face_arraysEv"></span><span id="_CPPv2N9teca_mesh17get_x_face_arraysEv"></span><span id="teca_mesh::get_x_face_arrays"></span><span class="target" id="classteca__mesh_1af57d554e21099ae07bd7a45785c13f06"></span>p_teca_array_collection &amp;<code class="sig-name descname">get_x_face_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh17get_x_face_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh17get_x_face_arraysEv">
+<span id="_CPPv3NK9teca_mesh17get_x_face_arraysEv"></span><span id="_CPPv2NK9teca_mesh17get_x_face_arraysEv"></span><span id="teca_mesh::get_x_face_arraysC"></span><span class="target" id="classteca__mesh_1aa2a8212aac0a3212081719051d907500"></span>const_p_teca_array_collection <code class="sig-name descname">get_x_face_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9teca_mesh17get_x_face_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh17get_y_face_arraysEv">
+<span id="_CPPv3N9teca_mesh17get_y_face_arraysEv"></span><span id="_CPPv2N9teca_mesh17get_y_face_arraysEv"></span><span id="teca_mesh::get_y_face_arrays"></span><span class="target" id="classteca__mesh_1a90b88648a9e29b0239b982e8fb2ab8e8"></span>p_teca_array_collection &amp;<code class="sig-name descname">get_y_face_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh17get_y_face_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh17get_y_face_arraysEv">
+<span id="_CPPv3NK9teca_mesh17get_y_face_arraysEv"></span><span id="_CPPv2NK9teca_mesh17get_y_face_arraysEv"></span><span id="teca_mesh::get_y_face_arraysC"></span><span class="target" id="classteca__mesh_1ab64da1d4ac44ed53274aa59dee09cfa6"></span>const_p_teca_array_collection <code class="sig-name descname">get_y_face_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9teca_mesh17get_y_face_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh17get_z_face_arraysEv">
+<span id="_CPPv3N9teca_mesh17get_z_face_arraysEv"></span><span id="_CPPv2N9teca_mesh17get_z_face_arraysEv"></span><span id="teca_mesh::get_z_face_arrays"></span><span class="target" id="classteca__mesh_1a040d16d14b81cc14f16455ad33ec5320"></span>p_teca_array_collection &amp;<code class="sig-name descname">get_z_face_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh17get_z_face_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh17get_z_face_arraysEv">
+<span id="_CPPv3NK9teca_mesh17get_z_face_arraysEv"></span><span id="_CPPv2NK9teca_mesh17get_z_face_arraysEv"></span><span id="teca_mesh::get_z_face_arraysC"></span><span class="target" id="classteca__mesh_1a78fe9f56ca9941221fcdcf70d22822a3"></span>const_p_teca_array_collection <code class="sig-name descname">get_z_face_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9teca_mesh17get_z_face_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh22get_information_arraysEv">
+<span id="_CPPv3N9teca_mesh22get_information_arraysEv"></span><span id="_CPPv2N9teca_mesh22get_information_arraysEv"></span><span id="teca_mesh::get_information_arrays"></span><span class="target" id="classteca__mesh_1a7a40d8f0b79ff0af7e21afbdaf5ef736"></span>p_teca_array_collection &amp;<code class="sig-name descname">get_information_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh22get_information_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh22get_information_arraysEv">
+<span id="_CPPv3NK9teca_mesh22get_information_arraysEv"></span><span id="_CPPv2NK9teca_mesh22get_information_arraysEv"></span><span id="teca_mesh::get_information_arraysC"></span><span class="target" id="classteca__mesh_1af21afb85c5a352bf53511b6168674756"></span>const_p_teca_array_collection <code class="sig-name descname">get_information_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9teca_mesh22get_information_arraysEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh5emptyEv">
+<span id="_CPPv3NK9teca_mesh5emptyEv"></span><span id="_CPPv2NK9teca_mesh5emptyEv"></span><span id="teca_mesh::emptyC"></span><span class="target" id="classteca__mesh_1a942e1f339493534620087d43202a055f"></span>bool <code class="sig-name descname">empty</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">noexcept</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK9teca_mesh5emptyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh4copyERK20const_p_teca_dataset">
+<span id="_CPPv3N9teca_mesh4copyERK20const_p_teca_dataset"></span><span id="_CPPv2N9teca_mesh4copyERK20const_p_teca_dataset"></span><span id="teca_mesh::copy__const_p_teca_datasetCR"></span><span class="target" id="classteca__mesh_1a4764fe00355402fb9d17ba98e27050c2"></span>void <code class="sig-name descname">copy</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N9teca_mesh4copyERK20const_p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh12shallow_copyERK14p_teca_dataset">
+<span id="_CPPv3N9teca_mesh12shallow_copyERK14p_teca_dataset"></span><span id="_CPPv2N9teca_mesh12shallow_copyERK14p_teca_dataset"></span><span id="teca_mesh::shallow_copy__p_teca_datasetCR"></span><span class="target" id="classteca__mesh_1a21f1f4cb0471a2e4a7f3f7eba43f4ac9"></span>void <code class="sig-name descname">shallow_copy</code><span class="sig-paren">(</span><em class="property">const</em> p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N9teca_mesh12shallow_copyERK14p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh13append_arraysERK17const_p_teca_mesh">
+<span id="_CPPv3N9teca_mesh13append_arraysERK17const_p_teca_mesh"></span><span id="_CPPv2N9teca_mesh13append_arraysERK17const_p_teca_mesh"></span><span id="teca_mesh::append_arrays__const_p_teca_meshCR"></span><span class="target" id="classteca__mesh_1ab938029635f9a844019dc634d3efcbe4"></span>void <code class="sig-name descname">append_arrays</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_mesh&amp;<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh13append_arraysERK17const_p_teca_mesh" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh21shallow_append_arraysERK11p_teca_mesh">
+<span id="_CPPv3N9teca_mesh21shallow_append_arraysERK11p_teca_mesh"></span><span id="_CPPv2N9teca_mesh21shallow_append_arraysERK11p_teca_mesh"></span><span id="teca_mesh::shallow_append_arrays__p_teca_meshCR"></span><span class="target" id="classteca__mesh_1abcb42878e21f65969a85148ccd426c0f"></span>void <code class="sig-name descname">shallow_append_arrays</code><span class="sig-paren">(</span><em class="property">const</em> p_teca_mesh&amp;<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh21shallow_append_arraysERK11p_teca_mesh" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh4swapER14p_teca_dataset">
+<span id="_CPPv3N9teca_mesh4swapER14p_teca_dataset"></span><span id="_CPPv2N9teca_mesh4swapER14p_teca_dataset"></span><span id="teca_mesh::swap__p_teca_datasetR"></span><span class="target" id="classteca__mesh_1a8f8b85784deaccc81671daa10ffe84e6"></span>void <code class="sig-name descname">swap</code><span class="sig-paren">(</span>p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N9teca_mesh4swapER14p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh9to_streamER18teca_binary_stream">
+<span id="_CPPv3NK9teca_mesh9to_streamER18teca_binary_stream"></span><span id="_CPPv2NK9teca_mesh9to_streamER18teca_binary_stream"></span><span id="teca_mesh::to_stream__teca_binary_streamRC"></span><span class="target" id="classteca__mesh_1aada3804a882370b11cc84e401dead711"></span>int <code class="sig-name descname">to_stream</code><span class="sig-paren">(</span><a class="reference internal" href="core.html#_CPPv418teca_binary_stream" title="teca_binary_stream">teca_binary_stream</a>&amp;<span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK9teca_mesh9to_streamER18teca_binary_stream" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh11from_streamER18teca_binary_stream">
+<span id="_CPPv3N9teca_mesh11from_streamER18teca_binary_stream"></span><span id="_CPPv2N9teca_mesh11from_streamER18teca_binary_stream"></span><span id="teca_mesh::from_stream__teca_binary_streamR"></span><span class="target" id="classteca__mesh_1a212a237afea50dd5f98e088e777bff7b"></span>int <code class="sig-name descname">from_stream</code><span class="sig-paren">(</span><a class="reference internal" href="core.html#_CPPv418teca_binary_stream" title="teca_binary_stream">teca_binary_stream</a>&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N9teca_mesh11from_streamER18teca_binary_stream" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK9teca_mesh9to_streamERNSt7ostreamE">
+<span id="_CPPv3NK9teca_mesh9to_streamERNSt7ostreamE"></span><span id="_CPPv2NK9teca_mesh9to_streamERNSt7ostreamE"></span><span id="teca_mesh::to_stream__osRC"></span><span class="target" id="classteca__mesh_1a7d1013c52a443584176f0a6d88f85cfd"></span>int <code class="sig-name descname">to_stream</code><span class="sig-paren">(</span>std::ostream&amp;<span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK9teca_mesh9to_streamERNSt7ostreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh11from_streamERNSt7istreamE">
+<span id="_CPPv3N9teca_mesh11from_streamERNSt7istreamE"></span><span id="_CPPv2N9teca_mesh11from_streamERNSt7istreamE"></span><span id="teca_mesh::from_stream__isR"></span><span class="target" id="classteca__mesh_1a06559d2faa48f818eaa22648b2318b4f"></span>int <code class="sig-name descname">from_stream</code><span class="sig-paren">(</span>std::istream&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N9teca_mesh11from_streamERNSt7istreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N9teca_mesh6m_implE">
+<span id="_CPPv3N9teca_mesh6m_implE"></span><span id="_CPPv2N9teca_mesh6m_implE"></span><span id="teca_mesh::m_impl__std::shared_ptr:impl_t:"></span><span class="target" id="classteca__mesh_1affb9a9a5a8e7d9c41f9c1c8045a37a5e"></span>std::shared_ptr&lt;<a class="reference internal" href="#_CPPv4N9teca_mesh6impl_tE" title="teca_mesh::impl_t">impl_t</a>&gt; <code class="sig-name descname">m_impl</code><a class="headerlink" href="#_CPPv4N9teca_mesh6m_implE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh9teca_meshEv">
+<span id="_CPPv3N9teca_mesh9teca_meshEv"></span><span id="_CPPv2N9teca_mesh9teca_meshEv"></span><span id="teca_mesh::teca_mesh"></span><span class="target" id="classteca__mesh_1a4cab4a92725fad018eebf9e6a697fe1c"></span><code class="sig-name descname">teca_mesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh9teca_meshEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt id="_CPPv4N9teca_mesh6impl_tE">
+<span id="_CPPv3N9teca_mesh6impl_tE"></span><span id="_CPPv2N9teca_mesh6impl_tE"></span><span id="teca_mesh::impl_t"></span><span class="target" id="structteca__mesh_1_1impl__t"></span><em class="property">struct </em><code class="sig-name descname">impl_t</code><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N9teca_mesh6impl_t6impl_tEv">
+<span id="_CPPv3N9teca_mesh6impl_t6impl_tEv"></span><span id="_CPPv2N9teca_mesh6impl_t6impl_tEv"></span><span id="teca_mesh::impl_t::impl_t"></span><span class="target" id="structteca__mesh_1_1impl__t_1a0049d71e041b4d51ac54735edbdee6cb"></span><code class="sig-name descname">impl_t</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_t6impl_tEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N9teca_mesh6impl_t11cell_arraysE">
+<span id="_CPPv3N9teca_mesh6impl_t11cell_arraysE"></span><span id="_CPPv2N9teca_mesh6impl_t11cell_arraysE"></span><span id="teca_mesh::impl_t::cell_arrays__p_teca_array_collection"></span><span class="target" id="structteca__mesh_1_1impl__t_1a32d20116ccd9bc56db4364c897c57dc7"></span>p_teca_array_collection <code class="sig-name descname">cell_arrays</code><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_t11cell_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N9teca_mesh6impl_t13x_edge_arraysE">
+<span id="_CPPv3N9teca_mesh6impl_t13x_edge_arraysE"></span><span id="_CPPv2N9teca_mesh6impl_t13x_edge_arraysE"></span><span id="teca_mesh::impl_t::x_edge_arrays__p_teca_array_collection"></span><span class="target" id="structteca__mesh_1_1impl__t_1a0b6ca09ba6ef8719d72fa0ec64257694"></span>p_teca_array_collection <code class="sig-name descname">x_edge_arrays</code><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_t13x_edge_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N9teca_mesh6impl_t13y_edge_arraysE">
+<span id="_CPPv3N9teca_mesh6impl_t13y_edge_arraysE"></span><span id="_CPPv2N9teca_mesh6impl_t13y_edge_arraysE"></span><span id="teca_mesh::impl_t::y_edge_arrays__p_teca_array_collection"></span><span class="target" id="structteca__mesh_1_1impl__t_1a2554d9f378b02ac5b1c3e0ee027a9dd9"></span>p_teca_array_collection <code class="sig-name descname">y_edge_arrays</code><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_t13y_edge_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N9teca_mesh6impl_t13z_edge_arraysE">
+<span id="_CPPv3N9teca_mesh6impl_t13z_edge_arraysE"></span><span id="_CPPv2N9teca_mesh6impl_t13z_edge_arraysE"></span><span id="teca_mesh::impl_t::z_edge_arrays__p_teca_array_collection"></span><span class="target" id="structteca__mesh_1_1impl__t_1ab0d8c45dcb6fc80fba7968a55ea796d7"></span>p_teca_array_collection <code class="sig-name descname">z_edge_arrays</code><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_t13z_edge_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N9teca_mesh6impl_t13x_face_arraysE">
+<span id="_CPPv3N9teca_mesh6impl_t13x_face_arraysE"></span><span id="_CPPv2N9teca_mesh6impl_t13x_face_arraysE"></span><span id="teca_mesh::impl_t::x_face_arrays__p_teca_array_collection"></span><span class="target" id="structteca__mesh_1_1impl__t_1a6564316ac78a962d8ac130908531d3f7"></span>p_teca_array_collection <code class="sig-name descname">x_face_arrays</code><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_t13x_face_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N9teca_mesh6impl_t13y_face_arraysE">
+<span id="_CPPv3N9teca_mesh6impl_t13y_face_arraysE"></span><span id="_CPPv2N9teca_mesh6impl_t13y_face_arraysE"></span><span id="teca_mesh::impl_t::y_face_arrays__p_teca_array_collection"></span><span class="target" id="structteca__mesh_1_1impl__t_1a28cd22ebf38a6cc730e0c1495d3dba45"></span>p_teca_array_collection <code class="sig-name descname">y_face_arrays</code><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_t13y_face_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N9teca_mesh6impl_t13z_face_arraysE">
+<span id="_CPPv3N9teca_mesh6impl_t13z_face_arraysE"></span><span id="_CPPv2N9teca_mesh6impl_t13z_face_arraysE"></span><span id="teca_mesh::impl_t::z_face_arrays__p_teca_array_collection"></span><span class="target" id="structteca__mesh_1_1impl__t_1a132afbfa61bc13b3b18ea76a3a73d472"></span>p_teca_array_collection <code class="sig-name descname">z_face_arrays</code><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_t13z_face_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N9teca_mesh6impl_t12point_arraysE">
+<span id="_CPPv3N9teca_mesh6impl_t12point_arraysE"></span><span id="_CPPv2N9teca_mesh6impl_t12point_arraysE"></span><span id="teca_mesh::impl_t::point_arrays__p_teca_array_collection"></span><span class="target" id="structteca__mesh_1_1impl__t_1af2fc45c827dd0838c014ed0f4152eb73"></span>p_teca_array_collection <code class="sig-name descname">point_arrays</code><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_t12point_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N9teca_mesh6impl_t11info_arraysE">
+<span id="_CPPv3N9teca_mesh6impl_t11info_arraysE"></span><span id="_CPPv2N9teca_mesh6impl_t11info_arraysE"></span><span id="teca_mesh::impl_t::info_arrays__p_teca_array_collection"></span><span class="target" id="structteca__mesh_1_1impl__t_1a0da62c98b38d981ba05658b303a34b57"></span>p_teca_array_collection <code class="sig-name descname">info_arrays</code><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_t11info_arraysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N9teca_mesh6impl_t7invalidE">
+<span id="_CPPv3N9teca_mesh6impl_t7invalidE"></span><span id="_CPPv2N9teca_mesh6impl_t7invalidE"></span><span id="teca_mesh::impl_t::invalid__p_teca_array_collection"></span><span class="target" id="structteca__mesh_1_1impl__t_1a296d70c36befafa7547ff115fa0ebb22"></span>p_teca_array_collection <code class="sig-name descname">invalid</code><a class="headerlink" href="#_CPPv4N9teca_mesh6impl_t7invalidE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="cpp class">
+<dt id="_CPPv410teca_table">
+<span id="_CPPv310teca_table"></span><span id="_CPPv210teca_table"></span><span id="teca_table"></span><span class="target" id="classteca__table"></span><em class="property">class </em><code class="sig-name descname">teca_table</code> : <em class="property">public</em> <a class="reference internal" href="core.html#_CPPv412teca_dataset" title="teca_dataset">teca_dataset</a><a class="headerlink" href="#_CPPv410teca_table" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>A collection of collumnar data with row based accessors and communication and I/O support. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_tableD0Ev">
+<span id="_CPPv3N10teca_tableD0Ev"></span><span id="_CPPv2N10teca_tableD0Ev"></span><span id="teca_table::~teca_table"></span><span class="target" id="classteca__table_1a8f375dc946be0dae996e4752048d57e5"></span><code class="sig-name descname">~teca_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span> = default<a class="headerlink" href="#_CPPv4N10teca_tableD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table5clearEv">
+<span id="_CPPv3N10teca_table5clearEv"></span><span id="_CPPv2N10teca_table5clearEv"></span><span id="teca_table::clear"></span><span class="target" id="classteca__table_1aabbc24d40b2ef6484cba463f499f31c8"></span>void <code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table5clearEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I00DpEN10teca_table15declare_columnsEvRR2nT2cTDpRR2oT">
+<span id="_CPPv3I00DpEN10teca_table15declare_columnsERR2nT2cTDpRR2oT"></span><span id="_CPPv2I00DpEN10teca_table15declare_columnsERR2nT2cTDpRR2oT"></span>template&lt;typename <code class="sig-name descname">nT</code>, typename <code class="sig-name descname">cT</code>, typename ...<code class="sig-name descname">oT</code>&gt;<br /><span class="target" id="classteca__table_1aa41656c6ce56d4695b8bd326629b2a24"></span>void <code class="sig-name descname">declare_columns</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I00DpEN10teca_table15declare_columnsEvRR2nT2cTDpRR2oT" title="teca_table::declare_columns::nT">nT</a> &amp;&amp;<em>col_name</em>, <a class="reference internal" href="#_CPPv4I00DpEN10teca_table15declare_columnsEvRR2nT2cTDpRR2oT" title="teca_table::declare_columns::cT">cT</a> <em>col_type</em>, <a class="reference internal" href="#_CPPv4I00DpEN10teca_table15declare_columnsEvRR2nT2cTDpRR2oT" title="teca_table::declare_columns::oT">oT</a>&amp;&amp;... <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I00DpEN10teca_table15declare_columnsEvRR2nT2cTDpRR2oT" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I00EN10teca_table14declare_columnEvRR2nT2cT">
+<span id="_CPPv3I00EN10teca_table14declare_columnERR2nT2cT"></span><span id="_CPPv2I00EN10teca_table14declare_columnERR2nT2cT"></span>template&lt;typename <code class="sig-name descname">nT</code>, typename <code class="sig-name descname">cT</code>&gt;<br /><span class="target" id="classteca__table_1a5ad38150a8e4d7a51444b67bac0e1e78"></span>void <code class="sig-name descname">declare_column</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I00EN10teca_table14declare_columnEvRR2nT2cT" title="teca_table::declare_column::nT">nT</a> &amp;&amp;<em>col_name</em>, <a class="reference internal" href="#_CPPv4I00EN10teca_table14declare_columnEvRR2nT2cT" title="teca_table::declare_column::cT">cT</a> <em>col_type</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I00EN10teca_table14declare_columnEvRR2nT2cT" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table21get_number_of_columnsEv">
+<span id="_CPPv3NK10teca_table21get_number_of_columnsEv"></span><span id="_CPPv2NK10teca_table21get_number_of_columnsEv"></span><span id="teca_table::get_number_of_columnsC"></span><span class="target" id="classteca__table_1a58d36c0bd0d0a9712438b5a3dc7548fe"></span>unsigned int <code class="sig-name descname">get_number_of_columns</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">noexcept</em><a class="headerlink" href="#_CPPv4NK10teca_table21get_number_of_columnsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table18get_number_of_rowsEv">
+<span id="_CPPv3NK10teca_table18get_number_of_rowsEv"></span><span id="_CPPv2NK10teca_table18get_number_of_rowsEv"></span><span id="teca_table::get_number_of_rowsC"></span><span class="target" id="classteca__table_1af52073fbb06ab61ea94b32e4ee8fcca9"></span>unsigned long <code class="sig-name descname">get_number_of_rows</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">noexcept</em><a class="headerlink" href="#_CPPv4NK10teca_table18get_number_of_rowsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table10get_columnEj">
+<span id="_CPPv3N10teca_table10get_columnEj"></span><span id="_CPPv2N10teca_table10get_columnEj"></span><span id="teca_table::get_column__unsigned-i"></span><span class="target" id="classteca__table_1aaae185948b3a35c7445e7140c64f24e2"></span>p_teca_variant_array <code class="sig-name descname">get_column</code><span class="sig-paren">(</span>unsigned int <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table10get_columnEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table10get_columnERKNSt6stringE">
+<span id="_CPPv3N10teca_table10get_columnERKNSt6stringE"></span><span id="_CPPv2N10teca_table10get_columnERKNSt6stringE"></span><span id="teca_table::get_column__ssCR"></span><span class="target" id="classteca__table_1adde3f78113bdcadc0e14bd32506216b1"></span>p_teca_variant_array <code class="sig-name descname">get_column</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>col_name</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table10get_columnERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table10get_columnEj">
+<span id="_CPPv3NK10teca_table10get_columnEj"></span><span id="_CPPv2NK10teca_table10get_columnEj"></span><span id="teca_table::get_column__unsigned-iC"></span><span class="target" id="classteca__table_1a77163b82c8053192e2c06d01acbfa9e8"></span>const_p_teca_variant_array <code class="sig-name descname">get_column</code><span class="sig-paren">(</span>unsigned int <em>i</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10teca_table10get_columnEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table10get_columnERKNSt6stringE">
+<span id="_CPPv3NK10teca_table10get_columnERKNSt6stringE"></span><span id="_CPPv2NK10teca_table10get_columnERKNSt6stringE"></span><span id="teca_table::get_column__ssCRC"></span><span class="target" id="classteca__table_1a8487fad70acc5f439b52db4240dd0206"></span>const_p_teca_variant_array <code class="sig-name descname">get_column</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>col_name</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10teca_table10get_columnERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table10has_columnERKNSt6stringE">
+<span id="_CPPv3NK10teca_table10has_columnERKNSt6stringE"></span><span id="_CPPv2NK10teca_table10has_columnERKNSt6stringE"></span><span id="teca_table::has_column__ssCRC"></span><span class="target" id="classteca__table_1ac715d1814c6233a650eb89310487bfe9"></span>bool <code class="sig-name descname">has_column</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>col_name</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10teca_table10has_columnERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table15get_column_nameEj">
+<span id="_CPPv3NK10teca_table15get_column_nameEj"></span><span id="_CPPv2NK10teca_table15get_column_nameEj"></span><span id="teca_table::get_column_name__unsigned-iC"></span><span class="target" id="classteca__table_1a6315778a81a53d16a8ed2f1974c513a5"></span>std::string <code class="sig-name descname">get_column_name</code><span class="sig-paren">(</span>unsigned int <em>i</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10teca_table15get_column_nameEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table13append_columnE20p_teca_variant_array">
+<span id="_CPPv3N10teca_table13append_columnE20p_teca_variant_array"></span><span id="_CPPv2N10teca_table13append_columnE20p_teca_variant_array"></span><span id="teca_table::append_column__p_teca_variant_array"></span><span class="target" id="classteca__table_1ab62401b61851e15baa8e4d7dc45c2a70"></span>int <code class="sig-name descname">append_column</code><span class="sig-paren">(</span>p_teca_variant_array <em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table13append_columnE20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table13append_columnERKNSt6stringE20p_teca_variant_array">
+<span id="_CPPv3N10teca_table13append_columnERKNSt6stringE20p_teca_variant_array"></span><span id="_CPPv2N10teca_table13append_columnERKNSt6stringE20p_teca_variant_array"></span><span id="teca_table::append_column__ssCR.p_teca_variant_array"></span><span class="target" id="classteca__table_1a7aa8b2a0519d2ec1cf959e67a8c9db54"></span>int <code class="sig-name descname">append_column</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em>, p_teca_variant_array <em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table13append_columnERKNSt6stringE20p_teca_variant_array" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table13remove_columnEj">
+<span id="_CPPv3N10teca_table13remove_columnEj"></span><span id="_CPPv2N10teca_table13remove_columnEj"></span><span id="teca_table::remove_column__unsigned-i"></span><span class="target" id="classteca__table_1a2d7a1af167487edab5ee58e78c996d7a"></span>int <code class="sig-name descname">remove_column</code><span class="sig-paren">(</span>unsigned int <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table13remove_columnEj" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table13remove_columnERKNSt6stringE">
+<span id="_CPPv3N10teca_table13remove_columnERKNSt6stringE"></span><span id="_CPPv2N10teca_table13remove_columnERKNSt6stringE"></span><span id="teca_table::remove_column__ssCR"></span><span class="target" id="classteca__table_1a3c151ea1752c74ff46009a357da49e6c"></span>int <code class="sig-name descname">remove_column</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table13remove_columnERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table11get_columnsEv">
+<span id="_CPPv3N10teca_table11get_columnsEv"></span><span id="_CPPv2N10teca_table11get_columnsEv"></span><span id="teca_table::get_columns"></span><span class="target" id="classteca__table_1a3bd59fdf6fdfc79076bf3efd070e8384"></span>p_teca_array_collection <code class="sig-name descname">get_columns</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table11get_columnsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table11get_columnsEv">
+<span id="_CPPv3NK10teca_table11get_columnsEv"></span><span id="_CPPv2NK10teca_table11get_columnsEv"></span><span id="teca_table::get_columnsC"></span><span class="target" id="classteca__table_1a194608e67c2f58e9eba3795cf7006688"></span>const_p_teca_array_collection <code class="sig-name descname">get_columns</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK10teca_table11get_columnsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table6resizeEm">
+<span id="_CPPv3N10teca_table6resizeEm"></span><span id="_CPPv2N10teca_table6resizeEm"></span><span id="teca_table::resize__unsigned-l"></span><span class="target" id="classteca__table_1a0b38d0e6c340814af925f0673287c2fe"></span>void <code class="sig-name descname">resize</code><span class="sig-paren">(</span>unsigned long <em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table6resizeEm" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table7reserveEm">
+<span id="_CPPv3N10teca_table7reserveEm"></span><span id="_CPPv2N10teca_table7reserveEm"></span><span id="teca_table::reserve__unsigned-l"></span><span class="target" id="classteca__table_1a1fae3bd4574ed82b106f392de2c8aca8"></span>void <code class="sig-name descname">reserve</code><span class="sig-paren">(</span>unsigned long <em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table7reserveEm" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I0DpEN10teca_table6appendEvRR2cTDpRR2oT">
+<span id="_CPPv3I0DpEN10teca_table6appendERR2cTDpRR2oT"></span><span id="_CPPv2I0DpEN10teca_table6appendERR2cTDpRR2oT"></span>template&lt;typename <code class="sig-name descname">cT</code>, typename ...<code class="sig-name descname">oT</code>&gt;<br /><span class="target" id="classteca__table_1a26a8c72c1301999ddfcde2e8f05587cf"></span>void <code class="sig-name descname">append</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0DpEN10teca_table6appendEvRR2cTDpRR2oT" title="teca_table::append::cT">cT</a> &amp;&amp;<em>val</em>, <a class="reference internal" href="#_CPPv4I0DpEN10teca_table6appendEvRR2cTDpRR2oT" title="teca_table::append::oT">oT</a>&amp;&amp;... <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0DpEN10teca_table6appendEvRR2cTDpRR2oT" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table14get_class_nameEv">
+<span id="_CPPv3NK10teca_table14get_class_nameEv"></span><span id="_CPPv2NK10teca_table14get_class_nameEv"></span><span id="teca_table::get_class_nameC"></span><span class="target" id="classteca__table_1ae00288015c245e2f95689ee85405fca2"></span>std::string <code class="sig-name descname">get_class_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK10teca_table14get_class_nameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table13get_type_codeEv">
+<span id="_CPPv3NK10teca_table13get_type_codeEv"></span><span id="_CPPv2NK10teca_table13get_type_codeEv"></span><span id="teca_table::get_type_codeC"></span><span class="target" id="classteca__table_1a0a035faf54e59069665a8fb18c2f68be"></span>int <code class="sig-name descname">get_type_code</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK10teca_table13get_type_codeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_tablecvbEv">
+<span id="_CPPv3NK10teca_tablecvbEv"></span><span id="_CPPv2NK10teca_tablecvbEv"></span><span id="teca_table::castto-b-operatorC"></span><span class="target" id="classteca__table_1a81f3182ce0085e5e8098550a8043a067"></span><code class="sig-name descname">operator bool</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">noexcept</em><a class="headerlink" href="#_CPPv4NK10teca_tablecvbEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table5emptyEv">
+<span id="_CPPv3NK10teca_table5emptyEv"></span><span id="_CPPv2NK10teca_table5emptyEv"></span><span id="teca_table::emptyC"></span><span class="target" id="classteca__table_1a1b370994c47f53b01c630012e8e56aad"></span>bool <code class="sig-name descname">empty</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">noexcept</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK10teca_table5emptyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table9to_streamER18teca_binary_stream">
+<span id="_CPPv3NK10teca_table9to_streamER18teca_binary_stream"></span><span id="_CPPv2NK10teca_table9to_streamER18teca_binary_stream"></span><span id="teca_table::to_stream__teca_binary_streamRC"></span><span class="target" id="classteca__table_1ad38902b90ef61bb8c4f01a3d763db5f9"></span>int <code class="sig-name descname">to_stream</code><span class="sig-paren">(</span><a class="reference internal" href="core.html#_CPPv418teca_binary_stream" title="teca_binary_stream">teca_binary_stream</a>&amp;<span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK10teca_table9to_streamER18teca_binary_stream" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table11from_streamER18teca_binary_stream">
+<span id="_CPPv3N10teca_table11from_streamER18teca_binary_stream"></span><span id="_CPPv2N10teca_table11from_streamER18teca_binary_stream"></span><span id="teca_table::from_stream__teca_binary_streamR"></span><span class="target" id="classteca__table_1a86610860c0b314f048c951f6fb647353"></span>int <code class="sig-name descname">from_stream</code><span class="sig-paren">(</span><a class="reference internal" href="core.html#_CPPv418teca_binary_stream" title="teca_binary_stream">teca_binary_stream</a>&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N10teca_table11from_streamER18teca_binary_stream" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK10teca_table9to_streamERNSt7ostreamE">
+<span id="_CPPv3NK10teca_table9to_streamERNSt7ostreamE"></span><span id="_CPPv2NK10teca_table9to_streamERNSt7ostreamE"></span><span id="teca_table::to_stream__osRC"></span><span class="target" id="classteca__table_1a8cea1f4fe68c688441f93915cd939bcf"></span>int <code class="sig-name descname">to_stream</code><span class="sig-paren">(</span>std::ostream&amp;<span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK10teca_table9to_streamERNSt7ostreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table11from_streamERNSt7istreamE">
+<span id="_CPPv3N10teca_table11from_streamERNSt7istreamE"></span><span id="_CPPv2N10teca_table11from_streamERNSt7istreamE"></span><span id="teca_table::from_stream__isR"></span><span class="target" id="classteca__table_1ad3ef11460bd5f567ca5f642e9b6ceb69"></span>int <code class="sig-name descname">from_stream</code><span class="sig-paren">(</span>std::istream&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N10teca_table11from_streamERNSt7istreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table4copyERK20const_p_teca_dataset">
+<span id="_CPPv3N10teca_table4copyERK20const_p_teca_dataset"></span><span id="_CPPv2N10teca_table4copyERK20const_p_teca_dataset"></span><span id="teca_table::copy__const_p_teca_datasetCR"></span><span class="target" id="classteca__table_1a490695eefb28010e0bd8257393112079"></span>void <code class="sig-name descname">copy</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_dataset &amp;<em>other</em><span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N10teca_table4copyERK20const_p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table4copyERK18const_p_teca_tablemm">
+<span id="_CPPv3N10teca_table4copyERK18const_p_teca_tablemm"></span><span id="_CPPv2N10teca_table4copyERK18const_p_teca_tablemm"></span><span id="teca_table::copy__const_p_teca_tableCR.unsigned-l.unsigned-l"></span><span class="target" id="classteca__table_1ae810f05fa2c5d70ea98d1d1002aeb9ff"></span>void <code class="sig-name descname">copy</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_table &amp;<em>other</em>, unsigned long <em>first_row</em>, unsigned long <em>last_row</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table4copyERK18const_p_teca_tablemm" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table12shallow_copyERK14p_teca_dataset">
+<span id="_CPPv3N10teca_table12shallow_copyERK14p_teca_dataset"></span><span id="_CPPv2N10teca_table12shallow_copyERK14p_teca_dataset"></span><span id="teca_table::shallow_copy__p_teca_datasetCR"></span><span class="target" id="classteca__table_1a1d6c5ff1898762908c9b18f1e2f23b5f"></span>void <code class="sig-name descname">shallow_copy</code><span class="sig-paren">(</span><em class="property">const</em> p_teca_dataset &amp;<em>other</em><span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N10teca_table12shallow_copyERK14p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table14copy_structureERK18const_p_teca_table">
+<span id="_CPPv3N10teca_table14copy_structureERK18const_p_teca_table"></span><span id="_CPPv2N10teca_table14copy_structureERK18const_p_teca_table"></span><span id="teca_table::copy_structure__const_p_teca_tableCR"></span><span class="target" id="classteca__table_1a6fd561e8573ac1da85b70a71f767cf63"></span>void <code class="sig-name descname">copy_structure</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_table &amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table14copy_structureERK18const_p_teca_table" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table4swapER14p_teca_dataset">
+<span id="_CPPv3N10teca_table4swapER14p_teca_dataset"></span><span id="_CPPv2N10teca_table4swapER14p_teca_dataset"></span><span id="teca_table::swap__p_teca_datasetR"></span><span class="target" id="classteca__table_1ab24dbc0555a4d3692df93eb51dcc56be"></span>void <code class="sig-name descname">swap</code><span class="sig-paren">(</span>p_teca_dataset &amp;<em>other</em><span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N10teca_table4swapER14p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table16concatenate_rowsERK18const_p_teca_table">
+<span id="_CPPv3N10teca_table16concatenate_rowsERK18const_p_teca_table"></span><span id="_CPPv2N10teca_table16concatenate_rowsERK18const_p_teca_table"></span><span id="teca_table::concatenate_rows__const_p_teca_tableCR"></span><span class="target" id="classteca__table_1a7d0ce8ef051c2399058301d80fd01a92"></span>void <code class="sig-name descname">concatenate_rows</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_table &amp;<em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table16concatenate_rowsERK18const_p_teca_table" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table16concatenate_colsERK18const_p_teca_tableb">
+<span id="_CPPv3N10teca_table16concatenate_colsERK18const_p_teca_tableb"></span><span id="_CPPv2N10teca_table16concatenate_colsERK18const_p_teca_tableb"></span><span id="teca_table::concatenate_cols__const_p_teca_tableCR.b"></span><span class="target" id="classteca__table_1a21fbabc527cdfa81baf1b8a345feb6f1"></span>void <code class="sig-name descname">concatenate_cols</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_table &amp;<em>other</em>, bool <em>deep</em> = false<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table16concatenate_colsERK18const_p_teca_tableb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table10teca_tableEv">
+<span id="_CPPv3N10teca_table10teca_tableEv"></span><span id="_CPPv2N10teca_table10teca_tableEv"></span><span id="teca_table::teca_table"></span><span class="target" id="classteca__table_1aca837c4efe35dd04c2cd433990f0102e"></span><code class="sig-name descname">teca_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table10teca_tableEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table10teca_tableERK10teca_table">
+<span id="_CPPv3N10teca_table10teca_tableERK10teca_table"></span><span id="_CPPv2N10teca_table10teca_tableERK10teca_table"></span><span id="teca_table::teca_table__teca_tableCR"></span><span class="target" id="classteca__table_1a5022ceb53f5d804efaa392a94600e44e"></span><code class="sig-name descname">teca_table</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N10teca_table10teca_tableERK10teca_table" title="teca_table::teca_table">teca_table</a> &amp;<em>other</em><span class="sig-paren">)</span> = default<a class="headerlink" href="#_CPPv4N10teca_table10teca_tableERK10teca_table" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table10teca_tableERR10teca_table">
+<span id="_CPPv3N10teca_table10teca_tableERR10teca_table"></span><span id="_CPPv2N10teca_table10teca_tableERR10teca_table"></span><span id="teca_table::teca_table__teca_tableRR"></span><span class="target" id="classteca__table_1a79d7d2d9569b18cfdcaa4e3fca2a3798"></span><code class="sig-name descname">teca_table</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N10teca_table10teca_tableERR10teca_table" title="teca_table::teca_table">teca_table</a> &amp;&amp;<em>other</em><span class="sig-paren">)</span> = default<a class="headerlink" href="#_CPPv4N10teca_table10teca_tableERR10teca_table" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_tableaSERK10teca_table">
+<span id="_CPPv3N10teca_tableaSERK10teca_table"></span><span id="_CPPv2N10teca_tableaSERK10teca_table"></span><span id="teca_table::assign-operator__teca_tableCR"></span><span class="target" id="classteca__table_1a664f5e6d989584c0fb9fdcd196bb2bc4"></span><a class="reference internal" href="#_CPPv410teca_table" title="teca_table">teca_table</a> &amp;<code class="sig-name descname">operator=</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv410teca_table" title="teca_table">teca_table</a> &amp;<em>other</em><span class="sig-paren">)</span> = default<a class="headerlink" href="#_CPPv4N10teca_tableaSERK10teca_table" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table15declare_columnsEv">
+<span id="_CPPv3N10teca_table15declare_columnsEv"></span><span id="_CPPv2N10teca_table15declare_columnsEv"></span><span id="teca_table::declare_columns"></span><span class="target" id="classteca__table_1a6b7aa49ed591662ef148c2ccbea7b24b"></span>void <code class="sig-name descname">declare_columns</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table15declare_columnsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table6appendEv">
+<span id="_CPPv3N10teca_table6appendEv"></span><span id="_CPPv2N10teca_table6appendEv"></span><span id="teca_table::append"></span><span class="target" id="classteca__table_1a9fcfcf06ca188952abeb10d26cf18be1"></span>void <code class="sig-name descname">append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table6appendEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Private Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N10teca_table6m_implE">
+<span id="_CPPv3N10teca_table6m_implE"></span><span id="_CPPv2N10teca_table6m_implE"></span><span id="teca_table::m_impl__std::shared_ptr:impl_t:"></span><span class="target" id="classteca__table_1aa2ad90ef17b95f02e9cbe3ad10fdf669"></span>std::shared_ptr&lt;<a class="reference internal" href="#_CPPv4N10teca_table6impl_tE" title="teca_table::impl_t">impl_t</a>&gt; <code class="sig-name descname">m_impl</code><a class="headerlink" href="#_CPPv4N10teca_table6m_implE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt id="_CPPv4N10teca_table6impl_tE">
+<span id="_CPPv3N10teca_table6impl_tE"></span><span id="_CPPv2N10teca_table6impl_tE"></span><span id="teca_table::impl_t"></span><span class="target" id="structteca__table_1_1impl__t"></span><em class="property">struct </em><code class="sig-name descname">impl_t</code><a class="headerlink" href="#_CPPv4N10teca_table6impl_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N10teca_table6impl_t6impl_tEv">
+<span id="_CPPv3N10teca_table6impl_t6impl_tEv"></span><span id="_CPPv2N10teca_table6impl_t6impl_tEv"></span><span id="teca_table::impl_t::impl_t"></span><span class="target" id="structteca__table_1_1impl__t_1a5bbdcda7bf61c148acb1111558c08afc"></span><code class="sig-name descname">impl_t</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10teca_table6impl_t6impl_tEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N10teca_table6impl_t7columnsE">
+<span id="_CPPv3N10teca_table6impl_t7columnsE"></span><span id="_CPPv2N10teca_table6impl_t7columnsE"></span><span id="teca_table::impl_t::columns__p_teca_array_collection"></span><span class="target" id="structteca__table_1_1impl__t_1a3a8714cb8feeb5cb9ce0043f412e22b4"></span>p_teca_array_collection <code class="sig-name descname">columns</code><a class="headerlink" href="#_CPPv4N10teca_table6impl_t7columnsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N10teca_table6impl_t13active_columnE">
+<span id="_CPPv3N10teca_table6impl_t13active_columnE"></span><span id="_CPPv2N10teca_table6impl_t13active_columnE"></span><span id="teca_table::impl_t::active_column__unsigned-i"></span><span class="target" id="structteca__table_1_1impl__t_1a92c39aad00b39b5926cd22fa7713c365"></span>unsigned int <code class="sig-name descname">active_column</code><a class="headerlink" href="#_CPPv4N10teca_table6impl_t13active_columnE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="cpp class">
+<dt id="_CPPv427teca_uniform_cartesian_mesh">
+<span id="_CPPv327teca_uniform_cartesian_mesh"></span><span id="_CPPv227teca_uniform_cartesian_mesh"></span><span id="teca_uniform_cartesian_mesh"></span><span class="target" id="classteca__uniform__cartesian__mesh"></span><em class="property">class </em><code class="sig-name descname">teca_uniform_cartesian_mesh</code> : <em class="property">public</em> <a class="reference internal" href="#_CPPv49teca_mesh" title="teca_mesh">teca_mesh</a><a class="headerlink" href="#_CPPv427teca_uniform_cartesian_mesh" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>data on a uniform cartesian mesh </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N27teca_uniform_cartesian_meshD0Ev">
+<span id="_CPPv3N27teca_uniform_cartesian_meshD0Ev"></span><span id="_CPPv2N27teca_uniform_cartesian_meshD0Ev"></span><span id="teca_uniform_cartesian_mesh::~teca_uniform_cartesian_mesh"></span><span class="target" id="classteca__uniform__cartesian__mesh_1a9b89622cc96c249abfab38cdfb6ceb95"></span><code class="sig-name descname">~teca_uniform_cartesian_mesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span> = default<a class="headerlink" href="#_CPPv4N27teca_uniform_cartesian_meshD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK27teca_uniform_cartesian_mesh14get_class_nameEv">
+<span id="_CPPv3NK27teca_uniform_cartesian_mesh14get_class_nameEv"></span><span id="_CPPv2NK27teca_uniform_cartesian_mesh14get_class_nameEv"></span><span id="teca_uniform_cartesian_mesh::get_class_nameC"></span><span class="target" id="classteca__uniform__cartesian__mesh_1ab48f9fefccc1031b751a9caa7748c7b6"></span>std::string <code class="sig-name descname">get_class_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK27teca_uniform_cartesian_mesh14get_class_nameEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK27teca_uniform_cartesian_mesh13get_type_codeEv">
+<span id="_CPPv3NK27teca_uniform_cartesian_mesh13get_type_codeEv"></span><span id="_CPPv2NK27teca_uniform_cartesian_mesh13get_type_codeEv"></span><span id="teca_uniform_cartesian_mesh::get_type_codeC"></span><span class="target" id="classteca__uniform__cartesian__mesh_1ae87b1514d27684da924190e00d49aa3f"></span>int <code class="sig-name descname">get_type_code</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em> <em class="property">override</em><a class="headerlink" href="#_CPPv4NK27teca_uniform_cartesian_mesh13get_type_codeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N27teca_uniform_cartesian_mesh4copyERK20const_p_teca_dataset">
+<span id="_CPPv3N27teca_uniform_cartesian_mesh4copyERK20const_p_teca_dataset"></span><span id="_CPPv2N27teca_uniform_cartesian_mesh4copyERK20const_p_teca_dataset"></span><span id="teca_uniform_cartesian_mesh::copy__const_p_teca_datasetCR"></span><span class="target" id="classteca__uniform__cartesian__mesh_1a594ac64b1de91c91a294860561f18935"></span>void <code class="sig-name descname">copy</code><span class="sig-paren">(</span><em class="property">const</em> const_p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N27teca_uniform_cartesian_mesh4copyERK20const_p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N27teca_uniform_cartesian_mesh12shallow_copyERK14p_teca_dataset">
+<span id="_CPPv3N27teca_uniform_cartesian_mesh12shallow_copyERK14p_teca_dataset"></span><span id="_CPPv2N27teca_uniform_cartesian_mesh12shallow_copyERK14p_teca_dataset"></span><span id="teca_uniform_cartesian_mesh::shallow_copy__p_teca_datasetCR"></span><span class="target" id="classteca__uniform__cartesian__mesh_1a3555333d74df435aeb80702bde85774d"></span>void <code class="sig-name descname">shallow_copy</code><span class="sig-paren">(</span><em class="property">const</em> p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N27teca_uniform_cartesian_mesh12shallow_copyERK14p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N27teca_uniform_cartesian_mesh4swapER14p_teca_dataset">
+<span id="_CPPv3N27teca_uniform_cartesian_mesh4swapER14p_teca_dataset"></span><span id="_CPPv2N27teca_uniform_cartesian_mesh4swapER14p_teca_dataset"></span><span id="teca_uniform_cartesian_mesh::swap__p_teca_datasetR"></span><span class="target" id="classteca__uniform__cartesian__mesh_1a2771069569242d2327b6294ad54c86cd"></span>void <code class="sig-name descname">swap</code><span class="sig-paren">(</span>p_teca_dataset&amp;<span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N27teca_uniform_cartesian_mesh4swapER14p_teca_dataset" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Protected Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N27teca_uniform_cartesian_mesh27teca_uniform_cartesian_meshEv">
+<span id="_CPPv3N27teca_uniform_cartesian_mesh27teca_uniform_cartesian_meshEv"></span><span id="_CPPv2N27teca_uniform_cartesian_mesh27teca_uniform_cartesian_meshEv"></span><span id="teca_uniform_cartesian_mesh::teca_uniform_cartesian_mesh"></span><span class="target" id="classteca__uniform__cartesian__mesh_1af87c49b85eebdacb3e2d32f222cdd94f"></span><code class="sig-name descname">teca_uniform_cartesian_mesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N27teca_uniform_cartesian_mesh27teca_uniform_cartesian_meshEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="system.html" class="btn btn-neutral float-right" title="System" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="io.html" class="btn btn-neutral float-left" title="I/O" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Burlen Loring, Travis O&#39;Brien &amp; Abdelrahman Elbashandy
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TECA, Toolkit for Extreme Climate Analysis, User’s Guide &mdash; TECA  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> TECA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="framework/framework.html">Framework</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">TECA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>TECA, Toolkit for Extreme Climate Analysis, User’s Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="teca-toolkit-for-extreme-climate-analysis-users-guide">
+<h1>TECA, Toolkit for Extreme Climate Analysis, User’s Guide<a class="headerlink" href="#teca-toolkit-for-extreme-climate-analysis-users-guide" title="Permalink to this headline">¶</a></h1>
+<p>TECA is a framework for parallel data analyitics on large scale systems built
+by the DOE. TECA has algorithms for extreme event detection and analysis of
+detected events.  Written in C++, TECA uses MPI and threads, to delivers state
+of the art performance and scaling. It’s Python bindings provide an easy way to
+script analyisis suitable to any need and to develop new diagnostics. Paired
+with NERSC’s shifter solution Python based analytics using TECA can run at
+largest scale on DOE HPC systems.</p>
+<div class="figure align-default" id="id1">
+<span id="cyclone-tracks"></span><img alt="_images/tracks_crop_2.gif" src="_images/tracks_crop_2.gif" />
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Storm Tracks Generated by TECA</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#on-a-cray-supercomputer">On a Cray Supercomputer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#configure-script">Configure script</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#on-a-laptop-or-desktop">On a laptop or desktop</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#a-python-only-install">A Python only install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#compiling-teca-from-sources">Compiling TECA from sources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#installing-dependencies">Installing dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#post-install">Post Install</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="applications.html">Applications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#metadata-probe">Metadata Probe</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#command-line-arguments">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#gfdl-tropical-cyclone-detector">GFDL Tropical Cyclone Detector</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id1">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id2">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#tropical-cyclone-trajectories">Tropical Cyclone Trajectories</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id3">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id4">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#tc-wind-radii">TC Wind Radii</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id5">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id6">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#tropical-cyclone-statistics">Tropical Cyclone Statistics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id7">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#analysis">Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#analyses-produced-by-the-stats-stage">Analyses produced by the stats stage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id8">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#tc-trajectory-scalars">TC Trajectory Scalars</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id9">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id10">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#tc-wind-radii-stats">TC Wind Radii Stats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id11">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id12">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#event-filter">Event Filter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id13">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id14">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#temporal-reduction">Temporal Reduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id15">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#id16">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="python.html#pipeline-construction-configuration-and-execution">Pipeline Construction, Configuration and Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python.html#algorithm-development">Algorithm Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="python.html#report-phase">Report Phase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#request-phase">Request Phase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#execute">Execute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#python-algorithm-template">Python Algorithm Template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#the-report-override">The Report Override</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#the-request-override">The Request Override</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#the-execute-override">The Execute Override</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#arrays">Arrays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#metadata">Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#array-collections">Array Collections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#tables">Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html#cartesian-meshes">Cartesian Meshes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="developer.html#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer.html#timing-and-profiling">Timing and Profiling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="developer.html#compilation">Compilation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer.html#runtime-controls">Runtime controls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer.html#visualization">Visualization</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="framework/framework.html">Framework</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="framework/alg.html">Algorithms</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="framework/alg.html#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="framework/core.html">CORE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="framework/io.html">I/O</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="framework/io.html#classes">Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="framework/io.html#namespaces">Namespaces</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="framework/data.html">DATA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="framework/data.html#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="framework/system.html">System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="framework/system.html#namespaces">Namespaces</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Burlen Loring, Travis O&#39;Brien &amp; Abdelrahman Elbashandy
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

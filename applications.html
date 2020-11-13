@@ -1,0 +1,952 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Applications &mdash; TECA  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Python" href="python.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> TECA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Applications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#metadata-probe">Metadata Probe</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#command-line-arguments">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#gfdl-tropical-cyclone-detector">GFDL Tropical Cyclone Detector</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tropical-cyclone-trajectories">Tropical Cyclone Trajectories</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tc-wind-radii">TC Wind Radii</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tropical-cyclone-statistics">Tropical Cyclone Statistics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#analysis">Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#analyses-produced-by-the-stats-stage">Analyses produced by the stats stage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tc-trajectory-scalars">TC Trajectory Scalars</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tc-wind-radii-stats">TC Wind Radii Stats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#event-filter">Event Filter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#temporal-reduction">Temporal Reduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Command Line Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="framework/framework.html">Framework</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TECA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Applications</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/applications.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="applications">
+<h1>Applications<a class="headerlink" href="#applications" title="Permalink to this headline">¶</a></h1>
+<p>TECA’s command line applications deliver the highest perfromance, while
+providing a good deal of flexibility for common use cases.  This section
+describes how to run TECA’s command line applciations. If you need more
+felxibility or functionalty not packaged in a command line application consider
+using our Python scripting capabilities.</p>
+<p>Running the command line applications requires the enviornment to be correctly
+configured. One should either install to a default location, or load the
+appropriate modulefile, for example when using installs on NERSC. Experience
+has proven that it is best to start with a clean environment (i.e. no other
+modules loaded) and to load the teca modulefiles as late as possible.  For
+instance when running in a batch script on the Cray load the teca module in the
+batch script rather than in your shell.</p>
+<div class="section" id="metadata-probe">
+<h2>Metadata Probe<a class="headerlink" href="#metadata-probe" title="Permalink to this headline">¶</a></h2>
+<p>The metadata probe is a simple command line application that can be used
+to determine the number of time steps in a dataset. The metadata probe is
+most helpful when a dataset is split across multiple files and/or a subset
+selection is applied via a regular expression.</p>
+<div class="section" id="command-line-arguments">
+<h3>Command Line Arguments<a class="headerlink" href="#command-line-arguments" title="Permalink to this headline">¶</a></h3>
+<dl class="option-list">
+<dt><kbd><span class="option">--input_regex</span></kbd></dt>
+<dd><p>this is how you tell TECA what files are in the dataset. We use the grep
+style regex, which must be quoted with single ticks to protect it from the
+shell. Regex meta characters present in the file name must be escaped with
+a textbackslash. An example of an input regex which includes all .nc files
+is: ‘.*textbackslash.nc$’. If instead one wanted to grab only files from
+2004-2005 then ‘.*textbackslash.200[45 .*textbackslash.nc$’ would do the
+trick. For the best performance, specify the smallest set of files needed
+to achieve the desired result. Each of the files will be opened in order to
+scan the time axis.</p>
+</dd>
+<dt><kbd><span class="option">--start_date</span></kbd></dt>
+<dd><p>an optional way to further specify the time range to process. The accepted
+format is a CF style human readable date spec such as YYYY-MM-DD hh:mm:ss.
+Because of the space in between day and hour spec quotes must be used. For
+example “2005-01-01 00:00:00”. Specifying a start date is optional,  if
+none is given then all of the time steps in all of the files specified in
+the <em>–input_regex</em> are processed.</p>
+</dd>
+<dt><kbd><span class="option">--end_date</span></kbd></dt>
+<dd><p>see <em>–start_date</em>. this is has a similar purpose in restricting
+the range of time steps processed.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<p>The teca_metadata_probe is not MPI parallel and therefor can be run on login
+nodes on NERSC systems. In the following example the metadata probe is used
+to determine the number of time steps in a large dataset spread over many files.
+A regular expression is used to subset the first decade of 2000’s. The result
+is show in the comment folloing the example.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">in_dir</span><span class="o">=</span>/project/projectdirs/dasrepo/gmd/input/ALLHIST/run1
+<span class="nv">in_files</span><span class="o">=</span>CAM5-1-0<span class="s1">&#39;\.25degree_All-Hist_est1_v3_run1\.cam\.h2\.200[0-9].*\.nc$&#39;</span>
+
+teca_metadata_probe <span class="se">\</span>
+    --sim_reader::thread_pool_size <span class="m">16</span> --input_regex <span class="si">${</span><span class="nv">in_dir</span><span class="si">}</span>/<span class="si">${</span><span class="nv">in_files</span><span class="si">}</span>
+
+<span class="c1"># A total of 29200 steps available in 3650 files. Using the noleap calendar.</span>
+<span class="c1"># Times are specified in units of days since 1995-02-01 00:00:00. The available</span>
+<span class="c1"># times range from 2000-1-1 0:0:0 (1794) to 2009-12-31 21:0:0 (5443.88).</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="gfdl-tropical-cyclone-detector">
+<h2>GFDL Tropical Cyclone Detector<a class="headerlink" href="#gfdl-tropical-cyclone-detector" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id17">
+<span id="tracks"></span><img alt="_images/tracks_1824.png" src="_images/tracks_1824.png" />
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Cyclone tracks plotted with 850 mb wind speed and integrated moisture.</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id18">
+<span id="candidates"></span><img alt="_images/candidates_and_tracks.png" src="_images/candidates_and_tracks.png" />
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Cyclone candidates and tracks. Not all candidates end up in tracks.</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+</div>
+<p>The cyclone detector is an MPI+threads parallel map-reduce based application
+that identifies tropical cyclone tracks in NetCDF-CF2 climate data. The
+application is comprised of a number of stages that are run in succession
+producing tables containing cyclone tracks. The tracks then can be visualized
+or further analyzed using the TECA TC statistics application, TECA’s Python
+bindings, or the TECA ParaView plugin.</p>
+<div class="section" id="id1">
+<h3>Command Line Arguments<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>The most common command line options are:</p>
+<dl class="option-list">
+<dt><kbd><span class="option">--help</span></kbd></dt>
+<dd><p>prints documentation for the most common options. MPI programs, such as
+teca_tc_detect aren’t allowed to run on the login noes at NERSC. For
+this reason to use <em>–help</em> you’ll need to obtain a compute node
+via <em>salloc</em> first.</p>
+</dd>
+<dt><kbd><span class="option">--full_help</span></kbd></dt>
+<dd><p>prints documentation for all options. See <em>–help</em> notes.</p>
+</dd>
+<dt><kbd><span class="option">--input_regex</span></kbd></dt>
+<dd><p>this is how you tell TECA what files are in the dataset. We use the grep
+style regex, which must be quoted with single ticks to protect it from the
+shell. Regex meta characters present in the file name must be escaped with
+a textbackslash. An example of an input regex which includes all .nc files
+is: ‘.*textbackslash.nc$’. If instead one wanted to grab only files from
+2004-2005 then ‘.*textbackslash.200[45 .*textbackslash.nc$’ would do the
+trick. For the best performance, specify the smallest set of files needed
+to achieve the desired result. Each of the files will be opened in order to
+scan the time axis.</p>
+</dd>
+<dt><kbd><span class="option">--start_date</span></kbd></dt>
+<dd><p>an optional way to further specify the time range to process. The accepted
+format is a CF style human readable date spec such as YYYY-MM-DD hh:mm:ss.
+Because of the space in between day and hour spec quotes must be used. For
+example “2005-01-01 00:00:00”. Specifying a start date is optional,  if
+none is given then all of the time steps in all of the files specified in
+the <em>–input_regex</em> are processed.</p>
+</dd>
+<dt><kbd><span class="option">--end_date</span></kbd></dt>
+<dd><p>see <em>–start_date</em>. this is has a similar purpose in restricting
+the range of time steps processed.</p>
+</dd>
+<dt><kbd><span class="option">--candidate_file</span></kbd></dt>
+<dd><p>a file name specifying where to write the storm candidates to. If not
+specified result will be written to candidates.bin in the current working
+directory. One sets the output format via the extension. Supported formats
+include csv, xlsx, and bin.</p>
+</dd>
+<dt><kbd><span class="option">--track_file</span></kbd></dt>
+<dd><p>a file name specifying where to write the detected storm tracks. If not
+specified the tracks are written to a file named tracks.bin in the current
+working directory. See <em>–candidate_file</em> for information about the
+supported formats.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id2">
+<h3>Example<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>Once on Edison load the TECA module</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module load teca
+</pre></div>
+</div>
+<p>note that there are multiple versions installed, just use the latest and
+greatest as they become available.</p>
+<p>Processing an entire dataset is straight forward once you know how many cores
+you want to run on. You will launch teca_tc_detect, the tropical cyclone
+application, from a SLURM batch script. A batch script is provided below.</p>
+<p>TECA can process any size dataset on any number of compute cores. However, the
+fastest results are attained when there is 1 time step per core. In order to
+set this up one must determine how many time steps there are and write the
+SLURM batch script accordingly. The teca_metadata_probe command line
+application can be used for this purpose. When executed with the same
+<em>–input_regex</em> and optionally the <em>–start_date</em> and or
+<em>–end_date</em> options that will be used in the cyclone detection run it
+will print out the information needed to configure a 1 to 1 (time steps to
+cores) run. The metadata probe is a serial application and can be run on the
+login nodes.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>teca_metadata_probe --input_regex <span class="s1">&#39;.*\.199[0-9].*\.nc$&#39;</span>
+
+<span class="c1"># A total of 29200 steps available in 3650 files. Using the noleap calendar.</span>
+<span class="c1"># Times are specified in units of days since 1979-01-01 00:00:00. The available</span>
+<span class="c1"># times range from 1990-1-1 3:0:0 (4015.12) to 2000-1-1 0:0:0 (7665).</span>
+</pre></div>
+</div>
+<p>With the number of time steps in hand one can set up the SLURM batch script for
+the run. The following batch script, named textit{1990s.sh}, processes the
+entire decade of the 1990’s. The teca_metadata_probe was used to determine
+that there are 29200 time steps. The srun command is used to launch the cyclone
+detector on 29200 cores.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash -l</span>
+
+<span class="c1">#SBATCH -p regular</span>
+<span class="c1">#SBATCH -N 1217</span>
+<span class="c1">#SBATCH -t 00:30:00</span>
+
+<span class="nv">data_dir</span><span class="o">=</span>/scratch2/scratchdirs/prabhat/TCHero/data
+<span class="nv">files_regex</span><span class="o">=</span>cam5_1_amip_run2<span class="s1">&#39;\.cam2\.h2\.199[0-9].*.nc$&#39;</span>
+
+srun -n <span class="m">29200</span> teca_tc_detect                    <span class="se">\</span>
+    --input_regex <span class="si">${</span><span class="nv">data_dir</span><span class="si">}</span>/<span class="si">${</span><span class="nv">files_regex</span><span class="si">}</span>    <span class="se">\</span>
+    --candidate_file candidates_1990s.bin       <span class="se">\</span>
+    --track_file tracks_1990s.bin
+</pre></div>
+</div>
+<p>Finally, the batch script must be submitted to the batch system requesting the
+appropriate number of nodes. In this case the command is:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sbatch ./1990s.sh
+</pre></div>
+</div>
+<p>For the <span class="math notranslate nohighlight">\(\frac{1}{4}\)</span> degree resolution dataset when processing latitudes
+between -90 to 90 the detector runs in approx 15 min. Detector run time could
+be reduced by subsetting in latitude (see <em>–lowest_lat</em>,
+<em>–highest_lat</em> options). Note that as the number of files in the
+dataset increases the metadata phase takes more time. You can use
+teca_metadata_probe to get a sense of how much more and extend the run time
+accordingly.</p>
+</div>
+</div>
+<div class="section" id="tropical-cyclone-trajectories">
+<h2>Tropical Cyclone Trajectories<a class="headerlink" href="#tropical-cyclone-trajectories" title="Permalink to this headline">¶</a></h2>
+<p>The trajectory stage runs after the map-reduce candidate detection stage and
+generates cyclone storm tracks. The TC detector described above invokes the
+trajectory stage automatically, however it can also be run independently on the
+candidate stage output. The trajectory stage can be run from the login nodes.</p>
+<div class="section" id="id3">
+<h3>Command Line Arguments<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>The most commonly used command line arguments to the trajectory stage are:</p>
+<dl class="option-list">
+<dt><kbd><span class="option">--help</span></kbd></dt>
+<dd><p>prints documentation for the most common options.</p>
+</dd>
+<dt><kbd><span class="option">--full_help</span></kbd></dt>
+<dd><p>prints documentation for all options. See –help notes.</p>
+</dd>
+<dt><kbd><span class="option">--candidate_file</span></kbd></dt>
+<dd><p>a file name specifying where to read the storm candidates from.</p>
+</dd>
+<dt><kbd><span class="option">--track_file</span></kbd></dt>
+<dd><p>a file name specifying where to write the detected storm tracks. If not
+specified the tracks are written to a file named tracks.bin in the current
+working directory. One sets the output format via the extension. Supported
+formats include csv, xlsx, and bin.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id4">
+<h3>Example<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>An example of running the trajectory stage is:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>teca_tc_trajectory <span class="se">\</span>
+    --candidate_file candidates_1990s.bin       <span class="se">\</span>
+    --track_file tracks_1990s.bin
+</pre></div>
+</div>
+<p>the file textit{tracks_1990s.bin} will contain the list of storm tracks.</p>
+</div>
+</div>
+<div class="section" id="tc-wind-radii">
+<h2>TC Wind Radii<a class="headerlink" href="#tc-wind-radii" title="Permalink to this headline">¶</a></h2>
+<p>The wind radii application can be used to compute wind radii from track data in
+parallel. For each point on each track a radial profile is computed over a
+number of angular intervals. The radial profiles are used to compute distance
+from the storm center to the first downward crossing of given wind speeds. The
+default wind speeds are the3 Saffir-Simpson transitions. Additionally distance
+to the peak wind speed and peak wind speed are recorded.  A new table is
+produced containing the data. The TC trajectory scalars application, TC stats
+application and ParaView plugin can be used to further analyze the data.</p>
+<div class="section" id="id5">
+<h3>Command Line Arguments<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>The most commonly used command liine arguments are:</p>
+<dl class="option-list">
+<dt><kbd><span class="option">--track_file</span></kbd></dt>
+<dd><p>file path to read the cyclone from (tracks.bin)</p>
+</dd>
+<dt><kbd><span class="option">--wind_files</span></kbd></dt>
+<dd><p>regex matching simulation files containing wind fields ()</p>
+</dd>
+<dt><kbd><span class="option">--track_file_out</span></kbd></dt>
+<dd><p>file path to write cyclone tracks with size (tracks_size.bin)</p>
+</dd>
+<dt><kbd><span class="option">--wind_u_var</span></kbd></dt>
+<dd><p>name of variable with wind x-component (UBOT)</p>
+</dd>
+<dt><kbd><span class="option">--wind_v_var</span></kbd></dt>
+<dd><p>name of variable with wind y-component (VBOT)</p>
+</dd>
+<dt><kbd><span class="option">--track_mask</span></kbd></dt>
+<dd><p>expression to filter tracks by ()</p>
+</dd>
+<dt><kbd><span class="option">--n_theta</span></kbd></dt>
+<dd><p>number of points in the wind profile in the theta direction (32)</p>
+</dd>
+<dt><kbd><span class="option">--n_r</span></kbd></dt>
+<dd><p>number cells in the wind profile in radial direction (32)</p>
+</dd>
+<dt><kbd><span class="option">--profile_type</span></kbd></dt>
+<dd><p>radial wind profile type. max or avg (avg)</p>
+</dd>
+<dt><kbd><span class="option">--search_radius</span></kbd></dt>
+<dd><p>size of search window in deg lat (6)</p>
+</dd>
+</dl>
+<p>see –help and –full_help for more information.</p>
+</div>
+<div class="section" id="id6">
+<h3>Example<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>The following examples shows computation of wind radii for a decades worth of
+tracks using 128 cores on NERSC Cori.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module load teca
+sbatch wind_radii_1990s.sh
+</pre></div>
+</div>
+<p>where the contents of textit{wind_radii_1990s.sh} are as follows</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash -l</span>
+<span class="c1">#SBATCH -p debug</span>
+<span class="c1">#SBATCH -N 4</span>
+<span class="c1">#SBATCH -t 00:30:00</span>
+<span class="c1">#SBATCH -C haswell</span>
+
+<span class="nv">data_dir</span><span class="o">=</span>/global/cscratch1/sd/mwehner/cylones_ensemble/cam5_1_amip_run2/ncfiles
+<span class="nv">files_regex</span><span class="o">=</span><span class="si">${</span><span class="nv">data_dir</span><span class="si">}</span>/cam5_1_amip_run2<span class="s1">&#39;\.cam2\.h2\.199[0-9].*\.nc$&#39;</span>
+<span class="nv">track_file</span><span class="o">=</span>tracks_1990s_3hr_mdd_4800.bin
+<span class="nv">track_file_out</span><span class="o">=</span>wind_radii_1990s_3hr_mdd_4800_co.bin
+
+srun -n <span class="m">4</span> --ntasks-per-node<span class="o">=</span><span class="m">1</span> <span class="se">\</span>
+    teca_tc_wind_radii --n_threads <span class="m">32</span> --first_track <span class="m">0</span> <span class="se">\</span>
+    --last_track -1 --wind_files <span class="si">${</span><span class="nv">files_regex</span><span class="si">}</span> --track_file <span class="si">${</span><span class="nv">track_file</span><span class="si">}</span> <span class="se">\</span>
+    --track_file_out <span class="si">${</span><span class="nv">track_file_out</span><span class="si">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="tropical-cyclone-statistics">
+<h2>Tropical Cyclone Statistics<a class="headerlink" href="#tropical-cyclone-statistics" title="Permalink to this headline">¶</a></h2>
+<p>The statistics stage can be used to compute a variety of statistics on detected
+cyclones. It generates a number of plots and tables and it can be ran on the
+login nodes. The most common options are the input file and output prefix.</p>
+<div class="section" id="id7">
+<h3>Command Line Arguments<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>The command line arguments to the stats stage are:</p>
+<dl class="simple">
+<dt>tracks_file</dt><dd><p>A required positional argument pointing to the file containing TC storm tracks.</p>
+</dd>
+<dt>output_prefix</dt><dd><p>Required positional argument declaring the prefix that is prepended to all output files.</p>
+</dd>
+</dl>
+<dl class="option-list">
+<dt><kbd><span class="option">--help</span></kbd></dt>
+<dd><p>prints documentation for the command line options.</p>
+</dd>
+<dt><kbd><span class="option">-d</span>, <span class="option">--dpi</span></kbd></dt>
+<dd><p>Sets the resolution of the output images.</p>
+</dd>
+<dt><kbd><span class="option">-i</span>, <span class="option">--interactive</span></kbd></dt>
+<dd><p>Causes the figures to open immediately in a pop-up window.</p>
+</dd>
+<dt><kbd><span class="option">-a</span>, <span class="option">--ind_axes</span></kbd></dt>
+<dd><p>Normalize y axes in the subplots allowing for easier inter-plot comparison.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="analysis">
+<h3>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h3>
+<p>The following analysis are performed by the stats stage:</p>
+<dl class="simple">
+<dt>Classification Table</dt><dd><p>Produces a table containing cyclogenisis information, Saphir-Simpson
+category, and the min/max of a number of detection parameters.</p>
+</dd>
+<dt>Categorical Distribution</dt><dd><p>Produces a histogram containing counts of each class of storm on the
+Saphir-Simpson scale. See figure <a class="reference internal" href="#ass"><span class="std std-numref">Fig. 5</span></a>.</p>
+</dd>
+<dt>Categorical Monthly Breakdown</dt><dd><p>Produces histogram for each year that shows the breakdown by month and
+Saphir-Simpson category. See figure <a class="reference internal" href="#mon"><span class="std std-numref">Fig. 6</span></a>.</p>
+</dd>
+<dt>Categorical Regional Breakdown</dt><dd><p>Produces a histogram for each year that shows breakdown by region and
+Saphir-Simpson category. See figure <a class="reference internal" href="#reg"><span class="std std-numref">Fig. 7</span></a>.</p>
+</dd>
+<dt>Categorical Regional Trend</dt><dd><p>Produces a histogram for each geographic region that shows trend of storm
+count and Saphir-Simpson category over time. See figure <a class="reference internal" href="#trend"><span class="std std-numref">Fig. 8</span></a></p>
+</dd>
+<dt>Parameter Distributions</dt><dd><p>Produces box and whisker plots for each year for a number of detector
+parameters. See figure <a class="reference internal" href="#dist"><span class="std std-numref">Fig. 4</span></a>.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="analyses-produced-by-the-stats-stage">
+<h3>Analyses produced by the stats stage<a class="headerlink" href="#analyses-produced-by-the-stats-stage" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default" id="id19">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Stats output 1</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-default" id="id20">
+<span id="dist"></span><img alt="_images/stats_1990s_3hr_distribution_1.png" src="_images/stats_1990s_3hr_distribution_1.png" />
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Parameter Dist.</span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-default" id="id21">
+<span id="ass"></span><img alt="_images/stats_1990s_3hr_annual_saphire_simpson_distribution_1.png" src="_images/stats_1990s_3hr_annual_saphire_simpson_distribution_1.png" />
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Categorical Dist.</span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="figure align-default" id="id22">
+<span id="mon"></span><img alt="_images/stats_1990s_3hr_monthly_breakdown_1.png" src="_images/stats_1990s_3hr_monthly_breakdown_1.png" />
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Monthly Breakdown</span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-default" id="id23">
+<span id="reg"></span><img alt="_images/stats_1990s_3hr_regional_break_down_1.png" src="_images/stats_1990s_3hr_regional_break_down_1.png" />
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Regional Breakdown</span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="figure align-default" id="id24">
+<span id="trend"></span><img alt="_images/stats_1990s_3hr_regional_trend_1.png" src="_images/stats_1990s_3hr_regional_trend_1.png" />
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Regional trend.</span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="figure align-default" id="id25">
+<span id="basins"></span><img alt="_images/basin_poly_validation.png" src="_images/basin_poly_validation.png" />
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Basin Definitions and Cyclogenesis Plot</span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="id8">
+<h3>Example<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>An example of running the stats stage is:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>teca_tc_stats tracks_1990s.bin stats/stats_1990s
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="tc-trajectory-scalars">
+<h2>TC Trajectory Scalars<a class="headerlink" href="#tc-trajectory-scalars" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id26">
+<span id="traj-scalar"></span><a class="reference internal image-reference" href="_images/track_scalars_1990s_3hr_mdd_4800_000280.png"><img alt="_images/track_scalars_1990s_3hr_mdd_4800_000280.png" src="_images/track_scalars_1990s_3hr_mdd_4800_000280.png" style="width: 3in;" /></a>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">The trajectory scalars application plots cyclone properties over time.</span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
+</div>
+<p>The trajectory scalars application can be used to plot detection parameters for
+each storm in time. The application can be run in parallel.</p>
+<div class="section" id="id9">
+<h3>Command Line Arguments<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>tracks_file</dt><dd><p>A required positional argument pointing to the file containing TC storm tracks.</p>
+</dd>
+<dt>output_prefix</dt><dd><p>A required positional argument declaring the prefix that is prepended to all output files.</p>
+</dd>
+</dl>
+<dl class="option-list">
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>prints documentation for the command line options.</p>
+</dd>
+<dt><kbd><span class="option">-d</span>, <span class="option">--dpi</span></kbd></dt>
+<dd><p>Sets the resolution of the output images.</p>
+</dd>
+<dt><kbd><span class="option">-i</span>, <span class="option">--interactive</span></kbd></dt>
+<dd><p>Causes the figures to open immediately in a pop-up window.</p>
+</dd>
+<dt><kbd><span class="option">--first_track</span></kbd></dt>
+<dd><p>Id of the first track to process</p>
+</dd>
+<dt><kbd><span class="option">--last_track</span></kbd></dt>
+<dd><p>Id of the last track to process</p>
+</dd>
+<dt><kbd><span class="option">--texture</span></kbd></dt>
+<dd><p>An image containing a map of the Earth to plot the tracks on.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id10">
+<h3>Example<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">10</span> ./bin/teca_tc_trajectory_scalars   <span class="se">\</span>
+    --texture ../../TECA_data/earthmap4k.png      <span class="se">\</span>
+    tracks_1990s_3hr_mdd_4800.bin                 <span class="se">\</span>
+    traj_scalars_1990s_3hr_mdd_4800
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="tc-wind-radii-stats">
+<h2>TC Wind Radii Stats<a class="headerlink" href="#tc-wind-radii-stats" title="Permalink to this headline">¶</a></h2>
+<p>The wind radii stats application can be used to generate summary statistics
+describing the wind radii distributions.</p>
+<div class="figure align-default" id="id27">
+<span id="wind-rad-stats"></span><a class="reference internal image-reference" href="_images/wind_radii_stats.png"><img alt="_images/wind_radii_stats.png" src="_images/wind_radii_stats.png" style="width: 3in;" /></a>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">The wind radii stats application plots distribution of wind radii.</span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="id11">
+<h3>Command Line Arguments<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>tracks_file</dt><dd><p>A required positional argument pointing to the file containing TC storm tracks.</p>
+</dd>
+<dt>output_prefix</dt><dd><p>Required positional argument declaring the prefix that is prepended to all output files.</p>
+</dd>
+</dl>
+<dl class="option-list">
+<dt><kbd><span class="option">--help</span></kbd></dt>
+<dd><p>prints documentation for the command line options.</p>
+</dd>
+<dt><kbd><span class="option">-d</span>, <span class="option">--dpi</span></kbd></dt>
+<dd><p>Sets the resolution of the output images.</p>
+</dd>
+<dt><kbd><span class="option">-i</span>, <span class="option">--interactive</span></kbd></dt>
+<dd><p>Causes the figures to open immediately in a pop-up window.</p>
+</dd>
+<dt><kbd><span class="option">--wind_column</span></kbd></dt>
+<dd><p>Name of the column to load instantaneous max wind speeds from.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id12">
+<h3>Example<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>teca_tc_wind_radii_stats <span class="se">\</span>
+    wind_radii_1990s_3hr_mdd_4800_ed.bin wind_radii_stats_ed/
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="event-filter">
+<h2>Event Filter<a class="headerlink" href="#event-filter" title="Permalink to this headline">¶</a></h2>
+<p>The event filter application lets one remove rows from an input table that do
+not fall within specified geographic and/or temporal bounds. This gives one the
+capability to zoom into a specific storm, time period, or geographic region for
+detailed analysis.</p>
+<div class="section" id="id13">
+<h3>Command Line Arguments<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>in_file</dt><dd><p>A required positional argument pointing to the input file.</p>
+</dd>
+<dt>out_file</dt><dd><p>A required positional argument pointing where the output should be written.</p>
+</dd>
+</dl>
+<dl class="option-list">
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>prints documentation for the command line options.</p>
+</dd>
+<dt><kbd><span class="option">--time_column</span></kbd></dt>
+<dd><p>name of column containing time axis</p>
+</dd>
+<dt><kbd><span class="option">--start_time</span></kbd></dt>
+<dd><p>filter out events occurring before this time</p>
+</dd>
+<dt><kbd><span class="option">--end_time</span></kbd></dt>
+<dd><p>filter out events occurring after this time</p>
+</dd>
+<dt><kbd><span class="option">--step_column</span></kbd></dt>
+<dd><p>name of column containing time steps</p>
+</dd>
+<dt><kbd><span class="option">--step_interval</span></kbd></dt>
+<dd><p>filter out time steps modulo this interval</p>
+</dd>
+<dt><kbd><span class="option">--x_coordinate_column</span></kbd></dt>
+<dd><p>name of column containing event x coordinates</p>
+</dd>
+<dt><kbd><span class="option">--y_coordinate_column</span></kbd></dt>
+<dd><p>name of column containing event y coordinates</p>
+</dd>
+<dt><kbd><span class="option">--region_x_coords</span></kbd></dt>
+<dd><p>x coordinates defining region to filter</p>
+</dd>
+<dt><kbd><span class="option">--region_y_coords</span></kbd></dt>
+<dd><p>y coordinates defining region to filter</p>
+</dd>
+<dt><kbd><span class="option">--region_sizes</span></kbd></dt>
+<dd><p>sizes of each of the regions</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id14">
+<h3>Example<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>teca_event_filter --start_time<span class="o">=</span><span class="m">1750</span> --end_time<span class="o">=</span><span class="m">1850</span>                       <span class="se">\</span>
+    --region_x_coords <span class="m">260</span> <span class="m">320</span> <span class="m">320</span> <span class="m">260</span> --region_y_coords <span class="m">10</span> <span class="m">10</span> <span class="m">50</span> <span class="m">50</span>       <span class="se">\</span>
+    --region_sizes <span class="m">4</span> --x_coordinate_column lon --y_coordinate_column lat  <span class="se">\</span>
+    candidates_1990s_3hr.bin filtered.bin
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="temporal-reduction">
+<h2>Temporal Reduction<a class="headerlink" href="#temporal-reduction" title="Permalink to this headline">¶</a></h2>
+<p>The temporal reduction application is an MPI+threads parallel code that
+applies a reduction operator on the time axis of a NetCDF CF2 dataset.
+The reduction can be applied over a number of specific intervals, for instance
+daily, and monthly intervals. Minimum, maximum, and average operators are
+supported. A rule of thumb for when running in parallel one should size the
+job such that there is a rank per interval. For instance, to apply a
+reduction that computes a monthly time series from a 6 hourly time series
+spanning 10 years one would use 120 ranks. In this case the reduction
+interval is monthly and one arrives at 120 MPI ranks by multiplying:
+12 months/year * 10 years. The procedure for selecting the number of MPI
+ranks for other intervals and datasets with different time spans is similar.</p>
+<div class="section" id="id15">
+<h3>Command Line Arguments<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>The most common command line options are:</p>
+<dl class="option-list">
+<dt><kbd><span class="option">--input_regex <var>INPUT_REGEX</var></span></kbd></dt>
+<dd><p>regex matching the desired set of input NetCDF CF2
+files</p>
+</dd>
+<dt><kbd><span class="option">--interval <var>INTERVAL</var></span></kbd></dt>
+<dd><p>interval to reduce the time axis to. One of daily, or
+monthly (monthly)</p>
+</dd>
+<dt><kbd><span class="option">--operator <var>OPERATOR</var></span></kbd></dt>
+<dd><p>reduction operator to use. One of minimum, maximum, or
+average (average)</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>–point_arrays POINT_ARRAYS [POINT_ARRAYS …]</dt><dd><p>list of point centered arrays to process.</p>
+</dd>
+</dl>
+<dl class="option-list">
+<dt><kbd><span class="option">--fill_value <var>FILL_VALUE</var></span></kbd></dt>
+<dd><p>A value that identifies missing or invalid data.
+Specifying the fill value on the command line
+overrides array specific fill values stored in the
+file. (None)</p>
+</dd>
+<dt><kbd><span class="option">--ignore_fill_value</span></kbd></dt>
+<dd><p>Boolean flag that enables missing or invalid value
+handling. When enabled NetCDF CF conventions are used
+to determine fill value. Alternativley one can
+explicitly provide a fill value on the command line
+via the –fill_value argument. (True).</p>
+</dd>
+<dt><kbd><span class="option">--output_file <var>OUTPUT_FILE</var></span></kbd></dt>
+<dd><p>file pattern for writing output netcdf files. %t% will
+be replaced by a date/time string or time step. See
+the teca_cf_writer for more information.</p>
+</dd>
+<dt><kbd><span class="option">--steps_per_file <var>STEPS_PER_FILE</var></span></kbd></dt>
+<dd><p>number of time steps to write to each output file.
+(12)</p>
+</dd>
+<dt><kbd><span class="option">--x_axis_variable <var>X_AXIS_VARIABLE</var></span></kbd></dt>
+<dd><p>name of the variable to use for x-coordinates (lon)</p>
+</dd>
+<dt><kbd><span class="option">--y_axis_variable <var>Y_AXIS_VARIABLE</var></span></kbd></dt>
+<dd><p>name of the variable to use for y-coordinates (lat)</p>
+</dd>
+<dt><kbd><span class="option">--z_axis_variable <var>Z_AXIS_VARIABLE</var></span></kbd></dt>
+<dd><p>name of the variable to use for z-coordinates ()</p>
+</dd>
+<dt><kbd><span class="option">--t_axis_variable <var>T_AXIS_VARIABLE</var></span></kbd></dt>
+<dd><p>name of the variable to use for t-coordinates (time)</p>
+</dd>
+<dt><kbd><span class="option">--n_threads <var>N_THREADS</var></span></kbd></dt>
+<dd><p>Number of threads to use when stremaing the reduction
+(2)</p>
+</dd>
+<dt><kbd><span class="option">--verbose <var>VERBOSE</var></span></kbd></dt>
+<dd><p>enable verbose mode. (1)</p>
+</dd>
+</dl>
+<p>For 3D data one will need to use –z_axis_variable to specify the name of
+the array to use as vertical coordinates.</p>
+</div>
+<div class="section" id="id16">
+<h3>Example<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<p>Processing an entire dataset is straight forward once you know how many cores
+you want to run on. You will launch teca_temporal_reduction
+from a SLURM batch script. A batch script is provided below.</p>
+<p>TECA can process any size dataset on any number of compute cores. However, for
+the temporal reduction, the work is limitted by the number of intervals and one
+should not exceed that number of MPI ranks in a parallel run.  For example when
+the reduction is used to convert from a 6 hourly interval to a daily interval
+one should run with at most the same number of MPI ranks as the number of days
+in the dataset.</p>
+<p>The following SLURM batch script was used to calculate daily averages from a 3
+hourly input dataset. The first 10 years of the 2000’s was selected using a
+regular expression.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#SBATCH --account=m1517</span>
+<span class="c1">#SBATCH --qos=debug</span>
+<span class="c1">#SBATCH --time=00:30:00</span>
+<span class="c1">#SBATCH --nodes=10</span>
+<span class="c1">#SBATCH --tasks-per-node=32</span>
+<span class="c1">#SBATCH --constraint=haswell</span>
+
+<span class="nb">export</span> <span class="nv">PYTHONUNBUFFERED</span><span class="o">=</span><span class="m">1</span>
+
+module swap PrgEnv-intel PrgEnv-gnu
+
+module use /global/common/software/m1517/users/taobrien/modulefiles
+module load teca/develop_haswell
+
+<span class="c1">#export HDF5_USE_FILE_LOCKING=FALSE</span>
+<span class="c1">#data_dir=/global/cfs/cdirs/m3522/cmip6/CMIP6_hrmcol/HighResMIP/CMIP6/HighResMIP/ECMWF/ECMWF-IFS-LR/highresSST-present/r1i1p1f1/6hrPlevPt/psl/gr/v20170915/</span>
+
+<span class="nv">data_dir</span><span class="o">=</span>.
+<span class="nv">regex</span><span class="o">=</span>psl_6hrPlevPt_ECMWF-IFS-LR_highresSST-present_r1i1p1f1_gr_198<span class="s1">&#39;.*\.nc$&#39;</span>
+
+<span class="nb">time</span> teca_metadata_probe --input_regex <span class="si">${</span><span class="nv">data_dir</span><span class="si">}</span>/<span class="si">${</span><span class="nv">regex</span><span class="si">}</span>
+
+<span class="nb">time</span> srun -n <span class="m">320</span> teca_temporal_reduction <span class="se">\</span>
+    --input_regex <span class="si">${</span><span class="nv">data_dir</span><span class="si">}</span>/<span class="si">${</span><span class="nv">regex</span><span class="si">}</span> <span class="se">\</span>
+    --interval daily --operator average <span class="se">\</span>
+    --arrays psl --steps_per_file <span class="m">366</span> <span class="se">\</span>
+    --output_file psl_daily_avg_loc_%t%.nc
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="python.html" class="btn btn-neutral float-right" title="Python" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Burlen Loring, Travis O&#39;Brien &amp; Abdelrahman Elbashandy
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

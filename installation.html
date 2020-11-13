@@ -1,0 +1,497 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; TECA  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Applications" href="applications.html" />
+    <link rel="prev" title="TECA, Toolkit for Extreme Climate Analysis, User’s Guide" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> TECA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#on-a-cray-supercomputer">On a Cray Supercomputer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configure-script">Configure script</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#on-a-laptop-or-desktop">On a laptop or desktop</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-python-only-install">A Python only install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compiling-teca-from-sources">Compiling TECA from sources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-dependencies">Installing dependencies</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#apple-mac-os">Apple Mac OS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ubuntu-20-04">Ubuntu 20.04</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fedora-32">Fedora 32</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#python-environment">Python environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#netcdf-w-parallel-4">NetCDF w/ Parallel 4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#post-install">Post Install</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="framework/framework.html">Framework</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TECA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>TECA is designed to deliver the highest available performance on platforms
+ranging from Cray supercomputers to laptops. The installation procedure depends
+on the platform and desired use.</p>
+<div class="section" id="on-a-cray-supercomputer">
+<h2>On a Cray Supercomputer<a class="headerlink" href="#on-a-cray-supercomputer" title="Permalink to this headline">¶</a></h2>
+<p>When installing TECA on a supercomputer one of the best options is the
+superbuild, a piece of CMake code that downloads and builds TECA and its now
+more than 26 dependencies. The superbuild is located in a git repository here
+<a class="reference external" href="https://github.com/LBL-EESA/TECA_superbuild">TECA_superbuild</a>.</p>
+<p>Installing TECA on the Cray requires pointing the superbuild to Cray’s MPI and
+is sensitive to the modules loaded at compile time. You want a clean
+environment with only GNU compilers and CMake modules loaded. The GNU compilers
+are C++11 and Fortran 2008 standards compliant, while many other compilers are
+not. Additionally the HDF5 HL library needs to be built with thread safety
+enabled, which is rarely the case at the time of writing. Finally, some HPC
+centers have started to use Anaconda Python which can mix in incompatible
+builds of various libraries. The superbuild will take care of compiling and
+installing TECA and its dependencies. As occasionally occurs, something may go
+awry. If that happens it is best to start over from scratch. Starting over from
+scratch entails rm’ing contents of both build and install directories. This is
+because of CMake’s caching mechanism which will remember bad values and also
+because the superbuild makes use of what’s already been installed as it
+progresses and if you don’t clean it out you may end up referring to a broken
+library.</p>
+<div class="section" id="overview">
+<h3>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h3>
+<p>A quick overview follows. Note that step 8 is for using TECA after.
+This is usually put in an environment module.</p>
+<ol class="arabic simple">
+<li><p>module swap PrgEnv-intel PrgEnv-gnu</p></li>
+<li><p>module load cmake/3.8.2</p></li>
+<li><p>git clone <a class="reference external" href="https://github.com/LBL-EESA/TECA_superbuild.git">https://github.com/LBL-EESA/TECA_superbuild.git</a></p></li>
+<li><p>mkdir build &amp;&amp; cd build</p></li>
+<li><p>edit install paths and potentially update library paths after NERSC upgrades OS in config-teca-sb.sh. (see below)</p></li>
+<li><p>run config-teca-sb.sh .. (you may need to replace .. with path to super build clone)</p></li>
+<li><p>make -j 32 install</p></li>
+<li><p>When using TECA you need to source teca_env.sh from the install’s bin dir, load the correct version of gnu programming environment, and ensure that no incompatible modules are loaded(Python, HDF5, NetCDF etc).</p></li>
+</ol>
+</div>
+<div class="section" id="configure-script">
+<h3>Configure script<a class="headerlink" href="#configure-script" title="Permalink to this headline">¶</a></h3>
+<p>The configure script is a shell script that captures build settings specific to
+Cray environment (see steps 5 &amp; 6 above). You will need to edit the TECA_VER
+and TECA_INSTALL variables before running it. Additional CMake arguments may be
+passed on the command line. You must pass the location of the superbuild
+sources(see step 3 above).</p>
+<p>Here is the script config-teca-sb.sh use at NERSC for Cori and Edison.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># mpich is not in the pkg-config path on Cori/Edison</span>
+<span class="c1"># I have reported this bug to NERSC. for now we</span>
+<span class="c1"># must add it ourselves.</span>
+<span class="nb">export</span> <span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span><span class="nv">$CRAY_MPICH_DIR</span>/lib/pkgconfig:<span class="nv">$PKG_CONFIG_PATH</span>
+
+<span class="c1"># set the the path where TECA is installed to.</span>
+<span class="c1"># this must be a writable directory by the user</span>
+<span class="c1"># who is doing the build, as install is progressive.</span>
+<span class="nv">TECA_VER</span><span class="o">=</span><span class="m">2</span>.1.1
+<span class="nv">TECA_INSTALL</span><span class="o">=</span>/global/cscratch1/sd/loring/test_superbuild/teca/<span class="nv">$TECA_VER</span>
+
+<span class="c1"># Configure TECA superbuild</span>
+cmake <span class="se">\</span>
+  -DCMAKE_CXX_COMPILER<span class="o">=</span><span class="sb">`</span>which g++<span class="sb">`</span> <span class="se">\</span>
+  -DCMAKE_C_COMPILER<span class="o">=</span><span class="sb">`</span>which gcc<span class="sb">`</span> <span class="se">\</span>
+  -DCMAKE_BUILD_TYPE<span class="o">=</span>Release <span class="se">\</span>
+  -DCMAKE_INSTALL_PREFIX<span class="o">=</span><span class="si">${</span><span class="nv">TECA_INSTALL</span><span class="si">}</span> <span class="se">\</span>
+  -DENABLE_MPICH<span class="o">=</span>OFF <span class="se">\</span>
+  -DENABLE_OPENMPI<span class="o">=</span>OFF <span class="se">\</span>
+  -DENABLE_CRAY_MPICH<span class="o">=</span>ON <span class="se">\</span>
+  -DENABLE_TECA_TEST<span class="o">=</span>OFF <span class="se">\</span>
+  -DENABLE_TECA_DATA<span class="o">=</span>ON <span class="se">\</span>
+  -DENABLE_READLINE<span class="o">=</span>OFF <span class="se">\</span>
+  <span class="nv">$*</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="on-a-laptop-or-desktop">
+<h2>On a laptop or desktop<a class="headerlink" href="#on-a-laptop-or-desktop" title="Permalink to this headline">¶</a></h2>
+<p>On a laptop or desktop system one may use local package managers to install
+third-party dependencies, and then proceed with compiling and installing TECA.
+A simple procedure exists for those wishing to use TECA for Python scripting.
+See section <a class="reference internal" href="#py-only-install"><span class="std std-ref">A Python only install</span></a>. For those wishing access to TECA
+libraries, command line applications, and Python scripting, compiling from
+sources is the best option. See section <a class="reference internal" href="#compile"><span class="std std-ref">Compiling TECA from sources</span></a>.</p>
+<p>Note, that as with any install, post install the environment will likely need
+to be set to pick up the install.  Specifically, PATH, LD_LIBRARY_PATH (or
+DYLD_LIBRRAY_PATH on Mac), and PYTHONPATH need to be set correctly. See section
+<a class="reference internal" href="#post-install"><span class="std std-ref">Post Install</span></a>.</p>
+<div class="section" id="a-python-only-install">
+<span id="py-only-install"></span><h3>A Python only install<a class="headerlink" href="#a-python-only-install" title="Permalink to this headline">¶</a></h3>
+<p>It is often convenient to install TECA locally for post processing results from
+runs made on a supercomputer. If one only desires access to the Python package,
+one may use pip. It is convenient, but not required, to do so in a virtual env.</p>
+<p>Before attempting to install TECA, install dependencies as shown in section
+<a class="reference internal" href="#install-deps"><span class="std std-ref">Installing dependencies</span></a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 -m venv py3k
+<span class="nb">source</span> py3k/bin/activate
+pip3 install numpy matploptlib mpi4py teca
+</pre></div>
+</div>
+<p>The install may take a few minutes as TECA compiles from sources. Errors are
+typically due to missing dependencies, from the corresponding message it should
+be obvious which dependency is missing.</p>
+</div>
+<div class="section" id="compiling-teca-from-sources">
+<span id="compile"></span><h3>Compiling TECA from sources<a class="headerlink" href="#compiling-teca-from-sources" title="Permalink to this headline">¶</a></h3>
+<p>TECA depends on a number of third party libraries. Before attempting to compile
+TECA please install dependencies as described in section
+<a class="reference internal" href="#install-deps"><span class="std std-ref">Installing dependencies</span></a> and then set up the Python environment as described in
+section <a class="reference internal" href="#python-environment"><span class="std std-ref">Python environment</span></a>.</p>
+<p>Once dependencies are installed, a typical install might proceed as follows.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/LBL-EESA/TECA.git
+svn co svn://svn.code.sf.net/p/teca/TECA_data TECA_data
+<span class="nb">cd</span> TECA
+mkdir bin
+<span class="nb">cd</span> bin
+cmake ..
+make -j
+make -j install
+</pre></div>
+</div>
+<p>If all goes well, at the end of this TECA will be installed. However, note that
+the install location should be added to various system paths, See <a class="reference internal" href="#post-install"><span class="std std-ref">Post Install</span></a>
+for how to configure the run time environment.</p>
+<p>When running CMake one can pass <cite>-DCMAKE_INSTALL_PREFIX=&lt;some path&gt;</cite> to control
+where the install lands, and <cite>-DBUILD_TESTING=ON</cite> to enable regression tests.</p>
+<p>The most common problem is when CMake failed to locate a dependency. Usually
+the error message has information about correcting the situation. Usually the
+remedy is to explicitly pass the path where the dependency is installed
+directly to CMake on the command line. While not recommened, as a last resort
+one may disable a problematic dependency using <cite>-DREQUIRE_&lt;X&gt;=OFF</cite> where X is
+the dependency.</p>
+</div>
+<div class="section" id="installing-dependencies">
+<span id="install-deps"></span><h3>Installing dependencies<a class="headerlink" href="#installing-dependencies" title="Permalink to this headline">¶</a></h3>
+<p>Most of the dependencies can be installed by the OS specific package manager.
+For Python modules pip is used as described in <a class="reference internal" href="#python-environment"><span class="std std-ref">Python environment</span></a>.</p>
+<p>It is recommended to have a parallel HDF5 based NetCDF install, on some systems
+(Ubuntu, Mac) this requires installing NetCDF from source as outlined in
+<a class="reference internal" href="#netcdf-parallel-4"><span class="std std-ref">NetCDF w/ Parallel 4</span></a>.</p>
+<div class="section" id="apple-mac-os">
+<h4>Apple Mac OS<a class="headerlink" href="#apple-mac-os" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew update
+brew unlink python@2
+brew install netcdf mpich swig svn udunits openssl python
+</pre></div>
+</div>
+</div>
+<div class="section" id="ubuntu-20-04">
+<h4>Ubuntu 20.04<a class="headerlink" href="#ubuntu-20-04" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ apt-get update
+$ apt-get install -y gcc g++ gfortran cmake swig <span class="se">\</span>
+    libmpich-dev libhdf5-dev libnetcdf-dev <span class="se">\</span>
+    libboost-program-options-dev python3-dev python3-pip <span class="se">\</span>
+    libudunits2-0 libudunits2-dev zlib1g-dev libssl-dev
+</pre></div>
+</div>
+</div>
+<div class="section" id="fedora-32">
+<h4>Fedora 32<a class="headerlink" href="#fedora-32" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ dnf update
+$ dnf install -qq -y environment-modules which git-all gcc-c++ gcc-gfortran <span class="se">\</span>
+    make cmake swig mpich-devel hdf5-mpich-devel netcdf-mpich-devel <span class="se">\</span>
+    boost-devel python3-devel python3-pip subversion udunits2 udunits2-devel <span class="se">\</span>
+    zlib-devel openssl-devel wget redhat-rpm-config
+</pre></div>
+</div>
+<p>Some of these packages may need an environment module loaded, for instance <code class="docutils literal notranslate"><span class="pre">MPI</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ module load mpi
+</pre></div>
+</div>
+</div>
+<div class="section" id="python-environment">
+<span id="id1"></span><h4>Python environment<a class="headerlink" href="#python-environment" title="Permalink to this headline">¶</a></h4>
+<p>TECA’s Python dependencies can be easily installed via pip.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip3 install numpy mpi4py matplotlib torch
+</pre></div>
+</div>
+<p>However, when building TECA from sources it can be useful to setup a virtual
+environment.  Creating the virtual environment is something that you do once,
+typically in your home folder or the SCRATCH file system on the Cray. Once
+setup the venv will need to be activated each time you use TECA.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~
+$ python3 -mvenv teca-py3k
+$ <span class="nb">source</span> teca-py3k/bin/activate
+$ pip3 install numpy matplotlib mpi4py torch
+</pre></div>
+</div>
+<p>Before building TECA, and every time you use TECA be sure to activate the same venv.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">source</span> teca-py3k/bin/activate
+</pre></div>
+</div>
+<p>Once the venv is installed and activated, see <a class="reference internal" href="#compile"><span class="std std-ref">Compiling TECA from sources</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As of 1/1/2020 TECA switched to Python 3. Python 2 may still work
+but is no longer maintained and should not be used.</p>
+</div>
+</div>
+<div class="section" id="netcdf-w-parallel-4">
+<span id="netcdf-parallel-4"></span><h4>NetCDF w/ Parallel 4<a class="headerlink" href="#netcdf-w-parallel-4" title="Permalink to this headline">¶</a></h4>
+<p>As of 7/31/2020 TECA relies on HDF5 NetCDF with MPI collective I/O. The
+NetCDF project calls this feature set “parallel 4”. At this time neither
+Mac OS homebrew nor Ubuntu 20.04 have a functional parallel NetCDF package.
+On those systems one should install NetCDF from sources.</p>
+<p>On Ubuntu 20.04</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~
+$ sudo apt-get remove libhdf5-dev
+$ sudo apt-get install libmpich-dev libhdf5-mpich-dev
+$ wget https://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-c-4.7.4.tar.gz
+$ tar -xvf netcdf-c-4.7.4.tar.gz
+$ <span class="nb">cd</span> netcdf-c-4.7.4
+$ ./configure <span class="nv">CC</span><span class="o">=</span>mpicc <span class="nv">CFLAGS</span><span class="o">=</span><span class="s2">&quot;-O3 -I/usr/include/hdf5/mpich&quot;</span>       <span class="se">\</span>
+      <span class="nv">LDFLAGS</span><span class="o">=</span><span class="s2">&quot;-L/usr/lib/x86_64-linux-gnu/hdf5/mpich/ -lhdf5&quot;</span>      <span class="se">\</span>
+      --prefix<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../netcdf-c-4.7.4-install --enable-parallel-4  <span class="se">\</span>
+      --disable-dap
+$ make -j install
+</pre></div>
+</div>
+<p>On Apple Mac OS</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ brew uninstall netcdf hdf5 mpich
+$ brew install mpi hdf5-mpi
+$ wget https://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-c-4.7.4.tar.gz
+$ tar -xvf netcdf-c-4.7.4.tar.gz
+$ <span class="nb">cd</span> netcdf-c-4.7.4
+$ ./configure <span class="nv">CC</span><span class="o">=</span>mpicc --enable-shared --enable-static          <span class="se">\</span>
+    --enable-fortran --disable-dap --enable-netcdf-4            <span class="se">\</span>
+    --enable-parallel4 --prefix<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../netcdf-c-4.7.4-install
+$ make -j install
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="post-install">
+<span id="id2"></span><h2>Post Install<a class="headerlink" href="#post-install" title="Permalink to this headline">¶</a></h2>
+<p>When installing after compiling from sources the user’s environment should be
+updated to use the install. One may use the following shell script as a
+template for this purpose by replacing &#64;CMAKE_INSTALL_PREFIX&#64; and
+&#64;PYTHON_VERSION&#64; with the value used during the install.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>@CMAKE_INSTALL_PREFIX@/lib/:@CMAKE_INSTALL_PREFIX@/lib64/:<span class="nv">$LD_LIBRARY_PATH</span>
+<span class="nb">export</span> <span class="nv">DYLD_LIBRARY_PATH</span><span class="o">=</span>@CMAKE_INSTALL_PREFIX@/lib/:@CMAKE_INSTALL_PREFIX@/lib64/:<span class="nv">$DYLD_LIBRARY_PATH</span>
+<span class="nb">export</span> <span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span>@CMAKE_INSTALL_PREFIX@/lib/pkgconfig:@CMAKE_INSTALL_PREFIX@/lib64/pkgconfig:<span class="nv">$PKG_CONFIG_PATH</span>
+<span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span>@CMAKE_INSTALL_PREFIX@/lib:@CMAKE_INSTALL_PREFIX@/lib/python@PYTHON_VERSION@/site-packages/
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>@CMAKE_INSTALL_PREFIX@/bin/:<span class="nv">$PATH</span>
+
+<span class="c1"># for server install without graphics capability</span>
+<span class="c1">#export MPLBACKEND=Agg</span>
+</pre></div>
+</div>
+<p>With this shell script in hand one configures the environment for use by sourcing it.</p>
+<p>When developing TECA it is common to skip the install step and run out of the
+build directory. When doing so one must also set LD_LIBRARY_PATH,
+DYLD_LIBRARY_PATH, PYTHONPATH, and PATH to point to the build directory.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="applications.html" class="btn btn-neutral float-right" title="Applications" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="TECA, Toolkit for Extreme Climate Analysis, User’s Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Burlen Loring, Travis O&#39;Brien &amp; Abdelrahman Elbashandy
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
