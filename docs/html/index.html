@@ -13,6 +13,7 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/collapsible-lists/css/tree_view.css" type="text/css" />
 
   
   
@@ -30,6 +31,8 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
+        <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
         <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -88,7 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="applications.html">Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="python.html">Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developer.html">Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="framework/framework.html">Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/framework_root.html">Framework</a></li>
 </ul>
 
             
@@ -171,118 +174,37 @@ largest scale on DOE HPC systems.</p>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#on-a-cray-supercomputer">On a Cray Supercomputer</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="installation.html#overview">Overview</a></li>
-<li class="toctree-l3"><a class="reference internal" href="installation.html#configure-script">Configure script</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#on-a-laptop-or-desktop">On a laptop or desktop</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="installation.html#a-python-only-install">A Python only install</a></li>
-<li class="toctree-l3"><a class="reference internal" href="installation.html#compiling-teca-from-sources">Compiling TECA from sources</a></li>
-<li class="toctree-l3"><a class="reference internal" href="installation.html#installing-dependencies">Installing dependencies</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#on-a-cray-supercomputer">On a Cray Supercomputer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#on-a-laptop-or-desktop">On a laptop or desktop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#post-install">Post Install</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="applications.html">Applications</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#metadata-probe">Metadata Probe</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#command-line-arguments">Command Line Arguments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#gfdl-tropical-cyclone-detector">GFDL Tropical Cyclone Detector</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id1">Command Line Arguments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id2">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#tropical-cyclone-trajectories">Tropical Cyclone Trajectories</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id3">Command Line Arguments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id4">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#tc-wind-radii">TC Wind Radii</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id5">Command Line Arguments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id6">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#tropical-cyclone-statistics">Tropical Cyclone Statistics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id7">Command Line Arguments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#analysis">Analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#analyses-produced-by-the-stats-stage">Analyses produced by the stats stage</a></li>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id8">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#tc-trajectory-scalars">TC Trajectory Scalars</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id9">Command Line Arguments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id10">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#tc-wind-radii-stats">TC Wind Radii Stats</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id11">Command Line Arguments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id12">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#event-filter">Event Filter</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id13">Command Line Arguments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id14">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#temporal-reduction">Temporal Reduction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id15">Command Line Arguments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="applications.html#id16">Example</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#metadata-probe">Metadata Probe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#gfdl-tropical-cyclone-detector">GFDL Tropical Cyclone Detector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#tropical-cyclone-trajectories">Tropical Cyclone Trajectories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#tc-wind-radii">TC Wind Radii</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#tropical-cyclone-statistics">Tropical Cyclone Statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#tc-trajectory-scalars">TC Trajectory Scalars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#tc-wind-radii-stats">TC Wind Radii Stats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#event-filter">Event Filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#temporal-reduction">Temporal Reduction</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="python.html">Python</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="python.html#pipeline-construction-configuration-and-execution">Pipeline Construction, Configuration and Execution</a></li>
-<li class="toctree-l2"><a class="reference internal" href="python.html#algorithm-development">Algorithm Development</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="python.html#report-phase">Report Phase</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#request-phase">Request Phase</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#execute">Execute</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#python-algorithm-template">Python Algorithm Template</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#the-report-override">The Report Override</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#the-request-override">The Request Override</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#the-execute-override">The Execute Override</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#arrays">Arrays</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#metadata">Metadata</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#array-collections">Array Collections</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#tables">Tables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="python.html#cartesian-meshes">Cartesian Meshes</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="python.html#algorithm-development">Algorithm Development</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="developer.html">Development</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="developer.html#testing">Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="developer.html#timing-and-profiling">Timing and Profiling</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="developer.html#compilation">Compilation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="developer.html#runtime-controls">Runtime controls</a></li>
-<li class="toctree-l3"><a class="reference internal" href="developer.html#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer.html#timing-and-profiling">Timing and Profiling</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="framework/framework.html">Framework</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="framework/alg.html">Algorithms</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="framework/alg.html#classes">Classes</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="framework/core.html">CORE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="framework/io.html">I/O</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="framework/io.html#classes">Classes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="framework/io.html#namespaces">Namespaces</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="framework/data.html">DATA</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="framework/data.html#classes">Classes</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="framework/system.html">System</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="framework/system.html#namespaces">Namespaces</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="api/framework_root.html">Framework</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/framework_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/framework_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/framework_root.html#full-api">Full API</a></li>
 </ul>
 </li>
 </ul>

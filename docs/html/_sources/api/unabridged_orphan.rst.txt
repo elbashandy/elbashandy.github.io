@@ -1,0 +1,38 @@
+:orphan:
+
+
+Full API
+========
+
+Directories
+***********
+
+
+.. toctree::
+   :maxdepth: 1
+
+   dir_TECA.rst
+
+.. toctree::
+   :maxdepth: 1
+
+   dir_TECA_alg.rst
+
+.. toctree::
+   :maxdepth: 1
+
+   dir_TECA_core.rst
+
+Files
+*****
+
+
+.. toctree::
+   :maxdepth: 1
+
+   file_TECA_alg_teca_2d_component_area.h.rst
+
+.. toctree::
+   :maxdepth: 1
+
+   file_TECA_core_teca_algorithm.h.rst

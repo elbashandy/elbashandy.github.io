@@ -9,6 +9,12 @@ to build Climage Data Analysis/Transformation pipelines.
    :caption: Contents:
 
    alg
+
+.. 
+   toctree::
+   :maxdepth: 1
+   :caption: Contents:
+   alg
    core
    io
    data

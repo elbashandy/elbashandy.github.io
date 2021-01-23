@@ -1,0 +1,71 @@
+
+.. _program_listing_file_TECA_alg_teca_2d_component_area.h:
+
+Program Listing for File teca_2d_component_area.h
+=================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_TECA_alg_teca_2d_component_area.h>` (``TECA/alg/teca_2d_component_area.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #ifndef teca_2d_component_area_h
+   #define teca_2d_component_area_h
+   
+   #include "teca_shared_object.h"
+   #include "teca_algorithm.h"
+   #include "teca_metadata.h"
+   
+   #include <string>
+   #include <vector>
+   
+   TECA_SHARED_OBJECT_FORWARD_DECL(teca_2d_component_area)
+   
+   
+   class teca_2d_component_area : public teca_algorithm
+   {
+   public:
+       TECA_ALGORITHM_STATIC_NEW(teca_2d_component_area)
+       TECA_ALGORITHM_DELETE_COPY_ASSIGN(teca_2d_component_area)
+       TECA_ALGORITHM_CLASS_NAME(teca_2d_component_area)
+       ~teca_2d_component_area();
+   
+       // report/initialize to/from Boost program options objects.
+       TECA_GET_ALGORITHM_PROPERTIES_DESCRIPTION()
+       TECA_SET_ALGORITHM_PROPERTIES()
+   
+       // The component variable name containing the region labels.
+       TECA_ALGORITHM_PROPERTY(std::string, component_variable)
+   
+       TECA_ALGORITHM_PROPERTY(int, contiguous_component_ids)
+       
+       TECA_ALGORITHM_PROPERTY(long, background_id)
+   
+   protected:
+       teca_2d_component_area();
+   
+       int get_component_variable(std::string &component_var);
+   
+   private:
+       teca_metadata get_output_metadata(
+           unsigned int port,
+           const std::vector<teca_metadata> &input_md) override;
+   
+       std::vector<teca_metadata> get_upstream_request(
+           unsigned int port,
+           const std::vector<teca_metadata> &input_md,
+           const teca_metadata &request) override;
+   
+       const_p_teca_dataset execute(
+           unsigned int port,
+           const std::vector<const_p_teca_dataset> &input_data,
+           const teca_metadata &request) override;
+   
+   private:
+       std::string component_variable;
+       int contiguous_component_ids;
+       long background_id;
+   };
+   
+   #endif

@@ -1,0 +1,13 @@
+.. _exhale_typedef_teca__2d__component__area_8h_1acaf3c2366a87b4c38726f14f24f13a52:
+
+Typedef const_p_teca_2d_component_area
+======================================
+
+- Defined in :ref:`file_TECA_alg_teca_2d_component_area.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: const_p_teca_2d_component_area

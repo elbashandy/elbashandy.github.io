@@ -1,0 +1,31 @@
+
+Full API
+--------
+
+Classes and Structs
+*******************
+
+
+.. toctree::
+   :maxdepth: 1
+
+   classteca__2d__component__area.rst
+
+.. toctree::
+   :maxdepth: 1
+
+   classteca__algorithm.rst
+
+Typedefs
+********
+
+
+.. toctree::
+   :maxdepth: 1
+
+   typedef_teca__2d__component__area_8h_1acaf3c2366a87b4c38726f14f24f13a52.rst
+
+.. toctree::
+   :maxdepth: 1
+
+   typedef_teca__2d__component__area_8h_1a31f3628734db2a22eac6b3bbfb90cbb2.rst

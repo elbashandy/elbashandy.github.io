@@ -1,0 +1,16 @@
+.. _dir_alg:
+
+
+Directory alg
+=============
+
+
+*Directory path:* ``alg``
+
+
+Files
+-----
+
+- :ref:`file_alg_teca_2d_component_area.h`
+
+

@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Program Listing for File teca_algorithm.h &mdash; TECA  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> TECA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="framework_root.html">Framework</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">TECA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File teca_algorithm.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/program_listing_file_TECA_core_teca_algorithm.h.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-teca-algorithm-h">
+<span id="program-listing-file-teca-core-teca-algorithm-h"></span><h1>Program Listing for File teca_algorithm.h<a class="headerlink" href="#program-listing-for-file-teca-algorithm-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_TECA_core_teca_algorithm.h.html#file-teca-core-teca-algorithm-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">TECA/core/teca_algorithm.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef teca_algorithm_h</span>
+<span class="cp">#define teca_algorithm_h</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;teca_config.h&quot;</span><span class="cp"></span>
+
+<span class="c1">// forward delcaration of ref counted types</span>
+<span class="cp">#include</span> <span class="cpf">&quot;teca_dataset_fwd.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;teca_algorithm_fwd.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;teca_algorithm_executive_fwd.h&quot;</span><span class="cp"></span>
+<span class="k">class</span> <span class="nc">teca_algorithm_internals</span><span class="p">;</span>
+
+<span class="c1">// for types used in the api</span>
+<span class="cp">#include</span> <span class="cpf">&quot;teca_metadata.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;teca_algorithm_output_port.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;teca_program_options.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;teca_mpi.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;utility&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;iosfwd&gt;</span><span class="cp"></span>
+
+<span class="c1">// interface to teca pipeline architecture. all sources/readers</span>
+<span class="c1">// filters, sinks/writers will implement this interface</span>
+<span class="k">class</span> <span class="nc">teca_algorithm</span> <span class="o">:</span> <span class="k">public</span> <span class="n">std</span><span class="o">::</span><span class="n">enable_shared_from_this</span><span class="o">&lt;</span><span class="n">teca_algorithm</span><span class="o">&gt;</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construct/destruct</span>
+    <span class="k">virtual</span> <span class="o">~</span><span class="n">teca_algorithm</span><span class="p">()</span> <span class="k">noexcept</span><span class="p">;</span>
+
+    <span class="n">TECA_ALGORITHM_DELETE_COPY_ASSIGN</span><span class="p">(</span><span class="n">teca_algorithm</span><span class="p">)</span>
+
+    <span class="c1">// return the name of the class.</span>
+    <span class="k">virtual</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">get_class_name</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="c1">// set/get the communicator to use at this stage of the pipeline this has</span>
+    <span class="c1">// no influence on other stages. We duplicate the passed in communicator</span>
+    <span class="c1">// providing an isolated communication space for subsequent operations. By</span>
+    <span class="c1">// default the communicator is initialized to MPI_COMM_WORLD, here it is not</span>
+    <span class="c1">// duplicated. Thus to put an algorithm into a unique communication space</span>
+    <span class="c1">// one should explicitly set a communicator. When an algorithm should not</span>
+    <span class="c1">// use MPI, for instance when it is in a nested pipeline, one may set the</span>
+    <span class="c1">// communicator to MPI_COMM_SELF.</span>
+    <span class="kt">void</span> <span class="nf">set_communicator</span><span class="p">(</span><span class="n">MPI_Comm</span> <span class="n">comm</span><span class="p">);</span>
+    <span class="n">MPI_Comm</span> <span class="nf">get_communicator</span><span class="p">();</span>
+
+<span class="cp">#if defined(TECA_HAS_BOOST)</span>
+    <span class="c1">// initialize the given options description</span>
+    <span class="c1">// with algorithm&#39;s properties</span>
+    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">get_properties_description</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="p">,</span> <span class="n">options_description</span> <span class="o">&amp;</span><span class="p">)</span>
+    <span class="p">{}</span>
+
+    <span class="c1">// initialize the algorithm from the given options</span>
+    <span class="c1">// variable map.</span>
+    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">set_properties</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="p">,</span> <span class="n">variables_map</span> <span class="o">&amp;</span><span class="p">)</span>
+    <span class="p">{}</span>
+<span class="cp">#endif</span>
+
+    <span class="c1">// get an output port from the algorithm. to be used</span>
+    <span class="c1">// during pipeline building</span>
+    <span class="k">virtual</span>
+    <span class="n">teca_algorithm_output_port</span> <span class="n">get_output_port</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="c1">// set an input to this algorithm</span>
+    <span class="kt">void</span> <span class="nf">set_input_connection</span><span class="p">(</span><span class="k">const</span> <span class="n">teca_algorithm_output_port</span> <span class="o">&amp;</span><span class="n">port</span><span class="p">)</span>
+    <span class="p">{</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">set_input_connection</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">port</span><span class="p">);</span> <span class="p">}</span>
+
+    <span class="k">virtual</span>
+    <span class="kt">void</span> <span class="n">set_input_connection</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">id</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">teca_algorithm_output_port</span> <span class="o">&amp;</span><span class="n">port</span><span class="p">);</span>
+
+    <span class="c1">// remove input connections</span>
+    <span class="k">virtual</span>
+    <span class="kt">void</span> <span class="n">remove_input_connection</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">id</span><span class="p">);</span>
+
+    <span class="c1">// remove all input connections</span>
+    <span class="kt">void</span> <span class="nf">clear_input_connections</span><span class="p">();</span>
+
+    <span class="c1">// access the cached data produced by this algorithm. when no</span>
+    <span class="c1">// request is specified the dataset on the top(most recent) of</span>
+    <span class="c1">// the cache is returned. When a request is specified it may</span>
+    <span class="c1">// optionally be filtered by the implementations cache key filter.</span>
+    <span class="c1">// see also get_cache_key (threadsafe)</span>
+    <span class="n">const_p_teca_dataset</span> <span class="nf">get_output_data</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="c1">// remove a dataset from the top/bottom of the cache. the</span>
+    <span class="c1">// top of the cache has the most recently created dataset.</span>
+    <span class="c1">// top or bottom is selected via the boolean argument.</span>
+    <span class="c1">// (threadsafe)</span>
+    <span class="kt">void</span> <span class="nf">pop_cache</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="kt">int</span> <span class="n">top</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="c1">// set the cache size. the default is 1. (threadsafe)</span>
+    <span class="kt">void</span> <span class="nf">set_cache_size</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
+
+    <span class="c1">// execute the pipeline from this instance up.</span>
+    <span class="k">virtual</span> <span class="kt">int</span> <span class="n">update</span><span class="p">();</span>
+    <span class="k">virtual</span> <span class="kt">int</span> <span class="n">update</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span><span class="p">);</span>
+
+    <span class="c1">// get meta data considering this instance up.</span>
+    <span class="k">virtual</span> <span class="n">teca_metadata</span> <span class="n">update_metadata</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="c1">// set the executive</span>
+    <span class="kt">void</span> <span class="nf">set_executive</span><span class="p">(</span><span class="n">p_teca_algorithm_executive</span> <span class="n">exe</span><span class="p">);</span>
+    <span class="n">p_teca_algorithm_executive</span> <span class="nf">get_executive</span><span class="p">();</span>
+
+    <span class="c1">// serialize the configuration to a stream. this should</span>
+    <span class="c1">// store the public user modifiable properties so that</span>
+    <span class="c1">// runtime configuration may be saved and restored..</span>
+    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">to_stream</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">from_stream</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">istream</span> <span class="o">&amp;</span><span class="n">s</span><span class="p">);</span>
+
+<span class="k">protected</span><span class="o">:</span>
+    <span class="n">teca_algorithm</span><span class="p">();</span>
+
+    <span class="c1">// implementations should call this from their constructors</span>
+    <span class="c1">// to setup the internal caches and data structures required</span>
+    <span class="c1">// for execution.</span>
+    <span class="kt">void</span> <span class="nf">set_number_of_input_connections</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="nf">set_number_of_output_ports</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
+
+    <span class="c1">// set the modified flag on the given output port&#39;s cache.</span>
+    <span class="c1">// should be called when user modifies properties on the</span>
+    <span class="c1">// object that require the output to be regenerated.</span>
+    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">set_modified</span><span class="p">();</span>
+    <span class="kt">void</span> <span class="nf">set_modified</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span><span class="p">);</span>
+
+<span class="k">protected</span><span class="o">:</span>
+<span class="c1">// this section contains methods that developers</span>
+<span class="c1">// typically need to override when implementing</span>
+<span class="c1">// teca_algorithm&#39;s such as reader, filters, and</span>
+<span class="c1">// writers.</span>
+
+    <span class="c1">// implementations must override this method to provide</span>
+    <span class="c1">// information to downstream consumers about what data</span>
+    <span class="c1">// will be produced on each output port. The port to</span>
+    <span class="c1">// provide information about is named in the first argument</span>
+    <span class="c1">// the second argument contains a list of the metadata</span>
+    <span class="c1">// describing data on all of the inputs.</span>
+    <span class="k">virtual</span>
+    <span class="n">teca_metadata</span> <span class="n">get_output_metadata</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">teca_metadata</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">input_md</span><span class="p">);</span>
+
+    <span class="c1">// implementations must override this method and</span>
+    <span class="c1">// generate a set of requests describing the data</span>
+    <span class="c1">// required on the inputs to produce data for the</span>
+    <span class="c1">// named output port, given the upstream meta data</span>
+    <span class="c1">// and request. If no data is needed on an input</span>
+    <span class="c1">// then the list should contain a null request.</span>
+    <span class="k">virtual</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">teca_metadata</span><span class="o">&gt;</span> <span class="n">get_upstream_request</span><span class="p">(</span>
+        <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">teca_metadata</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">input_md</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">teca_metadata</span> <span class="o">&amp;</span><span class="n">request</span><span class="p">);</span>
+
+    <span class="c1">// implementations must override this method and</span>
+    <span class="c1">// produce the output dataset for the port named</span>
+    <span class="c1">// in the first argument. The second argument is</span>
+    <span class="c1">// a list of all of the input datasets. See also</span>
+    <span class="c1">// get_request. The third argument contains a request</span>
+    <span class="c1">// from the consumer which can spcify information</span>
+    <span class="c1">// such as arrays, subset region, timestep etc.</span>
+    <span class="c1">// The implementation is free to handle the request</span>
+    <span class="c1">// as it sees fit.</span>
+    <span class="k">virtual</span>
+    <span class="n">const_p_teca_dataset</span> <span class="n">execute</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">const_p_teca_dataset</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">input_data</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">teca_metadata</span> <span class="o">&amp;</span><span class="n">request</span><span class="p">);</span>
+
+    <span class="c1">// implementations may choose to override this method</span>
+    <span class="c1">// to gain control of keys used in the cache. By default</span>
+    <span class="c1">// the passed in request is used as the key. This overide</span>
+    <span class="c1">// gives implementor the chance to filter the passed in</span>
+    <span class="c1">// request.</span>
+    <span class="k">virtual</span>
+    <span class="n">teca_metadata</span> <span class="n">get_cache_key</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">teca_metadata</span> <span class="o">&amp;</span><span class="n">request</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+<span class="k">protected</span><span class="o">:</span>
+<span class="c1">// this section contains methods that control the</span>
+<span class="c1">// pipeline&#39;s behavior. these would typically only</span>
+<span class="c1">// need to be overriden when designing a new class</span>
+<span class="c1">// of algorithms.</span>
+
+    <span class="c1">// driver function that manage meta data reporting  phase</span>
+    <span class="c1">// of pipeline execution.</span>
+    <span class="k">virtual</span>
+    <span class="n">teca_metadata</span> <span class="n">get_output_metadata</span><span class="p">(</span>
+        <span class="n">teca_algorithm_output_port</span> <span class="o">&amp;</span><span class="n">current</span><span class="p">);</span>
+
+    <span class="c1">// driver function that manages execution of the given</span>
+    <span class="c1">// requst on the named port</span>
+    <span class="k">virtual</span>
+    <span class="n">const_p_teca_dataset</span> <span class="n">request_data</span><span class="p">(</span>
+        <span class="n">teca_algorithm_output_port</span> <span class="o">&amp;</span><span class="n">port</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">teca_metadata</span> <span class="o">&amp;</span><span class="n">request</span><span class="p">);</span>
+
+    <span class="c1">// driver function that clears the output data cache</span>
+    <span class="c1">// where modified flag has been set from the current</span>
+    <span class="c1">// port upstream.</span>
+    <span class="k">virtual</span>
+    <span class="kt">int</span> <span class="n">validate_cache</span><span class="p">(</span><span class="n">teca_algorithm_output_port</span> <span class="o">&amp;</span><span class="n">current</span><span class="p">);</span>
+
+    <span class="c1">// driver function that clears the modified flag on the</span>
+    <span class="c1">// named port and all of it&#39;s upstream connections.</span>
+    <span class="k">virtual</span>
+    <span class="kt">void</span> <span class="n">clear_modified</span><span class="p">(</span><span class="n">teca_algorithm_output_port</span> <span class="n">current</span><span class="p">);</span>
+
+<span class="k">protected</span><span class="o">:</span>
+<span class="c1">// api exposing internals for use in driver methods</span>
+
+    <span class="c1">// search the given port&#39;s cache for the dataset associated</span>
+    <span class="c1">// with the given request. see also get_cache_key. (threadsafe)</span>
+    <span class="n">const_p_teca_dataset</span> <span class="n">get_output_data</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">teca_metadata</span> <span class="o">&amp;</span><span class="n">request</span><span class="p">);</span>
+
+    <span class="c1">// add or update the given request , dataset pair in the cache.</span>
+    <span class="c1">// see also get_cache_key. (threadsafe)</span>
+    <span class="kt">int</span> <span class="nf">cache_output_data</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">teca_metadata</span> <span class="o">&amp;</span><span class="n">request</span><span class="p">,</span> <span class="n">const_p_teca_dataset</span> <span class="o">&amp;</span><span class="n">data</span><span class="p">);</span>
+
+    <span class="c1">// clear the cache on the given output port</span>
+    <span class="kt">void</span> <span class="nf">clear_cache</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span><span class="p">);</span>
+
+    <span class="c1">// get the number of input connections</span>
+    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">get_number_of_input_connections</span><span class="p">();</span>
+
+    <span class="c1">// get the output port associated with this algorithm&#39;s</span>
+    <span class="c1">// i&#39;th input connection.</span>
+    <span class="n">teca_algorithm_output_port</span> <span class="o">&amp;</span><span class="nf">get_input_connection</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">i</span><span class="p">);</span>
+
+    <span class="c1">// clear the modified flag on the i&#39;th output</span>
+    <span class="kt">void</span> <span class="nf">clear_modified</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span><span class="p">);</span>
+
+    <span class="c1">// return the output port&#39;s modified flag value</span>
+    <span class="kt">int</span> <span class="nf">get_modified</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">port</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+<span class="k">private</span><span class="o">:</span>
+    <span class="n">teca_algorithm_internals</span> <span class="o">*</span><span class="n">internals</span><span class="p">;</span>
+
+    <span class="k">friend</span> <span class="k">class</span> <span class="nc">teca_threaded_algorithm</span><span class="p">;</span>
+    <span class="k">friend</span> <span class="k">class</span> <span class="nc">teca_data_request</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Burlen Loring, Travis O&#39;Brien &amp; Abdelrahman Elbashandy
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

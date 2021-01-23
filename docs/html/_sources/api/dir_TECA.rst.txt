@@ -1,0 +1,17 @@
+.. _dir_TECA:
+
+
+Directory TECA
+==============
+
+
+*Directory path:* ``TECA``
+
+Subdirectories
+--------------
+
+- :ref:`dir_TECA_alg`
+- :ref:`dir_TECA_core`
+
+
+

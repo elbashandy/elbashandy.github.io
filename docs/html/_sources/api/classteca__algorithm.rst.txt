@@ -1,0 +1,30 @@
+.. _exhale_class_classteca__algorithm:
+
+Class teca_algorithm
+====================
+
+- Defined in :ref:`file_TECA_core_teca_algorithm.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::enable_shared_from_this< teca_algorithm >``
+
+
+Derived Type
+************
+
+- ``public teca_2d_component_area`` (:ref:`exhale_class_classteca__2d__component__area`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: teca_algorithm
+   :members:
+   :undoc-members:

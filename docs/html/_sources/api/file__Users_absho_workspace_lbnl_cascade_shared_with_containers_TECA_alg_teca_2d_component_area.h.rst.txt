@@ -1,0 +1,57 @@
+
+.. _file__Users_absho_workspace_lbnl_cascade_shared_with_containers_TECA_alg_teca_2d_component_area.h:
+
+File teca_2d_component_area.h
+=============================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``/Users/absho/workspace/lbnl/cascade/shared_with_containers/TECA/alg/teca_2d_component_area.h``)
+-------------------------------------------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file__Users_absho_workspace_lbnl_cascade_shared_with_containers_TECA_alg_teca_2d_component_area.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``string``
+
+- ``teca_algorithm.h``
+
+- ``teca_metadata.h``
+
+- ``teca_shared_object.h``
+
+- ``vector``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classteca__2d__component__area`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_teca__2d__component__area_8h_1acaf3c2366a87b4c38726f14f24f13a52`
+
+- :ref:`exhale_typedef_teca__2d__component__area_8h_1a31f3628734db2a22eac6b3bbfb90cbb2`
+
