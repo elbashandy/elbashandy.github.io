@@ -13,6 +13,7 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
   <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
 
   
@@ -39,7 +40,9 @@
 
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Bibliography" href="../bibliography.html" />
+    <link rel="prev" title="Development" href="../developer.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,12 +88,16 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications.html">Command Line Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../python.html">Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../developer.html">Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/framework_root.html">Framework</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Framework</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#class-hierarchy">Class Hierarchy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Bibliography</a></li>
 </ul>
 
             
@@ -160,12 +167,9 @@
 <h1>Framework<a class="headerlink" href="#framework" title="Permalink to this headline">¶</a></h1>
 <p>TECA provides an extensive suite of algorithms and software utilities
 to build Climage Data Analysis/Transformation pipelines.</p>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="alg.html">Algorithms</a></li>
-</ul>
-</div>
+<div class="section" id="class-hierarchy">
+<h2>Class Hierarchy<a class="headerlink" href="#class-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="treeView" id="class-treeView"><li><ul class="collapsibleList"><li>Class <a href="classteca__algorithm.html">teca_algorithm</a><ul><li>Class <a href="classteca__2d__component__area.html">teca_2d_component_area</a></li><li>Class <a href="classteca__apply__binary__mask.html">teca_apply_binary_mask</a></li><li>Class <a href="classteca__ar__detect.html">teca_ar_detect</a></li><li>Class <a href="classteca__bayesian__ar__detect.html">teca_bayesian_ar_detect</a></li><li>Class <a href="classteca__bayesian__ar__detect__parameters.html">teca_bayesian_ar_detect_parameters</a></li><li>Class <a href="classteca__binary__segmentation.html">teca_binary_segmentation</a></li><li>Class <a href="classteca__cartesian__mesh__regrid.html">teca_cartesian_mesh_regrid</a></li><li>Class <a href="classteca__cartesian__mesh__source.html">teca_cartesian_mesh_source</a></li><li>Class <a href="classteca__cartesian__mesh__subset.html">teca_cartesian_mesh_subset</a></li><li>Class <a href="classteca__component__area__filter.html">teca_component_area_filter</a></li><li>Class <a href="classteca__component__statistics.html">teca_component_statistics</a></li><li>Class <a href="classteca__connected__components.html">teca_connected_components</a></li><li>Class <a href="classteca__dataset__capture.html">teca_dataset_capture</a></li><li>Class <a href="classteca__dataset__diff.html">teca_dataset_diff</a></li><li>Class <a href="classteca__dataset__source.html">teca_dataset_source</a></li><li>Class <a href="classteca__descriptive__statistics.html">teca_descriptive_statistics</a></li><li>Class <a href="classteca__evaluate__expression.html">teca_evaluate_expression</a></li><li>Class <a href="classteca__face__to__cell__centering.html">teca_face_to_cell_centering</a></li><li>Class <a href="classteca__l2__norm.html">teca_l2_norm</a></li><li>Class <a href="classteca__laplacian.html">teca_laplacian</a></li><li>Class <a href="classteca__latitude__damper.html">teca_latitude_damper</a></li><li>Class <a href="classteca__mask.html">teca_mask</a></li><li>Class <a href="classteca__normalize__coordinates.html">teca_normalize_coordinates</a></li><li>Class <a href="classteca__programmable__algorithm.html">teca_programmable_algorithm</a><ul><li class="lastChild">Class <a href="classteca__derived__quantity.html">teca_derived_quantity</a></li></ul></li><li>Class <a href="classteca__table__calendar.html">teca_table_calendar</a></li><li>Class <a href="classteca__table__region__mask.html">teca_table_region_mask</a></li><li>Class <a href="classteca__table__remove__rows.html">teca_table_remove_rows</a></li><li>Class <a href="classteca__table__sort.html">teca_table_sort</a></li><li>Class <a href="classteca__table__to__stream.html">teca_table_to_stream</a></li><li>Class <a href="classteca__tc__candidates.html">teca_tc_candidates</a></li><li>Class <a href="classteca__tc__classify.html">teca_tc_classify</a></li><li>Class <a href="classteca__tc__trajectory.html">teca_tc_trajectory</a></li><li>Class <a href="classteca__tc__wind__radii.html">teca_tc_wind_radii</a></li><li>Class <a href="classteca__temporal__average.html">teca_temporal_average</a></li><li>Class <a href="classteca__threaded__algorithm.html">teca_threaded_algorithm</a><ul><li>Class <a href="classteca__index__reduce.html">teca_index_reduce</a><ul><li>Class <a href="classteca__programmable__reduce.html">teca_programmable_reduce</a></li><li class="lastChild">Class <a href="classteca__table__reduce.html">teca_table_reduce</a></li></ul></li><li class="lastChild">Class <a href="classteca__threaded__programmable__algorithm.html">teca_threaded_programmable_algorithm</a></li></ul></li><li>Class <a href="classteca__unpack__data.html">teca_unpack_data</a></li><li>Class <a href="classteca__valid__value__mask.html">teca_valid_value_mask</a></li><li>Class <a href="classteca__vertical__coordinate__transform.html">teca_vertical_coordinate_transform</a></li><li>Class <a href="classteca__vertical__reduction.html">teca_vertical_reduction</a><ul><li class="lastChild">Class <a href="classteca__integrated__vapor__transport.html">teca_integrated_vapor_transport</a></li></ul></li><li class="lastChild">Class <a href="classteca__vorticity.html">teca_vorticity</a></li></ul></li><li>Class <a href="classteca__algorithm__executive.html">teca_algorithm_executive</a><ul><li class="lastChild">Class <a href="classteca__index__executive.html">teca_index_executive</a></li></ul></li><li>Class <a href="classteca__algorithm__internals.html">teca_algorithm_internals</a></li><li>Class <a href="classteca__array__collection.html">teca_array_collection</a></li><li>Class <a href="classteca__bad__cast.html">teca_bad_cast</a></li><li>Class <a href="classteca__binary__stream.html">teca_binary_stream</a></li><li>Class <a href="classteca__data__request.html">teca_data_request</a></li><li>Class <a href="classteca__dataset.html">teca_dataset</a><ul><li>Class <a href="classteca__database.html">teca_database</a></li><li>Class <a href="classteca__mesh.html">teca_mesh</a><ul><li>Class <a href="classteca__arakawa__c__grid.html">teca_arakawa_c_grid</a></li><li>Class <a href="classteca__cartesian__mesh.html">teca_cartesian_mesh</a></li><li>Class <a href="classteca__curvilinear__mesh.html">teca_curvilinear_mesh</a></li><li class="lastChild">Class <a href="classteca__uniform__cartesian__mesh.html">teca_uniform_cartesian_mesh</a></li></ul></li><li class="lastChild">Class <a href="classteca__table.html">teca_table</a></li></ul></li><li>Class <a href="classteca__memory__profiler.html">teca_memory_profiler</a></li><li>Class <a href="classteca__metadata.html">teca_metadata</a></li><li>Class <a href="classteca__mpi__manager.html">teca_mpi_manager</a></li><li>Class <a href="classteca__output__port.html">teca_output_port</a></li><li>Class <a href="classteca__parallel__id.html">teca_parallel_id</a></li><li>Class <a href="classteca__profiler.html">teca_profiler</a></li><li>Class <a href="classteca__table__collection.html">teca_table_collection</a></li><li>Class <a href="classteca__thread__pool.html">teca_thread_pool</a></li><li>Class <a href="classteca__threaded__algorithm__internals.html">teca_threaded_algorithm_internals</a></li><li>Class <a href="classteca__threadsafe__queue.html">teca_threadsafe_queue</a></li><li>Class <a href="classteca__time__event.html">teca_time_event</a></li><li>Class <a href="classteca__uuid.html">teca_uuid</a></li><li class="lastChild">Class <a href="classteca__variant__array.html">teca_variant_array</a><ul><li class="lastChild">Class <a href="classteca__variant__array__impl.html">teca_variant_array_impl</a></li></ul></li></ul></li></ul></div>
 </div>
 
 
@@ -173,6 +177,15 @@ to build Climage Data Analysis/Transformation pipelines.</p>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../bibliography.html" class="btn btn-neutral float-right" title="Bibliography" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../developer.html" class="btn btn-neutral float-left" title="Development" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

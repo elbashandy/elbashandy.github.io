@@ -13,6 +13,7 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
   <link rel="stylesheet" href="_static/collapsible-lists/css/tree_view.css" type="text/css" />
 
   
@@ -40,7 +41,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Framework" href="api/framework_root.html" />
+    <link rel="next" title="Framework" href="framework/framework.html" />
     <link rel="prev" title="Python" href="python.html" /> 
 </head>
 
@@ -89,7 +90,7 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="applications.html">Command Line Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="python.html">Python</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Development</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a></li>
@@ -101,7 +102,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="api/framework_root.html">Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="framework/framework.html">Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
 </ul>
 
             
@@ -243,7 +245,7 @@ by parallel TECA applications and tests.</p>
 log files. The application requires a timer profile file and a list of MPI
 ranks to analyze be passed on the command line. Optionally a memory profile
 file can be passed as well. For instance, the following command was used to
-generate figure <a class="reference internal" href="#prof-vis-10t-1r"><span class="std std-numref">Fig. 13</span></a>.</p>
+generate figure <a class="reference internal" href="#prof-vis-10t-1r"><span class="std std-numref">Fig. 15</span></a>.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./bin/teca_profile_explorer -e bin/test/test_bayesian_ar_detect <span class="se">\</span>
    -m bin/test/test_bayesian_ar_detect_mem -r <span class="m">0</span>
 </pre></div>
@@ -257,10 +259,10 @@ However, clicking on an event rectangle in the plot will result in all the data
 associated with the event being printed in the terminal. If a memory profile is
 passed on the command line the memory profile is normalized to the height of
 the plot and shown on top of the event profile. The maximum memory use is added
-to the title of the plot. Example output is shown in <a class="reference internal" href="#prof-vis-10t-1r"><span class="std std-numref">Fig. 13</span></a>.</p>
+to the title of the plot. Example output is shown in <a class="reference internal" href="#prof-vis-10t-1r"><span class="std std-numref">Fig. 15</span></a>.</p>
 <div class="figure align-default" id="id1">
 <span id="prof-vis-10t-1r"></span><a class="reference internal image-reference" href="_images/tpc_rank_profile_data_0.png"><img alt="_images/tpc_rank_profile_data_0.png" src="_images/tpc_rank_profile_data_0.png" style="width: 100%; height: 2.5in;" /></a>
-<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Visualization of TECA’s run time profiler for the test_bayesian_ar_detect
+<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">Visualization of TECA’s run time profiler for the test_bayesian_ar_detect
 regression test, run with 1 MPI rank and 10 threads.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 </div>
@@ -275,7 +277,7 @@ regression test, run with 1 MPI rank and 10 threads.</span><a class="headerlink"
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="api/framework_root.html" class="btn btn-neutral float-right" title="Framework" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="framework/framework.html" class="btn btn-neutral float-right" title="Framework" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="python.html" class="btn btn-neutral float-left" title="Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

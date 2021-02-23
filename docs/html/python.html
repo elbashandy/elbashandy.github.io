@@ -13,6 +13,7 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
   <link rel="stylesheet" href="_static/collapsible-lists/css/tree_view.css" type="text/css" />
 
   
@@ -41,7 +42,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Development" href="developer.html" />
-    <link rel="prev" title="Applications" href="applications.html" /> 
+    <link rel="prev" title="Command Line Applications" href="applications.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -89,7 +90,7 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="applications.html">Command Line Applications</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Python</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#pipeline-construction-configuration-and-execution">Pipeline Construction, Configuration and Execution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#algorithm-development">Algorithm Development</a><ul>
@@ -116,7 +117,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="developer.html">Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/framework_root.html">Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="framework/framework.html">Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
 </ul>
 
             
@@ -202,7 +204,7 @@ performance while allowing the programmer to focus on the algorithm itself
 rather than the technical details of C++11 development.</p>
 <div class="figure align-default" id="id1">
 <span id="parallel-exec"></span><a class="reference internal image-reference" href="_images/parallel_exec.png"><img alt="_images/parallel_exec.png" src="_images/parallel_exec.png" style="width: 100%; height: 2.5in;" /></a>
-<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">execution path through a simple 4 stage pipeline on any given process in an
+<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">execution path through a simple 4 stage pipeline on any given process in an
 MPI parallel run. Time progresses from a1 to c4 through the three execution
 phases report (a), request (b), and execute (c). The sequence of thread
 parallel execution is shown inside gray boxes, each path represents the
@@ -223,7 +225,7 @@ configure its run time behavior. Properties are accessed by set_&lt;prop
 name&gt;() and get_&lt;prop name&gt;() methods. Once a pipeline is created and
 configured it can be run by calling update() on its last algorithm.</p>
 <div class="literal-block-wrapper docutils container" id="id2">
-<span id="py-glue-code"></span><div class="code-block-caption"><span class="caption-number">Listing 1 </span><span class="caption-text">Command line application written in Python. The application constructs, configures, and executes a 4 stage pipeline that computes basic descriptive statistics over the entire lat-lon mesh for a set of variables passed on the command line. The statistic computations have been written in Python, and are shown in listing <a class="reference internal" href="#py-devel-code"><span class="std std-numref">Listing 2</span></a>. When run in parallel, the map-reduce pattern is applied over the time steps in the input dataset. A graphical representation of the pipeline is shown in figure <a class="reference internal" href="#parallel-exec"><span class="std std-numref">Fig. 12</span></a></span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<span id="py-glue-code"></span><div class="code-block-caption"><span class="caption-number">Listing 1 </span><span class="caption-text">Command line application written in Python. The application constructs, configures, and executes a 4 stage pipeline that computes basic descriptive statistics over the entire lat-lon mesh for a set of variables passed on the command line. The statistic computations have been written in Python, and are shown in listing <a class="reference internal" href="#py-devel-code"><span class="std std-numref">Listing 2</span></a>. When run in parallel, the map-reduce pattern is applied over the time steps in the input dataset. A graphical representation of the pipeline is shown in figure <a class="reference internal" href="#parallel-exec"><span class="std std-numref">Fig. 14</span></a></span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -314,7 +316,7 @@ code would be to compute a time series of average global temperature. The
 application loads modules and initializes MPI (lines 1-4), parses the command
 line options (lines 6-17),  constructs and configures the pipeline (lines
 22-37), and finally executes the pipeline (line 39). The pipeline constructed
-is shown in figure <a class="reference internal" href="#parallel-exec"><span class="std std-numref">Fig. 12</span></a> next to a time line of the
+is shown in figure <a class="reference internal" href="#parallel-exec"><span class="std std-numref">Fig. 14</span></a> next to a time line of the
 pipeline’s parallel execution on an arbitrary MPI process.</p>
 </div>
 <div class="section" id="algorithm-development">
@@ -433,7 +435,7 @@ appropriate overrides.</p>
 39
 40
 41
-42</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpi4py</span> <span class="kn">import</span> <span class="o">*</span>
+42</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mpi4py</span> <span class="kn">import</span> <span class="n">MPI</span>
 <span class="kn">from</span> <span class="nn">teca</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -651,7 +653,7 @@ and deep copying are always used.</p>
         <a href="developer.html" class="btn btn-neutral float-right" title="Development" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="applications.html" class="btn btn-neutral float-left" title="Applications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="applications.html" class="btn btn-neutral float-left" title="Command Line Applications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
