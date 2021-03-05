@@ -1,0 +1,10 @@
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   Algorithms<../framework/generated_alg>
+   Core<../framework/generated_core>
+   Data<../framework/generated_data>
+   I/O<../framework/generated_io>

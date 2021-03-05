@@ -1,0 +1,31 @@
+
+.. _Data:
+
+Data
+----
+
+TECA's data structures
+
+.. csv-table:: TECA Classes
+   :header: "Class", "Description"
+   :widths: 5, 30
+
+   teca_arakawa_c_grid_ , data on an Arkawa C Grid
+   teca_array_collection_ , 
+   teca_cartesian_mesh_ , data on a physically uniform cartesian mesh
+   teca_curvilinear_mesh_ , data on a physically uniform curvilinear mesh
+   teca_database_ , teca_database - A collection of named tables
+   teca_mesh_ , a base class for geometric data
+   teca_table_ , 
+   teca_table_collection_ , 
+   teca_uniform_cartesian_mesh_ , data on a uniform cartesian mesh
+
+.. _teca_arakawa_c_grid: classteca__arakawa__c__grid.html
+.. _teca_array_collection: classteca__array__collection.html
+.. _teca_cartesian_mesh: classteca__cartesian__mesh.html
+.. _teca_curvilinear_mesh: classteca__curvilinear__mesh.html
+.. _teca_database: classteca__database.html
+.. _teca_mesh: classteca__mesh.html
+.. _teca_table: classteca__table.html
+.. _teca_table_collection: classteca__table__collection.html
+.. _teca_uniform_cartesian_mesh: classteca__uniform__cartesian__mesh.html

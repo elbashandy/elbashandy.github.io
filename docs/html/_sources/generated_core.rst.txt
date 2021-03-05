@@ -1,0 +1,63 @@
+
+.. _Core:
+
+Core
+----
+
+TECA's core components
+
+.. csv-table:: TECA Classes
+   :header: "Class", "Description"
+   :widths: 5, 30
+
+   teca_algorithm_ , 
+   teca_algorithm_executive_ , 
+   teca_bad_cast_ , 
+   teca_binary_stream_ , 
+   teca_dataset_ , 
+   teca_dataset_capture_ , 
+   teca_dataset_source_ , 
+   teca_index_executive_ , 
+   teca_index_reduce_ , 
+   teca_memory_profiler_ , 
+   teca_metadata_ , 
+   teca_mpi_manager_ , A RAII class to ease MPI initalization and finalization.
+   teca_output_port_ , 
+   teca_parallel_id_ , 
+   teca_profiler_ , 
+   teca_programmable_algorithm_ , an algorithm implemented with user provided callbacks
+   teca_programmable_reduce_ , 
+   teca_thread_pool_ , 
+   teca_threaded_algorithm_ , 
+   teca_threaded_programmable_algorithm_ , an algorithm implemented with user provided callbacks
+   teca_threadsafe_queue_ , 
+   teca_time_event_ , 
+   teca_uuid_ , 
+   teca_variant_array_ , type agnostic container for array based data
+   teca_variant_array_impl_ , 
+
+.. _teca_algorithm: classteca__algorithm.html
+.. _teca_algorithm_executive: classteca__algorithm__executive.html
+.. _teca_bad_cast: classteca__bad__cast.html
+.. _teca_binary_stream: classteca__binary__stream.html
+.. _teca_dataset: classteca__dataset.html
+.. _teca_dataset_capture: classteca__dataset__capture.html
+.. _teca_dataset_source: classteca__dataset__source.html
+.. _teca_index_executive: classteca__index__executive.html
+.. _teca_index_reduce: classteca__index__reduce.html
+.. _teca_memory_profiler: classteca__memory__profiler.html
+.. _teca_metadata: classteca__metadata.html
+.. _teca_mpi_manager: classteca__mpi__manager.html
+.. _teca_output_port: classteca__output__port.html
+.. _teca_parallel_id: classteca__parallel__id.html
+.. _teca_profiler: classteca__profiler.html
+.. _teca_programmable_algorithm: classteca__programmable__algorithm.html
+.. _teca_programmable_reduce: classteca__programmable__reduce.html
+.. _teca_thread_pool: classteca__thread__pool.html
+.. _teca_threaded_algorithm: classteca__threaded__algorithm.html
+.. _teca_threaded_programmable_algorithm: classteca__threaded__programmable__algorithm.html
+.. _teca_threadsafe_queue: classteca__threadsafe__queue.html
+.. _teca_time_event: classteca__time__event.html
+.. _teca_uuid: classteca__uuid.html
+.. _teca_variant_array: classteca__variant__array.html
+.. _teca_variant_array_impl: classteca__variant__array__impl.html

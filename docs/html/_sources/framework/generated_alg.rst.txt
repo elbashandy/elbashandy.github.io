@@ -1,0 +1,91 @@
+
+.. _Algorithms:
+
+Algorithms
+----------
+
+TECA's suite of algorithms that can be inserted in functional pipelines
+
+.. csv-table:: TECA Classes
+   :header: "Class", "Description"
+   :widths: 5, 30
+
+   teca_2d_component_area_ , an algorithm that computes the area of labeled regions
+   teca_apply_binary_mask_ , an algorithm that applies a binary mask multiplicatively
+   teca_ar_detect_ , 
+   teca_bayesian_ar_detect_ , CASCADE BARD atmospheric river detector.
+   teca_bayesian_ar_detect_parameters_ , 
+   teca_binary_segmentation_ , an algorithm that computes a binary segmentation
+   teca_cartesian_mesh_regrid_ , transfer data between overlapping meshes of potentially different resolution
+   teca_cartesian_mesh_source_ , 
+   teca_cartesian_mesh_subset_ , applies a subset given in world coordinates to the upstream request
+   teca_component_area_filter_ , An algorithm that applies a mask based on connected component area.
+   teca_component_statistics_ , compute statistics about connected components
+   teca_connected_components_ , an algorithm that computes connected component labeling
+   teca_dataset_diff_ , compute the element wise difference between to datasets
+   teca_derived_quantity_ , a programmable algorithm specialized for simple array based computations
+   teca_descriptive_statistics_ , compute descriptive statistics over a set of arrays.
+   teca_evaluate_expression_ , 
+   teca_face_to_cell_centering_ , an algorithm that transforms vertical cooridinates
+   teca_integrated_vapor_transport_ , an algorithm that computes integrated vapor transport (IVT)
+   teca_l2_norm_ , an algorithm that computes L2 norm
+   teca_laplacian_ , an algorithm that computes laplacian
+   teca_latitude_damper_ , 
+   teca_mask_ , an algorithm that masks a range of values
+   teca_normalize_coordinates_ , an algorithm to ensure that coordinates are in ascending order
+   teca_table_calendar_ , 
+   teca_table_reduce_ , 
+   teca_table_region_mask_ , 
+   teca_table_remove_rows_ , 
+   teca_table_sort_ , an algorithm that sorts a table in ascending order
+   teca_table_to_stream_ , 
+   teca_tc_candidates_ , 
+   teca_tc_classify_ , an algorithm that classifies storms using Saphire-Simpson scale
+   teca_tc_trajectory_ , GFDL tropical storms trajectory tracking algorithm.
+   teca_tc_wind_radii_ , computes wind radius at the specified coordinates
+   teca_temporal_average_ , an algorithm that averages data in time
+   teca_unpack_data_ , an algorithm that unpacks NetCDF packed values
+   teca_valid_value_mask_ , an algorithm that computes a mask identifying valid values
+   teca_vertical_coordinate_transform_ , an algorithm that transforms vertical cooridinates
+   teca_vertical_reduction_ , base class for vertical reducitons
+   teca_vorticity_ , an algorithm that computes vorticity
+
+.. _teca_2d_component_area: classteca__2d__component__area.html
+.. _teca_apply_binary_mask: classteca__apply__binary__mask.html
+.. _teca_ar_detect: classteca__ar__detect.html
+.. _teca_bayesian_ar_detect: classteca__bayesian__ar__detect.html
+.. _teca_bayesian_ar_detect_parameters: classteca__bayesian__ar__detect__parameters.html
+.. _teca_binary_segmentation: classteca__binary__segmentation.html
+.. _teca_cartesian_mesh_regrid: classteca__cartesian__mesh__regrid.html
+.. _teca_cartesian_mesh_source: classteca__cartesian__mesh__source.html
+.. _teca_cartesian_mesh_subset: classteca__cartesian__mesh__subset.html
+.. _teca_component_area_filter: classteca__component__area__filter.html
+.. _teca_component_statistics: classteca__component__statistics.html
+.. _teca_connected_components: classteca__connected__components.html
+.. _teca_dataset_diff: classteca__dataset__diff.html
+.. _teca_derived_quantity: classteca__derived__quantity.html
+.. _teca_descriptive_statistics: classteca__descriptive__statistics.html
+.. _teca_evaluate_expression: classteca__evaluate__expression.html
+.. _teca_face_to_cell_centering: classteca__face__to__cell__centering.html
+.. _teca_integrated_vapor_transport: classteca__integrated__vapor__transport.html
+.. _teca_l2_norm: classteca__l2__norm.html
+.. _teca_laplacian: classteca__laplacian.html
+.. _teca_latitude_damper: classteca__latitude__damper.html
+.. _teca_mask: classteca__mask.html
+.. _teca_normalize_coordinates: classteca__normalize__coordinates.html
+.. _teca_table_calendar: classteca__table__calendar.html
+.. _teca_table_reduce: classteca__table__reduce.html
+.. _teca_table_region_mask: classteca__table__region__mask.html
+.. _teca_table_remove_rows: classteca__table__remove__rows.html
+.. _teca_table_sort: classteca__table__sort.html
+.. _teca_table_to_stream: classteca__table__to__stream.html
+.. _teca_tc_candidates: classteca__tc__candidates.html
+.. _teca_tc_classify: classteca__tc__classify.html
+.. _teca_tc_trajectory: classteca__tc__trajectory.html
+.. _teca_tc_wind_radii: classteca__tc__wind__radii.html
+.. _teca_temporal_average: classteca__temporal__average.html
+.. _teca_unpack_data: classteca__unpack__data.html
+.. _teca_valid_value_mask: classteca__valid__value__mask.html
+.. _teca_vertical_coordinate_transform: classteca__vertical__coordinate__transform.html
+.. _teca_vertical_reduction: classteca__vertical__reduction.html
+.. _teca_vorticity: classteca__vorticity.html

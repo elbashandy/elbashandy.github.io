@@ -1,0 +1,37 @@
+
+.. _I/O:
+
+I/O
+---
+
+TECA's I/O components to read datasets efficiently
+
+.. csv-table:: TECA Classes
+   :header: "Class", "Description"
+   :widths: 5, 30
+
+   teca_cartesian_mesh_reader_ , a reader for data stored in binary cartesian_mesh format
+   teca_cartesian_mesh_writer_ , 
+   teca_cf_layout_manager_ , 
+   teca_cf_reader_ , a reader for data stored in NetCDF CF format
+   teca_cf_time_axis_data_ , 
+   teca_cf_time_axis_data_reduce_ , 
+   teca_cf_time_axis_reader_ , an algorithm to read time axis and its attributes in parallel
+   teca_cf_time_step_mapper_ , 
+   teca_cf_writer_ , 
+   teca_multi_cf_reader_ , a reader for data stored in NetCDF CF format in multiple files
+   teca_table_writer_ , teca_table_writer - writes tabular datasets in CSV format.
+   teca_wrf_reader_ , a reader for data stored in WRF ARW format
+
+.. _teca_cartesian_mesh_reader: classteca__cartesian__mesh__reader.html
+.. _teca_cartesian_mesh_writer: classteca__cartesian__mesh__writer.html
+.. _teca_cf_layout_manager: classteca__cf__layout__manager.html
+.. _teca_cf_reader: classteca__cf__reader.html
+.. _teca_cf_time_axis_data: classteca__cf__time__axis__data.html
+.. _teca_cf_time_axis_data_reduce: classteca__cf__time__axis__data__reduce.html
+.. _teca_cf_time_axis_reader: classteca__cf__time__axis__reader.html
+.. _teca_cf_time_step_mapper: classteca__cf__time__step__mapper.html
+.. _teca_cf_writer: classteca__cf__writer.html
+.. _teca_multi_cf_reader: classteca__multi__cf__reader.html
+.. _teca_table_writer: classteca__table__writer.html
+.. _teca_wrf_reader: classteca__wrf__reader.html
